@@ -1,10 +1,30 @@
+import { Navigate, Outlet } from "react-router-dom";
+import Layout from '../components/layout/Layout';
+import CompanyDetails from "../feautures/companyDetails/views/CompanyDetails";
+
+const PublicApp = () => {
+    return <Layout>
+        <Outlet></Outlet>
+    </Layout>
+}
+
 export const publicRoutes = [
     {
         path: '/',
-        element: <><h1>Vugar</h1></>
+        element: <Navigate to="app/cd" />
     },
     {
         path: window.baseUrl,
-        element: <></>
-    }
+        element: <Navigate to="app/cd" />
+    },
+    {
+        path: '/app',
+        element: <PublicApp />,
+        children: [
+            {
+                path: 'cd',
+                element: <CompanyDetails></CompanyDetails>,
+            }
+        ]
+    },
 ]

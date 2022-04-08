@@ -4,7 +4,7 @@ import {useRoutes} from "react-router-dom";
 const AppRoutes = () => {
     const routes = publicRoutes;
     const element = useRoutes([...routes]);
-    return <>{element}</>
+    return <>{element}</>;
 }
 
 export default AppRoutes;
