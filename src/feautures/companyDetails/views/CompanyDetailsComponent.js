@@ -62,7 +62,7 @@ const CompanyDetailsComponent = props => {
                             id="employee"
                             type="number"
                             className="form-control"
-                            value= {props.numberOfEmployees}
+                            value= {props.companyNumberOfEmployees}
                             onChange = {(e) => props.setCompanyNumberOfEmployees(e.target.value)}
                         />
                     </div>
