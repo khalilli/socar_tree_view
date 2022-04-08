@@ -20,9 +20,6 @@ const handleSetCompany = (set, get, args) => {
             case 'ceo':
                 companyDetails.ceo = object.value;
                 break;
-            case 'fieldOfActivity':
-                companyDetails.fieldOfActivity = object.value;
-                break;
             case 'countryOfOperation':
                 companyDetails.countryOfOperation = object.value;
                 break;
@@ -40,10 +37,17 @@ const store = (set, get) => ({
         share: 0,
         numberOfEmployees: 0,
         ceo: '',
-        fieldOfActivity: '',
         countryOfOperation: ''
     },
-    setCompanyDetails:  args => handleSetCompany(set, get, args)
+    setCompanyDetails:  args => handleSetCompany(set, get, args),
+    setInitialCompanyDetails: () => set({companyDetails: {
+        name: '',
+        segment: '',
+        share: 0,
+        numberOfEmployees: 0,
+        ceo: '',
+        countryOfOperation: ''
+    }})
 })
 
 const useStore = create(devtools(store));

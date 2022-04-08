@@ -4,18 +4,18 @@ import shallow from 'zustand/shallow';
 
 const getState = state => [
     state.companyDetails,
-    state.setCompanyDetails
+    state.setCompanyDetails,
+    state.setInitialCompanyDetails
 ];
 
 const CompanyDetails = () => {
-    const [companyDetails, setCompanyDetails] = useStore(getState, shallow);
+    const [companyDetails, setCompanyDetails, setInitialCompanyDetails] = useStore(getState, shallow);
     const args = {
         companyName: companyDetails.name,
         companySegment: companyDetails.segment,
         companyShare: companyDetails.share,
         companyNumberOfEmployees: companyDetails.numberOfEmployees,
         companyCEO: companyDetails.ceo,
-        companyFieldOfActivity: companyDetails.fieldOfActivity,
         companyCountryOfOperation: companyDetails.countryOfOperation,
         setCompanyName: name => { 
             setCompanyDetails([{property: "name", value: name}]) 
@@ -24,19 +24,19 @@ const CompanyDetails = () => {
             setCompanyDetails([{property: 'segment', value: segment}])
         },
         setCompanyShare: share => {
-            setCompanyDetails([{property: 'share', value: share}])
+            setCompanyDetails([{property: 'share', value: Number.parseInt(share)}])
         },
         setCompanyNumberOfEmployees: numberOfEmployees => {
-            setCompanyDetails([{property: 'numberOfEmployees', value: numberOfEmployees}])
+            setCompanyDetails([{property: 'numberOfEmployees', value: Number.parseInt(numberOfEmployees)}])
         },
         setCompanyCEO: ceo => {
             setCompanyDetails([{property: 'ceo', value: ceo}])
         },
-        setCompanyFieldOfActivity: fieldOfActivity => {
-            setCompanyDetails([{property: 'fieldOfActivity', value: fieldOfActivity}])
-        },
         setCountryOfOperation: countryOfOperation => {
             setCompanyDetails([{property: 'countryOfOperation', value: countryOfOperation}])
+        },
+        reset: () => {
+            setInitialCompanyDetails();
         }
     }
     return <CompanyDetailsComponent {...args} />

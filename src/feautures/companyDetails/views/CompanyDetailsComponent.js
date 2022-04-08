@@ -49,7 +49,7 @@ const CompanyDetailsComponent = props => {
                             type="number"
                             className="form-control"
                             value = {props.companyShare}
-                            onChange = {(e) => props.setCompanySegment(e.target.value)}
+                            onChange = {(e) => props.setCompanyShare(e.target.value)}
                         />
                     </div>
                 </div>
@@ -83,20 +83,6 @@ const CompanyDetailsComponent = props => {
                 </div>
                 <div className="form-group row">
                     <label className="col-sm-3 col-form-label"
-                        >Fəaliyyət Sahəsi</label
-                    >
-                    <div className="col-sm-6">
-                        <input 
-                            id="industry"
-                            type="text"
-                            className="form-control"
-                            value = {props.companyFieldOfActivity}
-                            onChange = {(e) => props.setCompanyFieldOfActivity(e.target.value)}
-                        />
-                    </div>
-                </div>
-                <div className="form-group row">
-                    <label className="col-sm-3 col-form-label"
                         >Fəaliyyət göstərdiyi ölkələr</label
                     >
                     <div className="col-sm-6">
@@ -104,7 +90,7 @@ const CompanyDetailsComponent = props => {
                             id="country"
                             type="text" 
                             className="form-control"
-                            value= {props.countryOfOperation}
+                            value= {props.companyCountryOfOperation}
                             onChange = {(e) => props.setCountryOfOperation(e.target.value)}  
                         />
                     </div>
@@ -113,6 +99,9 @@ const CompanyDetailsComponent = props => {
                     <div className="col-sm-10">
                         <button type="button" className="btn btn-primary">
                             Save
+                        </button> &nbsp;
+                        <button type="button" onClick={props.reset} className="btn btn-secondary">
+                            Reset
                         </button>
                     </div>
                 </div>
@@ -122,7 +111,12 @@ const CompanyDetailsComponent = props => {
 }
 
 CompanyDetailsComponent.propTypes = {
-    companyName: PropTypes.string
+    companyName: PropTypes.string,
+    companySegment: PropTypes.string,
+    companyShare: PropTypes.number,
+    companyNumberOfEmployees: PropTypes.number,
+    companyCEO: PropTypes.string,
+    countryOfOperation: PropTypes.string
 }
 
 export default CompanyDetailsComponent;
