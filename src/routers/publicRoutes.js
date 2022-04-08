@@ -1,6 +1,9 @@
 import { Navigate, Outlet } from "react-router-dom";
-import Layout from '../components/layout/Layout';
+import Layout from "../components/layout/Layout";
+import BoardMembers from "../feautures/boardMembers/views/BoardMembers";
 import CompanyDetails from "../feautures/companyDetails/views/CompanyDetails";
+import ShareOfCompanies from "../feautures/shareOfCompanies/views/ShareOfCompanies";
+import FinancialData from "../feautures/financialData/views/FinancialData";
 
 const PublicApp = () => {
     return <Layout>
@@ -23,7 +26,19 @@ export const publicRoutes = [
         children: [
             {
                 path: 'cd',
-                element: <CompanyDetails></CompanyDetails>,
+                element: <CompanyDetails />,
+            },
+            {
+                path: 'bm',
+                element: <BoardMembers />
+            },
+            {
+                path: 'fd',
+                element: <FinancialData />
+            },
+            {
+                path: 'sc',
+                element: <ShareOfCompanies />
             }
         ]
     },

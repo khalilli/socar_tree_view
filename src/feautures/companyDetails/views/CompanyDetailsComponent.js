@@ -1,4 +1,6 @@
-const CompanyDetailsComponent = () => {
+import PropTypes from 'prop-types';
+
+const CompanyDetailsComponent = props => {
     return (
         <main className="content">
             <div className="content-header">
@@ -10,84 +12,101 @@ const CompanyDetailsComponent = () => {
             </div>
             <form className="content-form">
                 <div className="form-group row">
-                    <label for="comapny" className="col-sm-3 col-form-label"
+                    <label className="col-sm-3 col-form-label"
                         >Şirkət</label
                     >
                     <div className="col-sm-6">
                         <input
-                            value="AZFEN BM"
+                            id="company"              
                             type="text"
                             className="form-control"
-                            id="company"
+                            value = {props.companyName}
+                            onChange = {(e) => props.setCompanyName(e.target.value)}                         
                         />
                     </div>
                 </div>
                 <div className="form-group row">
-                    <label for="segment" className="col-sm-3 col-form-label"
+                    <label className="col-sm-3 col-form-label"
                         >Aid olduğu seqment</label
                     >
                     <div className="col-sm-6">
                         <input
-                            value="Xidmətlər"
+                            id="segment"
                             type="text"
                             className="form-control"
-                            id="segment"
+                            value = {props.companySegment}
+                            onChange = {(e) => props.setCompanySegment(e.target.value)}
                         />
                     </div>
                 </div>
                 <div className="form-group row">
-                    <label for="share" className="col-sm-3 col-form-label"
+                    <label className="col-sm-3 col-form-label"
                         >Share</label
                     >
                     <div className="col-sm-6">
                         <input
-                            value="100"
+                            id="share"
                             type="number"
                             className="form-control"
-                            id="share"
+                            value = {props.companyShare}
+                            onChange = {(e) => props.setCompanySegment(e.target.value)}
                         />
                     </div>
                 </div>
                 <div className="form-group row">
-                    <label for="employee" className="col-sm-3 col-form-label"
+                    <label className="col-sm-3 col-form-label"
                         >İşçi sayı</label
                     >
                     <div className="col-sm-6">
                         <input
-                            value="6441"
+                            id="employee"
                             type="number"
                             className="form-control"
-                            id="employee"
+                            value= {props.numberOfEmployees}
+                            onChange = {(e) => props.setCompanyNumberOfEmployees(e.target.value)}
                         />
                     </div>
                 </div>
                 <div className="form-group row">
-                    <label for="ceo" className="col-sm-3 col-form-label"
-                        >Rəhbər</label
+                    <label className="col-sm-3 col-form-label"
+                        >CEO</label
                     >
                     <div className="col-sm-6">
                         <input
-                            value="Həmid Həsənov"
+                            id="ceo"
                             type="text"
                             className="form-control"
-                            id="ceo"
+                            value = {props.companyCEO}    
+                            onChange = {(e) => props.setCompanyCEO(e.target.value)}
                         />
                     </div>
                 </div>
                 <div className="form-group row">
-                    <label for="industry" className="col-sm-3 col-form-label"
+                    <label className="col-sm-3 col-form-label"
                         >Fəaliyyət Sahəsi</label
                     >
                     <div className="col-sm-6">
-                        <input type="text" className="form-control" id="industry" />
+                        <input 
+                            id="industry"
+                            type="text"
+                            className="form-control"
+                            value = {props.companyFieldOfActivity}
+                            onChange = {(e) => props.setCompanyFieldOfActivity(e.target.value)}
+                        />
                     </div>
                 </div>
                 <div className="form-group row">
-                    <label for="country" className="col-sm-3 col-form-label"
+                    <label className="col-sm-3 col-form-label"
                         >Fəaliyyət göstərdiyi ölkələr</label
                     >
                     <div className="col-sm-6">
-                        <input type="text" className="form-control" id="country" />
+                        <input 
+                            id="country"
+                            type="text" 
+                            className="form-control"
+                            value= {props.countryOfOperation}
+                            onChange = {(e) => props.setCountryOfOperation(e.target.value)}  
+                        />
                     </div>
                 </div>
                 <div className="form-group row">
@@ -100,6 +119,10 @@ const CompanyDetailsComponent = () => {
             </form>
         </main>
     )
+}
+
+CompanyDetailsComponent.propTypes = {
+    companyName: PropTypes.string
 }
 
 export default CompanyDetailsComponent;
