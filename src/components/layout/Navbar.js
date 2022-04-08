@@ -5,16 +5,16 @@ const Navbar = () => {
         <nav className="navbar">
             <ul className="navbar-list">
                 <li className="navbar-list--item">
-                    <Link to="/app/cd" className="navbar-list--link">Company Details</Link>
+                    <Link to={window.baseUrl + 'app/cd' + '?func=ll&objId=' + window.currentWebreportId + '&objAction=RunReport'} className="navbar-list--link">Company Details</Link>
                 </li>
                 <li className="navbar-list--item">
-                    <Link to="/app/bm" className="navbar-list--link">Board Members</Link>
+                    <Link to={window.baseUrl + 'app/bm' + '?func=ll&objId=' + window.currentWebreportId + '&objAction=RunReport'} className="navbar-list--link">Board Members</Link>
                 </li>
                 <li className="navbar-list--item">
-                    <Link to="/app/fd" className="navbar-list--link">Financial Data</Link>
+                    <Link to={window.baseUrl + 'app/fd' + '?func=ll&objId=' + window.currentWebreportId + '&objAction=RunReport'} className="navbar-list--link">Financial Data</Link>
                 </li>
                 <li className="navbar-list--item">
-                    <Link to="/app/sc" className="navbar-list--link">Share of Companies</Link>
+                    <Link to={window.baseUrl + 'app/sc' + '?func=ll&objId=' + window.currentWebreportId + '&objAction=RunReport'} className="navbar-list--link">Share of Companies</Link>
                 </li>
             </ul>
         </nav>

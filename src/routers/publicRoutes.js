@@ -14,32 +14,37 @@ const PublicApp = () => {
 export const publicRoutes = [
     {
         path: '/',
-        element: <Navigate to="app/cd" />
+        element: <Navigate to={window.baseUrl + 'app/cd' + '?func=ll&objId=' + window.currentWebreportId + '&objAction=RunReport'} />
     },
     {
         path: window.baseUrl,
-        element: <Navigate to="app/cd" />
+        element: <Navigate to={window.baseUrl + 'app/cd' + '?func=ll&objId=' + window.currentWebreportId + '&objAction=RunReport'} />
     },
     {
-        path: '/app',
+        path: window.baseUrl + 'app',
         element: <PublicApp />,
         children: [
             {
-                path: 'cd',
-                element: <CompanyDetails />,
-            },
-            {
-                path: 'bm',
-                element: <BoardMembers />
-            },
-            {
-                path: 'fd',
-                element: <FinancialData />
-            },
-            {
-                path: 'sc',
-                element: <ShareOfCompanies />
+                children : [
+                    {
+                        path: 'cd',
+                        element: <CompanyDetails />,
+                    },
+                    {
+                        path: 'bm',
+                        element: <BoardMembers />
+                    },
+                    {
+                        path: 'fd',
+                        element: <FinancialData />
+                    },
+                    {
+                        path: 'sc',
+                        element: <ShareOfCompanies />
+                    }
+                ]
             }
+            
         ]
     },
 ]
