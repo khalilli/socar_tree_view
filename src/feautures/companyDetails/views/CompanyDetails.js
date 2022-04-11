@@ -5,11 +5,12 @@ import shallow from 'zustand/shallow';
 const getState = state => [
     state.companyDetails,
     state.setCompanyDetails,
-    state.setInitialCompanyDetails
+    state.setInitialCompanyDetails,
+    state.initWorkflow
 ];
 
 const CompanyDetails = () => {
-    const [companyDetails, setCompanyDetails, setInitialCompanyDetails] = useStore(getState, shallow);
+    const [companyDetails, setCompanyDetails, setInitialCompanyDetails, initWorkflow] = useStore(getState, shallow);
     const args = {
         companyName: companyDetails.name,
         companySegment: companyDetails.segment,
@@ -37,6 +38,9 @@ const CompanyDetails = () => {
         },
         reset: () => {
             setInitialCompanyDetails();
+        }, 
+        onSubmitForm: () => {
+            initWorkflow();
         }
     }
     return <CompanyDetailsComponent {...args} />

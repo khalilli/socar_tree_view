@@ -97,10 +97,16 @@ const CompanyDetailsComponent = props => {
                 </div>
                 <div className="form-group row">
                     <div className="col-sm-10">
-                        <button type="button" className="btn btn-primary">
+                        <button 
+                            type="button"
+                            onClick={props.onSubmitForm} 
+                            className="btn btn-primary">
                             Save
                         </button> &nbsp;
-                        <button type="button" onClick={props.reset} className="btn btn-secondary">
+                        <button 
+                            type="button" 
+                            onClick={props.reset} 
+                            className="btn btn-secondary">
                             Reset
                         </button>
                     </div>

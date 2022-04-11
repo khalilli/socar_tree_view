@@ -1,5 +1,6 @@
 import create from 'zustand';
 import {devtools} from 'zustand/middleware';
+import initiateWorkflow from '../feautures/companyDetails/api/initiateWorkflow';
 
 const handleSetCompany = (set, get, args) => {
     const companyDetails = Object.assign({}, get().companyDetails);
@@ -30,6 +31,16 @@ const handleSetCompany = (set, get, args) => {
     set({companyDetails});
 }
 
+const handleInitiateWorkflow = async (set, get) => {
+    const companyDetails = get().companyDetails;
+    const args = {
+        cname: companyDetails.name,
+        countemp: companyDetails.numberOfEmployees,
+        ceo: companyDetails.ceo
+    };
+    await initiateWorkflow(args);
+}
+
 const store = (set, get) => ({
     companyDetails: {
         name: '',
@@ -47,7 +58,8 @@ const store = (set, get) => ({
         numberOfEmployees: 0,
         ceo: '',
         countryOfOperation: ''
-    }})
+    }}),
+    initWorkflow: () => handleInitiateWorkflow(set, get)
 })
 
 const useStore = create(devtools(store));
