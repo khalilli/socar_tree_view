@@ -1,6 +1,8 @@
 import CompanyDetailsComponent from "./CompanyDetailsComponent";
 import useStore from '../../../stores/useStore';
 import shallow from 'zustand/shallow';
+import countries from '../../../assets/countries.json';
+import { useState } from "react";
 
 const getState = state => [
     state.companyDetails,
@@ -17,6 +19,7 @@ const CompanyDetails = () => {
         companyShare: companyDetails.share,
         companyNumberOfEmployees: companyDetails.numberOfEmployees,
         companyCEO: companyDetails.ceo,
+        countries,
         companyCountryOfOperation: companyDetails.countryOfOperation,
         setCompanyName: name => { 
             setCompanyDetails([{property: "name", value: name}]) 
@@ -43,6 +46,7 @@ const CompanyDetails = () => {
             initWorkflow();
         }
     }
+    console.log(countries);
     return <CompanyDetailsComponent {...args} />
 }
 

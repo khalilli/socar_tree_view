@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import Autocomplete from 'react-autocomplete';
 
 const CompanyDetailsComponent = props => {
     return (
@@ -86,12 +87,30 @@ const CompanyDetailsComponent = props => {
                         >Fəaliyyət göstərdiyi ölkələr</label
                     >
                     <div className="col-sm-6">
-                        <input 
-                            id="country"
-                            type="text" 
-                            className="form-control"
-                            value= {props.companyCountryOfOperation}
-                            onChange = {(e) => props.setCountryOfOperation(e.target.value)}  
+                        <Autocomplete 
+                            items={props.countries}
+                            getItemValue={(item) => item.Name} 
+                            renderItem={(item, isHighlighted) =>
+                                <div key={item.ISO} style={{ background: isHighlighted ? 'lightgray' : 'white' }}>
+                                  {item.Name}
+                                </div>
+                            }
+                            wrapperStyle = {{
+                                display: 'block'
+                            }}
+                            renderInput = {
+                                (props) => {
+                                    return <input 
+                                    id="country"
+                                    type="text" 
+                                    className="form-control"
+                                    {...props} />
+                                }
+                            }
+                            shouldItemRender={(item, value) => item.Name.toLowerCase().indexOf(value.toLowerCase()) > -1}
+                            value={props.companyCountryOfOperation}
+                            onChange={(e) => props.setCountryOfOperation(e.target.value)}
+                            onSelect={(val) => props.setCountryOfOperation(val)}
                         />
                     </div>
                 </div>

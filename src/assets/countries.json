@@ -1,0 +1,986 @@
+[
+	{
+		"Name": "Aland adaları",
+		"ISO": "AX"
+	},
+	{
+		"Name": "Albaniya",
+		"ISO": "AL"
+	},
+	{
+		"Name": "Almaniya",
+		"ISO": "DE"
+	},
+	{
+		"Name": "Amerika Birləşmiş Ştatları",
+		"ISO": "US"
+	},
+	{
+		"Name": "Amerika Birləşmiş Ştatlarının Kiçik Xarici Adaları",
+		"ISO": "UM"
+	},
+	{
+		"Name": "Amerika Samoası",
+		"ISO": "AS"
+	},
+	{
+		"Name": "Andora",
+		"ISO": "AD"
+	},
+	{
+		"Name": "Anqola",
+		"ISO": "AO"
+	},
+	{
+		"Name": "Anquilla",
+		"ISO": "AI"
+	},
+	{
+		"Name": "Antarktida",
+		"ISO": "AQ"
+	},
+	{
+		"Name": "Antiqua və Barbuda",
+		"ISO": "AG"
+	},
+	{
+		"Name": "Argentina",
+		"ISO": "AR"
+	},
+	{
+		"Name": "Aruba",
+		"ISO": "AW"
+	},
+	{
+		"Name": "Avstraliya",
+		"ISO": "AU"
+	},
+	{
+		"Name": "Avstriya",
+		"ISO": "AT"
+	},
+	{
+		"Name": "Azərbaycan",
+		"ISO": "AZ"
+	},
+	{
+		"Name": "Baham adaları",
+		"ISO": "BS"
+	},
+	{
+		"Name": "Banqladeş",
+		"ISO": "BD"
+	},
+	{
+		"Name": "Barbados",
+		"ISO": "BB"
+	},
+	{
+		"Name": "Belarusiya",
+		"ISO": "BY"
+	},
+	{
+		"Name": "Beliz",
+		"ISO": "BZ"
+	},
+	{
+		"Name": "Belçika",
+		"ISO": "BE"
+	},
+	{
+		"Name": "Benin",
+		"ISO": "BJ"
+	},
+	{
+		"Name": "Bermud adaları",
+		"ISO": "BM"
+	},
+	{
+		"Name": "Birləşmiş Krallıq",
+		"ISO": "GB"
+	},
+	{
+		"Name": "Birləşmiş Ərəb Əmirlikləri",
+		"ISO": "AE"
+	},
+	{
+		"Name": "Boliviya",
+		"ISO": "BO"
+	},
+	{
+		"Name": "Bolqarıstan",
+		"ISO": "BG"
+	},
+	{
+		"Name": "Bosniya və Herseqovina",
+		"ISO": "BA"
+	},
+	{
+		"Name": "Botsvana",
+		"ISO": "BW"
+	},
+	{
+		"Name": "Braziliya",
+		"ISO": "BR"
+	},
+	{
+		"Name": "Britaniya Hind okeanı ərazisi",
+		"ISO": "IO"
+	},
+	{
+		"Name": "Bruney Darussalam",
+		"ISO": "BN"
+	},
+	{
+		"Name": "Burkina Faso",
+		"ISO": "BF"
+	},
+	{
+		"Name": "Burundi",
+		"ISO": "BI"
+	},
+	{
+		"Name": "Butan",
+		"ISO": "BT"
+	},
+	{
+		"Name": "Buvet adası",
+		"ISO": "BV"
+	},
+	{
+		"Name": "Bəhreyn",
+		"ISO": "BH"
+	},
+	{
+		"Name": "Cape Verde",
+		"ISO": "CV"
+	},
+	{
+		"Name": "Cersi",
+		"ISO": "JE"
+	},
+	{
+		"Name": "Cibuti",
+		"ISO": "DJ"
+	},
+	{
+		"Name": "Cəbəllüttariq",
+		"ISO": "GI"
+	},
+	{
+		"Name": "Cənubi Afrika",
+		"ISO": "ZA"
+	},
+	{
+		"Name": "Cənubi Corciya və Cənubi Sandviç Adaları",
+		"ISO": "GS"
+	},
+	{
+		"Name": "Cənubi Koreya",
+		"ISO": "KR"
+	},
+	{
+		"Name": "Danimarka",
+		"ISO": "DK"
+	},
+	{
+		"Name": "Dominik respublikası",
+		"ISO": "DO"
+	},
+	{
+		"Name": "Dominika",
+		"ISO": "DM"
+	},
+	{
+		"Name": "Efiopiya",
+		"ISO": "ET"
+	},
+	{
+		"Name": "Ekvador",
+		"ISO": "EC"
+	},
+	{
+		"Name": "Ekvatorial Qvineya",
+		"ISO": "GQ"
+	},
+	{
+		"Name": "El Salvador",
+		"ISO": "SV"
+	},
+	{
+		"Name": "Eritreya",
+		"ISO": "ER"
+	},
+	{
+		"Name": "Ermənistan",
+		"ISO": "AM"
+	},
+	{
+		"Name": "Estoniya",
+		"ISO": "EE"
+	},
+	{
+		"Name": "Farer adaları",
+		"ISO": "FO"
+	},
+	{
+		"Name": "Fici",
+		"ISO": "FJ"
+	},
+	{
+		"Name": "Filippin",
+		"ISO": "PH"
+	},
+	{
+		"Name": "Finlandiya",
+		"ISO": "FI"
+	},
+	{
+		"Name": "Folklend adaları (Malvin adaları)",
+		"ISO": "FK"
+	},
+	{
+		"Name": "Fransa",
+		"ISO": "FR"
+	},
+	{
+		"Name": "Fransanın cənub əraziləri",
+		"ISO": "TF"
+	},
+	{
+		"Name": "Fransız Polineziyası",
+		"ISO": "PF"
+	},
+	{
+		"Name": "Fransız Qvianası",
+		"ISO": "GF"
+	},
+	{
+		"Name": "Fələstin",
+		"ISO": "PS"
+	},
+	{
+		"Name": "Gernsi",
+		"ISO": "GG"
+	},
+	{
+		"Name": "Gürcüstan",
+		"ISO": "GE"
+	},
+	{
+		"Name": "Haiti",
+		"ISO": "HT"
+	},
+	{
+		"Name": "Herd adası və Makdonald adaları",
+		"ISO": "HM"
+	},
+	{
+		"Name": "Hindistan",
+		"ISO": "IN"
+	},
+	{
+		"Name": "Hollandiya",
+		"ISO": "NL"
+	},
+	{
+		"Name": "Honduras",
+		"ISO": "HN"
+	},
+	{
+		"Name": "Honq Konq",
+		"ISO": "HK"
+	},
+	{
+		"Name": "Iran",
+		"ISO": "IR"
+	},
+	{
+		"Name": "Iraq",
+		"ISO": "IQ"
+	},
+	{
+		"Name": "Kamboca",
+		"ISO": "KH"
+	},
+	{
+		"Name": "Kamerun",
+		"ISO": "CM"
+	},
+	{
+		"Name": "Kanada",
+		"ISO": "CA"
+	},
+	{
+		"Name": "Kayman adaları",
+		"ISO": "KY"
+	},
+	{
+		"Name": "Keniya",
+		"ISO": "KE"
+	},
+	{
+		"Name": "Kipr",
+		"ISO": "CY"
+	},
+	{
+		"Name": "Kiribati",
+		"ISO": "KI"
+	},
+	{
+		"Name": "Kokos (Kiling) adaları",
+		"ISO": "CC"
+	},
+	{
+		"Name": "Kolumbiya",
+		"ISO": "CO"
+	},
+	{
+		"Name": "Komor adaları",
+		"ISO": "KM"
+	},
+	{
+		"Name": "Konqo (Brazzavil)",
+		"ISO": "CD"
+	},
+	{
+		"Name": "Konqo (Kinşasa)",
+		"ISO": "CG"
+	},
+	{
+		"Name": "Koreya, Demokratik Xalq Respublikası",
+		"ISO": "KP"
+	},
+	{
+		"Name": "Kosta Rika",
+		"ISO": "CR"
+	},
+	{
+		"Name": "Kot-d'İvuar",
+		"ISO": "CI"
+	},
+	{
+		"Name": "Kuba",
+		"ISO": "CU"
+	},
+	{
+		"Name": "Kuk adaları",
+		"ISO": "CK"
+	},
+	{
+		"Name": "Küveyt",
+		"ISO": "KW"
+	},
+	{
+		"Name": "Laos Xalq Demokratik Respublikası",
+		"ISO": "LA"
+	},
+	{
+		"Name": "Latviya",
+		"ISO": "LV"
+	},
+	{
+		"Name": "Lesoto",
+		"ISO": "LS"
+	},
+	{
+		"Name": "Liberiya",
+		"ISO": "LR"
+	},
+	{
+		"Name": "Litva",
+		"ISO": "LT"
+	},
+	{
+		"Name": "Livan",
+		"ISO": "LB"
+	},
+	{
+		"Name": "Liviya Ərəb Cəmahiriyası",
+		"ISO": "LY"
+	},
+	{
+		"Name": "Lixtenşteyn",
+		"ISO": "LI"
+	},
+	{
+		"Name": "Lüksemburq",
+		"ISO": "LU"
+	},
+	{
+		"Name": "Macarıstan",
+		"ISO": "HU"
+	},
+	{
+		"Name": "Madaqaskar",
+		"ISO": "MG"
+	},
+	{
+		"Name": "Makao",
+		"ISO": "MO"
+	},
+	{
+		"Name": "Makedoniya",
+		"ISO": "MK"
+	},
+	{
+		"Name": "Malavi",
+		"ISO": "MW"
+	},
+	{
+		"Name": "Malayziya",
+		"ISO": "MY"
+	},
+	{
+		"Name": "Maldiv adaları",
+		"ISO": "MV"
+	},
+	{
+		"Name": "Mali",
+		"ISO": "ML"
+	},
+	{
+		"Name": "Malta",
+		"ISO": "MT"
+	},
+	{
+		"Name": "Martinika",
+		"ISO": "MQ"
+	},
+	{
+		"Name": "Marşal adaları",
+		"ISO": "MH"
+	},
+	{
+		"Name": "Mavrikiy",
+		"ISO": "MU"
+	},
+	{
+		"Name": "Mavritaniya",
+		"ISO": "MR"
+	},
+	{
+		"Name": "Mayotta adası",
+		"ISO": "YT"
+	},
+	{
+		"Name": "Meksika",
+		"ISO": "MX"
+	},
+	{
+		"Name": "Men adası",
+		"ISO": "IM"
+	},
+	{
+		"Name": "Mikroneziya, Federal Dövlətlər",
+		"ISO": "FM"
+	},
+	{
+		"Name": "Milad adası",
+		"ISO": "CX"
+	},
+	{
+		"Name": "Misir",
+		"ISO": "EG"
+	},
+	{
+		"Name": "Moldova",
+		"ISO": "MD"
+	},
+	{
+		"Name": "Monako",
+		"ISO": "MC"
+	},
+	{
+		"Name": "Monqolustan",
+		"ISO": "MN"
+	},
+	{
+		"Name": "Monteneqro",
+		"ISO": "ME"
+	},
+	{
+		"Name": "Montserrat",
+		"ISO": "MS"
+	},
+	{
+		"Name": "Mozambik",
+		"ISO": "MZ"
+	},
+	{
+		"Name": "Myanma",
+		"ISO": "MM"
+	},
+	{
+		"Name": "Müqəddəs Yelena, Yüksəliş və Tristan-da-Kunya adaları",
+		"ISO": "SH"
+	},
+	{
+		"Name": "Mərakeş",
+		"ISO": "MA"
+	},
+	{
+		"Name": "Mərkəzi Afrika Respublikası",
+		"ISO": "CF"
+	},
+	{
+		"Name": "Namibiya",
+		"ISO": "NA"
+	},
+	{
+		"Name": "Nauru",
+		"ISO": "NR"
+	},
+	{
+		"Name": "Nepal",
+		"ISO": "NP"
+	},
+	{
+		"Name": "Niderland Antil adaları",
+		"ISO": "AN"
+	},
+	{
+		"Name": "Niger ",
+		"ISO": "NE"
+	},
+	{
+		"Name": "Nigeriya",
+		"ISO": "NG"
+	},
+	{
+		"Name": "Nikaraqua",
+		"ISO": "NI"
+	},
+	{
+		"Name": "Niue",
+		"ISO": "NU"
+	},
+	{
+		"Name": "Norfolk adası",
+		"ISO": "NF"
+	},
+	{
+		"Name": "Norveç",
+		"ISO": "NO"
+	},
+	{
+		"Name": "Oman (Ümman)",
+		"ISO": "OM"
+	},
+	{
+		"Name": "Pakistan İslam Respublikası",
+		"ISO": "PK"
+	},
+	{
+		"Name": "Palau",
+		"ISO": "PW"
+	},
+	{
+		"Name": "Panama",
+		"ISO": "PA"
+	},
+	{
+		"Name": "Papua-Yeni Qvineya",
+		"ISO": "PG"
+	},
+	{
+		"Name": "Paraqvay",
+		"ISO": "PY"
+	},
+	{
+		"Name": "Peru",
+		"ISO": "PE"
+	},
+	{
+		"Name": "Pitkern adaları",
+		"ISO": "PN"
+	},
+	{
+		"Name": "Polşa",
+		"ISO": "PL"
+	},
+	{
+		"Name": "Portuqaliya",
+		"ISO": "PT"
+	},
+	{
+		"Name": "Puerto-Riko",
+		"ISO": "PR"
+	},
+	{
+		"Name": "Qabon",
+		"ISO": "GA"
+	},
+	{
+		"Name": "Qambiya",
+		"ISO": "GM"
+	},
+	{
+		"Name": "Qana",
+		"ISO": "GH"
+	},
+	{
+		"Name": "Qayana",
+		"ISO": "GY"
+	},
+	{
+		"Name": "Qazaxıstan",
+		"ISO": "KZ"
+	},
+	{
+		"Name": "Qrenada",
+		"ISO": "GD"
+	},
+	{
+		"Name": "Qrenlandiya",
+		"ISO": "GL"
+	},
+	{
+		"Name": "Quam",
+		"ISO": "GU"
+	},
+	{
+		"Name": "Qvadelupa",
+		"ISO": "GP"
+	},
+	{
+		"Name": "Qvatemala",
+		"ISO": "GT"
+	},
+	{
+		"Name": "Qvineya",
+		"ISO": "GN"
+	},
+	{
+		"Name": "Qvineya-Bisau",
+		"ISO": "GW"
+	},
+	{
+		"Name": "Qırğızıstan",
+		"ISO": "KG"
+	},
+	{
+		"Name": "Qərbi Sahara",
+		"ISO": "EH"
+	},
+	{
+		"Name": "Qətər",
+		"ISO": "QA"
+	},
+	{
+		"Name": "Reünyon",
+		"ISO": "RE"
+	},
+	{
+		"Name": "Ruanda",
+		"ISO": "RW"
+	},
+	{
+		"Name": "Rumıniya",
+		"ISO": "RO"
+	},
+	{
+		"Name": "Rusiya",
+		"ISO": "RU"
+	},
+	{
+		"Name": "Samoa",
+		"ISO": "WS"
+	},
+	{
+		"Name": "San Marino",
+		"ISO": "SM"
+	},
+	{
+		"Name": "Sao Tome və Prinsipi",
+		"ISO": "ST"
+	},
+	{
+		"Name": "Sen  Lusiya",
+		"ISO": "LC"
+	},
+	{
+		"Name": "Sen Bartelemi",
+		"ISO": "BL"
+	},
+	{
+		"Name": "Sen Marten",
+		"ISO": "MF"
+	},
+	{
+		"Name": "Sen Pyer və Mikelon",
+		"ISO": "PM"
+	},
+	{
+		"Name": "Sen Vinsent və Qrenadinlər",
+		"ISO": "VC"
+	},
+	{
+		"Name": "Seneqal",
+		"ISO": "SN"
+	},
+	{
+		"Name": "Sent Kits və Nevis Federasiyası",
+		"ISO": "KN"
+	},
+	{
+		"Name": "Serbiya",
+		"ISO": "RS"
+	},
+	{
+		"Name": "Seyşel adaları",
+		"ISO": "SC"
+	},
+	{
+		"Name": "Sierra Leone",
+		"ISO": "SL"
+	},
+	{
+		"Name": "Sinqapur",
+		"ISO": "SG"
+	},
+	{
+		"Name": "Slovakiya",
+		"ISO": "SK"
+	},
+	{
+		"Name": "Sloveniya",
+		"ISO": "SI"
+	},
+	{
+		"Name": "Solomon adaları",
+		"ISO": "SB"
+	},
+	{
+		"Name": "Somali",
+		"ISO": "SO"
+	},
+	{
+		"Name": "Sudan",
+		"ISO": "SD"
+	},
+	{
+		"Name": "Surinam",
+		"ISO": "SR"
+	},
+	{
+		"Name": "Suriya Ərəb Respublikası",
+		"ISO": "SY"
+	},
+	{
+		"Name": "Svalbard və Jan Mayen",
+		"ISO": "SJ"
+	},
+	{
+		"Name": "Svazilend",
+		"ISO": "SZ"
+	},
+	{
+		"Name": "Səudiyyə Ərəbistan",
+		"ISO": "SA"
+	},
+	{
+		"Name": "Tacikistan",
+		"ISO": "TJ"
+	},
+	{
+		"Name": "Tanzaniya",
+		"ISO": "TZ"
+	},
+	{
+		"Name": "Tayland",
+		"ISO": "TH"
+	},
+	{
+		"Name": "Tayvan",
+		"ISO": "TW"
+	},
+	{
+		"Name": "Togo",
+		"ISO": "TG"
+	},
+	{
+		"Name": "Tokelau",
+		"ISO": "TK"
+	},
+	{
+		"Name": "Tonqa",
+		"ISO": "TO"
+	},
+	{
+		"Name": "Trinidad və Tobaqo",
+		"ISO": "TT"
+	},
+	{
+		"Name": "Tunis",
+		"ISO": "TN"
+	},
+	{
+		"Name": "Turks və Kaykos",
+		"ISO": "TC"
+	},
+	{
+		"Name": "Tuvalu",
+		"ISO": "TV"
+	},
+	{
+		"Name": "Türkiyə",
+		"ISO": "TR"
+	},
+	{
+		"Name": "Türkmənistan",
+		"ISO": "TM"
+	},
+	{
+		"Name": "Ukrayna",
+		"ISO": "UA"
+	},
+	{
+		"Name": "Uqanda",
+		"ISO": "UG"
+	},
+	{
+		"Name": "Uruqvay",
+		"ISO": "UY"
+	},
+	{
+		"Name": "Vanuatu",
+		"ISO": "VU"
+	},
+	{
+		"Name": "Vatikan",
+		"ISO": "VA"
+	},
+	{
+		"Name": "Venesuela",
+		"ISO": "VE"
+	},
+	{
+		"Name": "Virgin Adaları, ABŞ",
+		"ISO": "VI"
+	},
+	{
+		"Name": "Virgin Adaları, Britaniya",
+		"ISO": "VG"
+	},
+	{
+		"Name": "Vyetnam",
+		"ISO": "VN"
+	},
+	{
+		"Name": "Wallis və Futuna",
+		"ISO": "WF"
+	},
+	{
+		"Name": "Xorvatiya",
+		"ISO": "HR"
+	},
+	{
+		"Name": "Yamayka",
+		"ISO": "JM"
+	},
+	{
+		"Name": "Yaponiya",
+		"ISO": "JP"
+	},
+	{
+		"Name": "Yeni Kaledoniya",
+		"ISO": "NC"
+	},
+	{
+		"Name": "Yeni Zelandiya",
+		"ISO": "NZ"
+	},
+	{
+		"Name": "Yunanıstan",
+		"ISO": "GR"
+	},
+	{
+		"Name": "Yəmən",
+		"ISO": "YE"
+	},
+	{
+		"Name": "Zambiya",
+		"ISO": "ZM"
+	},
+	{
+		"Name": "Zimbabve",
+		"ISO": "ZW"
+	},
+	{
+		"Name": "Çad",
+		"ISO": "TD"
+	},
+	{
+		"Name": "Çexiya",
+		"ISO": "CZ"
+	},
+	{
+		"Name": "Çili",
+		"ISO": "CL"
+	},
+	{
+		"Name": "Çin",
+		"ISO": "CN"
+	},
+	{
+		"Name": "Özbəkistan",
+		"ISO": "UZ"
+	},
+	{
+		"Name": "İndoneziya",
+		"ISO": "ID"
+	},
+	{
+		"Name": "İordaniya",
+		"ISO": "JO"
+	},
+	{
+		"Name": "İrlandiya",
+		"ISO": "IE"
+	},
+	{
+		"Name": "İslandiya",
+		"ISO": "IS"
+	},
+	{
+		"Name": "İspaniya",
+		"ISO": "ES"
+	},
+	{
+		"Name": "İsrail",
+		"ISO": "IL"
+	},
+	{
+		"Name": "İsveç",
+		"ISO": "SE"
+	},
+	{
+		"Name": "İsveçrə",
+		"ISO": "CH"
+	},
+	{
+		"Name": "İtaliya",
+		"ISO": "IT"
+	},
+	{
+		"Name": "Şimali Marian adaları",
+		"ISO": "MP"
+	},
+	{
+		"Name": "Şri Lanka",
+		"ISO": "LK"
+	},
+	{
+		"Name": "Şərqi Timor",
+		"ISO": "TL"
+	},
+	{
+		"Name": "Əfqanıstan",
+		"ISO": "AF"
+	},
+	{
+		"Name": "Əlcəzair",
+		"ISO": "DZ"
+	}
+]
