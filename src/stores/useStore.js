@@ -52,8 +52,8 @@ const handleGetCompanyDetails = async (set, get) => {
         set({
             companyDetails: {
                 name: data[0].CNAME,
-                segment: data[0].SERVICENAME,
-                share: data[0].CSHARE,
+                segment: data[0].SERVICENAME !== '?' ? data[0].SERVICENAME : '',
+                share: data[0].CSHARE !== '?' ? data[0].CSHARE : '',
                 numberOfEmployees: data[0].COUNTEMP !== '?' ? data[0].COUNTEMP : '',
                 ceo: '',
                 countryOfOperation: ''
