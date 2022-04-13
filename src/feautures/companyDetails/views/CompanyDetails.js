@@ -22,7 +22,13 @@ const CompanyDetails = () => {
         companyCEO: companyDetails.ceo,
         countries,
         companyCountryOfOperation: companyDetails.countryOfOperation,
-        setCompanyName: name => { 
+        cleanCountryName: () => {
+            console.log("Test");
+            if(countries.findIndex(x=>x.Name === companyDetails.countryOfOperation) === -1){
+                setCompanyDetails([{property: "countryOfOperation", value: ''}]) 
+            } 
+        },
+        setCompanyName: name => {
             setCompanyDetails([{property: "name", value: name}]) 
         },
         setCompanySegment: segment => {

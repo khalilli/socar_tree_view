@@ -1,986 +1,986 @@
 [
 	{
-		"Name": "Aland adaları",
-		"ISO": "AX"
+		"label": "Aland adaları",
+		"value": "AX"
 	},
 	{
-		"Name": "Albaniya",
-		"ISO": "AL"
+		"label": "Albaniya",
+		"value": "AL"
 	},
 	{
-		"Name": "Almaniya",
-		"ISO": "DE"
+		"label": "Almaniya",
+		"value": "DE"
 	},
 	{
-		"Name": "Amerika Birləşmiş Ştatları",
-		"ISO": "US"
+		"label": "Amerika Birləşmiş Ştatları",
+		"value": "US"
 	},
 	{
-		"Name": "Amerika Birləşmiş Ştatlarının Kiçik Xarici Adaları",
-		"ISO": "UM"
+		"label": "Amerika Birləşmiş Ştatlarının Kiçik Xarici Adaları",
+		"value": "UM"
 	},
 	{
-		"Name": "Amerika Samoası",
-		"ISO": "AS"
+		"label": "Amerika Samoası",
+		"value": "AS"
 	},
 	{
-		"Name": "Andora",
-		"ISO": "AD"
+		"label": "Andora",
+		"value": "AD"
 	},
 	{
-		"Name": "Anqola",
-		"ISO": "AO"
+		"label": "Anqola",
+		"value": "AO"
 	},
 	{
-		"Name": "Anquilla",
-		"ISO": "AI"
+		"label": "Anquilla",
+		"value": "AI"
 	},
 	{
-		"Name": "Antarktida",
-		"ISO": "AQ"
+		"label": "Antarktida",
+		"value": "AQ"
 	},
 	{
-		"Name": "Antiqua və Barbuda",
-		"ISO": "AG"
+		"label": "Antiqua və Barbuda",
+		"value": "AG"
 	},
 	{
-		"Name": "Argentina",
-		"ISO": "AR"
+		"label": "Argentina",
+		"value": "AR"
 	},
 	{
-		"Name": "Aruba",
-		"ISO": "AW"
+		"label": "Aruba",
+		"value": "AW"
 	},
 	{
-		"Name": "Avstraliya",
-		"ISO": "AU"
+		"label": "Avstraliya",
+		"value": "AU"
 	},
 	{
-		"Name": "Avstriya",
-		"ISO": "AT"
+		"label": "Avstriya",
+		"value": "AT"
 	},
 	{
-		"Name": "Azərbaycan",
-		"ISO": "AZ"
+		"label": "Azərbaycan",
+		"value": "AZ"
 	},
 	{
-		"Name": "Baham adaları",
-		"ISO": "BS"
+		"label": "Baham adaları",
+		"value": "BS"
 	},
 	{
-		"Name": "Banqladeş",
-		"ISO": "BD"
+		"label": "Banqladeş",
+		"value": "BD"
 	},
 	{
-		"Name": "Barbados",
-		"ISO": "BB"
+		"label": "Barbados",
+		"value": "BB"
 	},
 	{
-		"Name": "Belarusiya",
-		"ISO": "BY"
+		"label": "Belarusiya",
+		"value": "BY"
 	},
 	{
-		"Name": "Beliz",
-		"ISO": "BZ"
+		"label": "Beliz",
+		"value": "BZ"
 	},
 	{
-		"Name": "Belçika",
-		"ISO": "BE"
+		"label": "Belçika",
+		"value": "BE"
 	},
 	{
-		"Name": "Benin",
-		"ISO": "BJ"
+		"label": "Benin",
+		"value": "BJ"
 	},
 	{
-		"Name": "Bermud adaları",
-		"ISO": "BM"
+		"label": "Bermud adaları",
+		"value": "BM"
 	},
 	{
-		"Name": "Birləşmiş Krallıq",
-		"ISO": "GB"
+		"label": "Birləşmiş Krallıq",
+		"value": "GB"
 	},
 	{
-		"Name": "Birləşmiş Ərəb Əmirlikləri",
-		"ISO": "AE"
+		"label": "Birləşmiş Ərəb Əmirlikləri",
+		"value": "AE"
 	},
 	{
-		"Name": "Boliviya",
-		"ISO": "BO"
+		"label": "Boliviya",
+		"value": "BO"
 	},
 	{
-		"Name": "Bolqarıstan",
-		"ISO": "BG"
+		"label": "Bolqarıstan",
+		"value": "BG"
 	},
 	{
-		"Name": "Bosniya və Herseqovina",
-		"ISO": "BA"
+		"label": "Bosniya və Herseqovina",
+		"value": "BA"
 	},
 	{
-		"Name": "Botsvana",
-		"ISO": "BW"
+		"label": "Botsvana",
+		"value": "BW"
 	},
 	{
-		"Name": "Braziliya",
-		"ISO": "BR"
+		"label": "Braziliya",
+		"value": "BR"
 	},
 	{
-		"Name": "Britaniya Hind okeanı ərazisi",
-		"ISO": "IO"
+		"label": "Britaniya Hind okeanı ərazisi",
+		"value": "IO"
 	},
 	{
-		"Name": "Bruney Darussalam",
-		"ISO": "BN"
+		"label": "Bruney Darussalam",
+		"value": "BN"
 	},
 	{
-		"Name": "Burkina Faso",
-		"ISO": "BF"
+		"label": "Burkina Faso",
+		"value": "BF"
 	},
 	{
-		"Name": "Burundi",
-		"ISO": "BI"
+		"label": "Burundi",
+		"value": "BI"
 	},
 	{
-		"Name": "Butan",
-		"ISO": "BT"
+		"label": "Butan",
+		"value": "BT"
 	},
 	{
-		"Name": "Buvet adası",
-		"ISO": "BV"
+		"label": "Buvet adası",
+		"value": "BV"
 	},
 	{
-		"Name": "Bəhreyn",
-		"ISO": "BH"
+		"label": "Bəhreyn",
+		"value": "BH"
 	},
 	{
-		"Name": "Cape Verde",
-		"ISO": "CV"
+		"label": "Cape Verde",
+		"value": "CV"
 	},
 	{
-		"Name": "Cersi",
-		"ISO": "JE"
+		"label": "Cersi",
+		"value": "JE"
 	},
 	{
-		"Name": "Cibuti",
-		"ISO": "DJ"
+		"label": "Cibuti",
+		"value": "DJ"
 	},
 	{
-		"Name": "Cəbəllüttariq",
-		"ISO": "GI"
+		"label": "Cəbəllüttariq",
+		"value": "GI"
 	},
 	{
-		"Name": "Cənubi Afrika",
-		"ISO": "ZA"
+		"label": "Cənubi Afrika",
+		"value": "ZA"
 	},
 	{
-		"Name": "Cənubi Corciya və Cənubi Sandviç Adaları",
-		"ISO": "GS"
+		"label": "Cənubi Corciya və Cənubi Sandviç Adaları",
+		"value": "GS"
 	},
 	{
-		"Name": "Cənubi Koreya",
-		"ISO": "KR"
+		"label": "Cənubi Koreya",
+		"value": "KR"
 	},
 	{
-		"Name": "Danimarka",
-		"ISO": "DK"
+		"label": "Danimarka",
+		"value": "DK"
 	},
 	{
-		"Name": "Dominik respublikası",
-		"ISO": "DO"
+		"label": "Dominik respublikası",
+		"value": "DO"
 	},
 	{
-		"Name": "Dominika",
-		"ISO": "DM"
+		"label": "Dominika",
+		"value": "DM"
 	},
 	{
-		"Name": "Efiopiya",
-		"ISO": "ET"
+		"label": "Efiopiya",
+		"value": "ET"
 	},
 	{
-		"Name": "Ekvador",
-		"ISO": "EC"
+		"label": "Ekvador",
+		"value": "EC"
 	},
 	{
-		"Name": "Ekvatorial Qvineya",
-		"ISO": "GQ"
+		"label": "Ekvatorial Qvineya",
+		"value": "GQ"
 	},
 	{
-		"Name": "El Salvador",
-		"ISO": "SV"
+		"label": "El Salvador",
+		"value": "SV"
 	},
 	{
-		"Name": "Eritreya",
-		"ISO": "ER"
+		"label": "Eritreya",
+		"value": "ER"
 	},
 	{
-		"Name": "Ermənistan",
-		"ISO": "AM"
+		"label": "Ermənistan",
+		"value": "AM"
 	},
 	{
-		"Name": "Estoniya",
-		"ISO": "EE"
+		"label": "Estoniya",
+		"value": "EE"
 	},
 	{
-		"Name": "Farer adaları",
-		"ISO": "FO"
+		"label": "Farer adaları",
+		"value": "FO"
 	},
 	{
-		"Name": "Fici",
-		"ISO": "FJ"
+		"label": "Fici",
+		"value": "FJ"
 	},
 	{
-		"Name": "Filippin",
-		"ISO": "PH"
+		"label": "Filippin",
+		"value": "PH"
 	},
 	{
-		"Name": "Finlandiya",
-		"ISO": "FI"
+		"label": "Finlandiya",
+		"value": "FI"
 	},
 	{
-		"Name": "Folklend adaları (Malvin adaları)",
-		"ISO": "FK"
+		"label": "Folklend adaları (Malvin adaları)",
+		"value": "FK"
 	},
 	{
-		"Name": "Fransa",
-		"ISO": "FR"
+		"label": "Fransa",
+		"value": "FR"
 	},
 	{
-		"Name": "Fransanın cənub əraziləri",
-		"ISO": "TF"
+		"label": "Fransanın cənub əraziləri",
+		"value": "TF"
 	},
 	{
-		"Name": "Fransız Polineziyası",
-		"ISO": "PF"
+		"label": "Fransız Polineziyası",
+		"value": "PF"
 	},
 	{
-		"Name": "Fransız Qvianası",
-		"ISO": "GF"
+		"label": "Fransız Qvianası",
+		"value": "GF"
 	},
 	{
-		"Name": "Fələstin",
-		"ISO": "PS"
+		"label": "Fələstin",
+		"value": "PS"
 	},
 	{
-		"Name": "Gernsi",
-		"ISO": "GG"
+		"label": "Gernsi",
+		"value": "GG"
 	},
 	{
-		"Name": "Gürcüstan",
-		"ISO": "GE"
+		"label": "Gürcüstan",
+		"value": "GE"
 	},
 	{
-		"Name": "Haiti",
-		"ISO": "HT"
+		"label": "Haiti",
+		"value": "HT"
 	},
 	{
-		"Name": "Herd adası və Makdonald adaları",
-		"ISO": "HM"
+		"label": "Herd adası və Makdonald adaları",
+		"value": "HM"
 	},
 	{
-		"Name": "Hindistan",
-		"ISO": "IN"
+		"label": "Hindistan",
+		"value": "IN"
 	},
 	{
-		"Name": "Hollandiya",
-		"ISO": "NL"
+		"label": "Hollandiya",
+		"value": "NL"
 	},
 	{
-		"Name": "Honduras",
-		"ISO": "HN"
+		"label": "Honduras",
+		"value": "HN"
 	},
 	{
-		"Name": "Honq Konq",
-		"ISO": "HK"
+		"label": "Honq Konq",
+		"value": "HK"
 	},
 	{
-		"Name": "Iran",
-		"ISO": "IR"
+		"label": "Iran",
+		"value": "IR"
 	},
 	{
-		"Name": "Iraq",
-		"ISO": "IQ"
+		"label": "Iraq",
+		"value": "IQ"
 	},
 	{
-		"Name": "Kamboca",
-		"ISO": "KH"
+		"label": "Kamboca",
+		"value": "KH"
 	},
 	{
-		"Name": "Kamerun",
-		"ISO": "CM"
+		"label": "Kamerun",
+		"value": "CM"
 	},
 	{
-		"Name": "Kanada",
-		"ISO": "CA"
+		"label": "Kanada",
+		"value": "CA"
 	},
 	{
-		"Name": "Kayman adaları",
-		"ISO": "KY"
+		"label": "Kayman adaları",
+		"value": "KY"
 	},
 	{
-		"Name": "Keniya",
-		"ISO": "KE"
+		"label": "Keniya",
+		"value": "KE"
 	},
 	{
-		"Name": "Kipr",
-		"ISO": "CY"
+		"label": "Kipr",
+		"value": "CY"
 	},
 	{
-		"Name": "Kiribati",
-		"ISO": "KI"
+		"label": "Kiribati",
+		"value": "KI"
 	},
 	{
-		"Name": "Kokos (Kiling) adaları",
-		"ISO": "CC"
+		"label": "Kokos (Kiling) adaları",
+		"value": "CC"
 	},
 	{
-		"Name": "Kolumbiya",
-		"ISO": "CO"
+		"label": "Kolumbiya",
+		"value": "CO"
 	},
 	{
-		"Name": "Komor adaları",
-		"ISO": "KM"
+		"label": "Komor adaları",
+		"value": "KM"
 	},
 	{
-		"Name": "Konqo (Brazzavil)",
-		"ISO": "CD"
+		"label": "Konqo (Brazzavil)",
+		"value": "CD"
 	},
 	{
-		"Name": "Konqo (Kinşasa)",
-		"ISO": "CG"
+		"label": "Konqo (Kinşasa)",
+		"value": "CG"
 	},
 	{
-		"Name": "Koreya, Demokratik Xalq Respublikası",
-		"ISO": "KP"
+		"label": "Koreya, Demokratik Xalq Respublikası",
+		"value": "KP"
 	},
 	{
-		"Name": "Kosta Rika",
-		"ISO": "CR"
+		"label": "Kosta Rika",
+		"value": "CR"
 	},
 	{
-		"Name": "Kot-d'İvuar",
-		"ISO": "CI"
+		"label": "Kot-d'İvuar",
+		"value": "CI"
 	},
 	{
-		"Name": "Kuba",
-		"ISO": "CU"
+		"label": "Kuba",
+		"value": "CU"
 	},
 	{
-		"Name": "Kuk adaları",
-		"ISO": "CK"
+		"label": "Kuk adaları",
+		"value": "CK"
 	},
 	{
-		"Name": "Küveyt",
-		"ISO": "KW"
+		"label": "Küveyt",
+		"value": "KW"
 	},
 	{
-		"Name": "Laos Xalq Demokratik Respublikası",
-		"ISO": "LA"
+		"label": "Laos Xalq Demokratik Respublikası",
+		"value": "LA"
 	},
 	{
-		"Name": "Latviya",
-		"ISO": "LV"
+		"label": "Latviya",
+		"value": "LV"
 	},
 	{
-		"Name": "Lesoto",
-		"ISO": "LS"
+		"label": "Lesoto",
+		"value": "LS"
 	},
 	{
-		"Name": "Liberiya",
-		"ISO": "LR"
+		"label": "Liberiya",
+		"value": "LR"
 	},
 	{
-		"Name": "Litva",
-		"ISO": "LT"
+		"label": "Litva",
+		"value": "LT"
 	},
 	{
-		"Name": "Livan",
-		"ISO": "LB"
+		"label": "Livan",
+		"value": "LB"
 	},
 	{
-		"Name": "Liviya Ərəb Cəmahiriyası",
-		"ISO": "LY"
+		"label": "Liviya Ərəb Cəmahiriyası",
+		"value": "LY"
 	},
 	{
-		"Name": "Lixtenşteyn",
-		"ISO": "LI"
+		"label": "Lixtenşteyn",
+		"value": "LI"
 	},
 	{
-		"Name": "Lüksemburq",
-		"ISO": "LU"
+		"label": "Lüksemburq",
+		"value": "LU"
 	},
 	{
-		"Name": "Macarıstan",
-		"ISO": "HU"
+		"label": "Macarıstan",
+		"value": "HU"
 	},
 	{
-		"Name": "Madaqaskar",
-		"ISO": "MG"
+		"label": "Madaqaskar",
+		"value": "MG"
 	},
 	{
-		"Name": "Makao",
-		"ISO": "MO"
+		"label": "Makao",
+		"value": "MO"
 	},
 	{
-		"Name": "Makedoniya",
-		"ISO": "MK"
+		"label": "Makedoniya",
+		"value": "MK"
 	},
 	{
-		"Name": "Malavi",
-		"ISO": "MW"
+		"label": "Malavi",
+		"value": "MW"
 	},
 	{
-		"Name": "Malayziya",
-		"ISO": "MY"
+		"label": "Malayziya",
+		"value": "MY"
 	},
 	{
-		"Name": "Maldiv adaları",
-		"ISO": "MV"
+		"label": "Maldiv adaları",
+		"value": "MV"
 	},
 	{
-		"Name": "Mali",
-		"ISO": "ML"
+		"label": "Mali",
+		"value": "ML"
 	},
 	{
-		"Name": "Malta",
-		"ISO": "MT"
+		"label": "Malta",
+		"value": "MT"
 	},
 	{
-		"Name": "Martinika",
-		"ISO": "MQ"
+		"label": "Martinika",
+		"value": "MQ"
 	},
 	{
-		"Name": "Marşal adaları",
-		"ISO": "MH"
+		"label": "Marşal adaları",
+		"value": "MH"
 	},
 	{
-		"Name": "Mavrikiy",
-		"ISO": "MU"
+		"label": "Mavrikiy",
+		"value": "MU"
 	},
 	{
-		"Name": "Mavritaniya",
-		"ISO": "MR"
+		"label": "Mavritaniya",
+		"value": "MR"
 	},
 	{
-		"Name": "Mayotta adası",
-		"ISO": "YT"
+		"label": "Mayotta adası",
+		"value": "YT"
 	},
 	{
-		"Name": "Meksika",
-		"ISO": "MX"
+		"label": "Meksika",
+		"value": "MX"
 	},
 	{
-		"Name": "Men adası",
-		"ISO": "IM"
+		"label": "Men adası",
+		"value": "IM"
 	},
 	{
-		"Name": "Mikroneziya, Federal Dövlətlər",
-		"ISO": "FM"
+		"label": "Mikroneziya, Federal Dövlətlər",
+		"value": "FM"
 	},
 	{
-		"Name": "Milad adası",
-		"ISO": "CX"
+		"label": "Milad adası",
+		"value": "CX"
 	},
 	{
-		"Name": "Misir",
-		"ISO": "EG"
+		"label": "Misir",
+		"value": "EG"
 	},
 	{
-		"Name": "Moldova",
-		"ISO": "MD"
+		"label": "Moldova",
+		"value": "MD"
 	},
 	{
-		"Name": "Monako",
-		"ISO": "MC"
+		"label": "Monako",
+		"value": "MC"
 	},
 	{
-		"Name": "Monqolustan",
-		"ISO": "MN"
+		"label": "Monqolustan",
+		"value": "MN"
 	},
 	{
-		"Name": "Monteneqro",
-		"ISO": "ME"
+		"label": "Monteneqro",
+		"value": "ME"
 	},
 	{
-		"Name": "Montserrat",
-		"ISO": "MS"
+		"label": "Montserrat",
+		"value": "MS"
 	},
 	{
-		"Name": "Mozambik",
-		"ISO": "MZ"
+		"label": "Mozambik",
+		"value": "MZ"
 	},
 	{
-		"Name": "Myanma",
-		"ISO": "MM"
+		"label": "Myanma",
+		"value": "MM"
 	},
 	{
-		"Name": "Müqəddəs Yelena, Yüksəliş və Tristan-da-Kunya adaları",
-		"ISO": "SH"
+		"label": "Müqəddəs Yelena, Yüksəliş və Tristan-da-Kunya adaları",
+		"value": "SH"
 	},
 	{
-		"Name": "Mərakeş",
-		"ISO": "MA"
+		"label": "Mərakeş",
+		"value": "MA"
 	},
 	{
-		"Name": "Mərkəzi Afrika Respublikası",
-		"ISO": "CF"
+		"label": "Mərkəzi Afrika Respublikası",
+		"value": "CF"
 	},
 	{
-		"Name": "Namibiya",
-		"ISO": "NA"
+		"label": "Namibiya",
+		"value": "NA"
 	},
 	{
-		"Name": "Nauru",
-		"ISO": "NR"
+		"label": "Nauru",
+		"value": "NR"
 	},
 	{
-		"Name": "Nepal",
-		"ISO": "NP"
+		"label": "Nepal",
+		"value": "NP"
 	},
 	{
-		"Name": "Niderland Antil adaları",
-		"ISO": "AN"
+		"label": "Niderland Antil adaları",
+		"value": "AN"
 	},
 	{
-		"Name": "Niger ",
-		"ISO": "NE"
+		"label": "Niger ",
+		"value": "NE"
 	},
 	{
-		"Name": "Nigeriya",
-		"ISO": "NG"
+		"label": "Nigeriya",
+		"value": "NG"
 	},
 	{
-		"Name": "Nikaraqua",
-		"ISO": "NI"
+		"label": "Nikaraqua",
+		"value": "NI"
 	},
 	{
-		"Name": "Niue",
-		"ISO": "NU"
+		"label": "Niue",
+		"value": "NU"
 	},
 	{
-		"Name": "Norfolk adası",
-		"ISO": "NF"
+		"label": "Norfolk adası",
+		"value": "NF"
 	},
 	{
-		"Name": "Norveç",
-		"ISO": "NO"
+		"label": "Norveç",
+		"value": "NO"
 	},
 	{
-		"Name": "Oman (Ümman)",
-		"ISO": "OM"
+		"label": "Oman (Ümman)",
+		"value": "OM"
 	},
 	{
-		"Name": "Pakistan İslam Respublikası",
-		"ISO": "PK"
+		"label": "Pakistan İslam Respublikası",
+		"value": "PK"
 	},
 	{
-		"Name": "Palau",
-		"ISO": "PW"
+		"label": "Palau",
+		"value": "PW"
 	},
 	{
-		"Name": "Panama",
-		"ISO": "PA"
+		"label": "Panama",
+		"value": "PA"
 	},
 	{
-		"Name": "Papua-Yeni Qvineya",
-		"ISO": "PG"
+		"label": "Papua-Yeni Qvineya",
+		"value": "PG"
 	},
 	{
-		"Name": "Paraqvay",
-		"ISO": "PY"
+		"label": "Paraqvay",
+		"value": "PY"
 	},
 	{
-		"Name": "Peru",
-		"ISO": "PE"
+		"label": "Peru",
+		"value": "PE"
 	},
 	{
-		"Name": "Pitkern adaları",
-		"ISO": "PN"
+		"label": "Pitkern adaları",
+		"value": "PN"
 	},
 	{
-		"Name": "Polşa",
-		"ISO": "PL"
+		"label": "Polşa",
+		"value": "PL"
 	},
 	{
-		"Name": "Portuqaliya",
-		"ISO": "PT"
+		"label": "Portuqaliya",
+		"value": "PT"
 	},
 	{
-		"Name": "Puerto-Riko",
-		"ISO": "PR"
+		"label": "Puerto-Riko",
+		"value": "PR"
 	},
 	{
-		"Name": "Qabon",
-		"ISO": "GA"
+		"label": "Qabon",
+		"value": "GA"
 	},
 	{
-		"Name": "Qambiya",
-		"ISO": "GM"
+		"label": "Qambiya",
+		"value": "GM"
 	},
 	{
-		"Name": "Qana",
-		"ISO": "GH"
+		"label": "Qana",
+		"value": "GH"
 	},
 	{
-		"Name": "Qayana",
-		"ISO": "GY"
+		"label": "Qayana",
+		"value": "GY"
 	},
 	{
-		"Name": "Qazaxıstan",
-		"ISO": "KZ"
+		"label": "Qazaxıstan",
+		"value": "KZ"
 	},
 	{
-		"Name": "Qrenada",
-		"ISO": "GD"
+		"label": "Qrenada",
+		"value": "GD"
 	},
 	{
-		"Name": "Qrenlandiya",
-		"ISO": "GL"
+		"label": "Qrenlandiya",
+		"value": "GL"
 	},
 	{
-		"Name": "Quam",
-		"ISO": "GU"
+		"label": "Quam",
+		"value": "GU"
 	},
 	{
-		"Name": "Qvadelupa",
-		"ISO": "GP"
+		"label": "Qvadelupa",
+		"value": "GP"
 	},
 	{
-		"Name": "Qvatemala",
-		"ISO": "GT"
+		"label": "Qvatemala",
+		"value": "GT"
 	},
 	{
-		"Name": "Qvineya",
-		"ISO": "GN"
+		"label": "Qvineya",
+		"value": "GN"
 	},
 	{
-		"Name": "Qvineya-Bisau",
-		"ISO": "GW"
+		"label": "Qvineya-Bisau",
+		"value": "GW"
 	},
 	{
-		"Name": "Qırğızıstan",
-		"ISO": "KG"
+		"label": "Qırğızıstan",
+		"value": "KG"
 	},
 	{
-		"Name": "Qərbi Sahara",
-		"ISO": "EH"
+		"label": "Qərbi Sahara",
+		"value": "EH"
 	},
 	{
-		"Name": "Qətər",
-		"ISO": "QA"
+		"label": "Qətər",
+		"value": "QA"
 	},
 	{
-		"Name": "Reünyon",
-		"ISO": "RE"
+		"label": "Reünyon",
+		"value": "RE"
 	},
 	{
-		"Name": "Ruanda",
-		"ISO": "RW"
+		"label": "Ruanda",
+		"value": "RW"
 	},
 	{
-		"Name": "Rumıniya",
-		"ISO": "RO"
+		"label": "Rumıniya",
+		"value": "RO"
 	},
 	{
-		"Name": "Rusiya",
-		"ISO": "RU"
+		"label": "Rusiya",
+		"value": "RU"
 	},
 	{
-		"Name": "Samoa",
-		"ISO": "WS"
+		"label": "Samoa",
+		"value": "WS"
 	},
 	{
-		"Name": "San Marino",
-		"ISO": "SM"
+		"label": "San Marino",
+		"value": "SM"
 	},
 	{
-		"Name": "Sao Tome və Prinsipi",
-		"ISO": "ST"
+		"label": "Sao Tome və Prinsipi",
+		"value": "ST"
 	},
 	{
-		"Name": "Sen  Lusiya",
-		"ISO": "LC"
+		"label": "Sen  Lusiya",
+		"value": "LC"
 	},
 	{
-		"Name": "Sen Bartelemi",
-		"ISO": "BL"
+		"label": "Sen Bartelemi",
+		"value": "BL"
 	},
 	{
-		"Name": "Sen Marten",
-		"ISO": "MF"
+		"label": "Sen Marten",
+		"value": "MF"
 	},
 	{
-		"Name": "Sen Pyer və Mikelon",
-		"ISO": "PM"
+		"label": "Sen Pyer və Mikelon",
+		"value": "PM"
 	},
 	{
-		"Name": "Sen Vinsent və Qrenadinlər",
-		"ISO": "VC"
+		"label": "Sen Vinsent və Qrenadinlər",
+		"value": "VC"
 	},
 	{
-		"Name": "Seneqal",
-		"ISO": "SN"
+		"label": "Seneqal",
+		"value": "SN"
 	},
 	{
-		"Name": "Sent Kits və Nevis Federasiyası",
-		"ISO": "KN"
+		"label": "Sent Kits və Nevis Federasiyası",
+		"value": "KN"
 	},
 	{
-		"Name": "Serbiya",
-		"ISO": "RS"
+		"label": "Serbiya",
+		"value": "RS"
 	},
 	{
-		"Name": "Seyşel adaları",
-		"ISO": "SC"
+		"label": "Seyşel adaları",
+		"value": "SC"
 	},
 	{
-		"Name": "Sierra Leone",
-		"ISO": "SL"
+		"label": "Sierra Leone",
+		"value": "SL"
 	},
 	{
-		"Name": "Sinqapur",
-		"ISO": "SG"
+		"label": "Sinqapur",
+		"value": "SG"
 	},
 	{
-		"Name": "Slovakiya",
-		"ISO": "SK"
+		"label": "Slovakiya",
+		"value": "SK"
 	},
 	{
-		"Name": "Sloveniya",
-		"ISO": "SI"
+		"label": "Sloveniya",
+		"value": "SI"
 	},
 	{
-		"Name": "Solomon adaları",
-		"ISO": "SB"
+		"label": "Solomon adaları",
+		"value": "SB"
 	},
 	{
-		"Name": "Somali",
-		"ISO": "SO"
+		"label": "Somali",
+		"value": "SO"
 	},
 	{
-		"Name": "Sudan",
-		"ISO": "SD"
+		"label": "Sudan",
+		"value": "SD"
 	},
 	{
-		"Name": "Surinam",
-		"ISO": "SR"
+		"label": "Surinam",
+		"value": "SR"
 	},
 	{
-		"Name": "Suriya Ərəb Respublikası",
-		"ISO": "SY"
+		"label": "Suriya Ərəb Respublikası",
+		"value": "SY"
 	},
 	{
-		"Name": "Svalbard və Jan Mayen",
-		"ISO": "SJ"
+		"label": "Svalbard və Jan Mayen",
+		"value": "SJ"
 	},
 	{
-		"Name": "Svazilend",
-		"ISO": "SZ"
+		"label": "Svazilend",
+		"value": "SZ"
 	},
 	{
-		"Name": "Səudiyyə Ərəbistan",
-		"ISO": "SA"
+		"label": "Səudiyyə Ərəbistan",
+		"value": "SA"
 	},
 	{
-		"Name": "Tacikistan",
-		"ISO": "TJ"
+		"label": "Tacikistan",
+		"value": "TJ"
 	},
 	{
-		"Name": "Tanzaniya",
-		"ISO": "TZ"
+		"label": "Tanzaniya",
+		"value": "TZ"
 	},
 	{
-		"Name": "Tayland",
-		"ISO": "TH"
+		"label": "Tayland",
+		"value": "TH"
 	},
 	{
-		"Name": "Tayvan",
-		"ISO": "TW"
+		"label": "Tayvan",
+		"value": "TW"
 	},
 	{
-		"Name": "Togo",
-		"ISO": "TG"
+		"label": "Togo",
+		"value": "TG"
 	},
 	{
-		"Name": "Tokelau",
-		"ISO": "TK"
+		"label": "Tokelau",
+		"value": "TK"
 	},
 	{
-		"Name": "Tonqa",
-		"ISO": "TO"
+		"label": "Tonqa",
+		"value": "TO"
 	},
 	{
-		"Name": "Trinidad və Tobaqo",
-		"ISO": "TT"
+		"label": "Trinidad və Tobaqo",
+		"value": "TT"
 	},
 	{
-		"Name": "Tunis",
-		"ISO": "TN"
+		"label": "Tunis",
+		"value": "TN"
 	},
 	{
-		"Name": "Turks və Kaykos",
-		"ISO": "TC"
+		"label": "Turks və Kaykos",
+		"value": "TC"
 	},
 	{
-		"Name": "Tuvalu",
-		"ISO": "TV"
+		"label": "Tuvalu",
+		"value": "TV"
 	},
 	{
-		"Name": "Türkiyə",
-		"ISO": "TR"
+		"label": "Türkiyə",
+		"value": "TR"
 	},
 	{
-		"Name": "Türkmənistan",
-		"ISO": "TM"
+		"label": "Türkmənistan",
+		"value": "TM"
 	},
 	{
-		"Name": "Ukrayna",
-		"ISO": "UA"
+		"label": "Ukrayna",
+		"value": "UA"
 	},
 	{
-		"Name": "Uqanda",
-		"ISO": "UG"
+		"label": "Uqanda",
+		"value": "UG"
 	},
 	{
-		"Name": "Uruqvay",
-		"ISO": "UY"
+		"label": "Uruqvay",
+		"value": "UY"
 	},
 	{
-		"Name": "Vanuatu",
-		"ISO": "VU"
+		"label": "Vanuatu",
+		"value": "VU"
 	},
 	{
-		"Name": "Vatikan",
-		"ISO": "VA"
+		"label": "Vatikan",
+		"value": "VA"
 	},
 	{
-		"Name": "Venesuela",
-		"ISO": "VE"
+		"label": "Venesuela",
+		"value": "VE"
 	},
 	{
-		"Name": "Virgin Adaları, ABŞ",
-		"ISO": "VI"
+		"label": "Virgin Adaları, ABŞ",
+		"value": "VI"
 	},
 	{
-		"Name": "Virgin Adaları, Britaniya",
-		"ISO": "VG"
+		"label": "Virgin Adaları, Britaniya",
+		"value": "VG"
 	},
 	{
-		"Name": "Vyetnam",
-		"ISO": "VN"
+		"label": "Vyetnam",
+		"value": "VN"
 	},
 	{
-		"Name": "Wallis və Futuna",
-		"ISO": "WF"
+		"label": "Wallis və Futuna",
+		"value": "WF"
 	},
 	{
-		"Name": "Xorvatiya",
-		"ISO": "HR"
+		"label": "Xorvatiya",
+		"value": "HR"
 	},
 	{
-		"Name": "Yamayka",
-		"ISO": "JM"
+		"label": "Yamayka",
+		"value": "JM"
 	},
 	{
-		"Name": "Yaponiya",
-		"ISO": "JP"
+		"label": "Yaponiya",
+		"value": "JP"
 	},
 	{
-		"Name": "Yeni Kaledoniya",
-		"ISO": "NC"
+		"label": "Yeni Kaledoniya",
+		"value": "NC"
 	},
 	{
-		"Name": "Yeni Zelandiya",
-		"ISO": "NZ"
+		"label": "Yeni Zelandiya",
+		"value": "NZ"
 	},
 	{
-		"Name": "Yunanıstan",
-		"ISO": "GR"
+		"label": "Yunanıstan",
+		"value": "GR"
 	},
 	{
-		"Name": "Yəmən",
-		"ISO": "YE"
+		"label": "Yəmən",
+		"value": "YE"
 	},
 	{
-		"Name": "Zambiya",
-		"ISO": "ZM"
+		"label": "Zambiya",
+		"value": "ZM"
 	},
 	{
-		"Name": "Zimbabve",
-		"ISO": "ZW"
+		"label": "Zimbabve",
+		"value": "ZW"
 	},
 	{
-		"Name": "Çad",
-		"ISO": "TD"
+		"label": "Çad",
+		"value": "TD"
 	},
 	{
-		"Name": "Çexiya",
-		"ISO": "CZ"
+		"label": "Çexiya",
+		"value": "CZ"
 	},
 	{
-		"Name": "Çili",
-		"ISO": "CL"
+		"label": "Çili",
+		"value": "CL"
 	},
 	{
-		"Name": "Çin",
-		"ISO": "CN"
+		"label": "Çin",
+		"value": "CN"
 	},
 	{
-		"Name": "Özbəkistan",
-		"ISO": "UZ"
+		"label": "Özbəkistan",
+		"value": "UZ"
 	},
 	{
-		"Name": "İndoneziya",
-		"ISO": "ID"
+		"label": "İndoneziya",
+		"value": "ID"
 	},
 	{
-		"Name": "İordaniya",
-		"ISO": "JO"
+		"label": "İordaniya",
+		"value": "JO"
 	},
 	{
-		"Name": "İrlandiya",
-		"ISO": "IE"
+		"label": "İrlandiya",
+		"value": "IE"
 	},
 	{
-		"Name": "İslandiya",
-		"ISO": "IS"
+		"label": "İslandiya",
+		"value": "IS"
 	},
 	{
-		"Name": "İspaniya",
-		"ISO": "ES"
+		"label": "İspaniya",
+		"value": "ES"
 	},
 	{
-		"Name": "İsrail",
-		"ISO": "IL"
+		"label": "İsrail",
+		"value": "IL"
 	},
 	{
-		"Name": "İsveç",
-		"ISO": "SE"
+		"label": "İsveç",
+		"value": "SE"
 	},
 	{
-		"Name": "İsveçrə",
-		"ISO": "CH"
+		"label": "İsveçrə",
+		"value": "CH"
 	},
 	{
-		"Name": "İtaliya",
-		"ISO": "IT"
+		"label": "İtaliya",
+		"value": "IT"
 	},
 	{
-		"Name": "Şimali Marian adaları",
-		"ISO": "MP"
+		"label": "Şimali Marian adaları",
+		"value": "MP"
 	},
 	{
-		"Name": "Şri Lanka",
-		"ISO": "LK"
+		"label": "Şri Lanka",
+		"value": "LK"
 	},
 	{
-		"Name": "Şərqi Timor",
-		"ISO": "TL"
+		"label": "Şərqi Timor",
+		"value": "TL"
 	},
 	{
-		"Name": "Əfqanıstan",
-		"ISO": "AF"
+		"label": "Əfqanıstan",
+		"value": "AF"
 	},
 	{
-		"Name": "Əlcəzair",
-		"ISO": "DZ"
+		"label": "Əlcəzair",
+		"value": "DZ"
 	}
 ]

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Autocomplete from 'react-autocomplete';
+import Select from 'react-select';
 
 const CompanyDetailsComponent = props => {
     return (
@@ -22,7 +22,7 @@ const CompanyDetailsComponent = props => {
                             type="text"
                             className="form-control"
                             value = {props.companyName}
-                            onChange = {(e) => props.setCompanyName(e.target.value)}                         
+                            onChange = {(e) => props.setCompanyName(e.target.value)}                     
                         />
                     </div>
                 </div>
@@ -87,31 +87,12 @@ const CompanyDetailsComponent = props => {
                         >Fəaliyyət göstərdiyi ölkələr</label
                     >
                     <div className="col-sm-6">
-                        <Autocomplete 
-                            items={props.countries}
-                            getItemValue={(item) => item.Name} 
-                            renderItem={(item, isHighlighted) =>
-                                <div key={item.ISO} style={{ background: isHighlighted ? 'lightgray' : 'white' }}>
-                                  {item.Name}
-                                </div>
-                            }
-                            wrapperStyle = {{
-                                display: 'block'
-                            }}
-                            renderInput = {
-                                (props) => {
-                                    return <input 
-                                    id="country"
-                                    type="text" 
-                                    className="form-control"
-                                    {...props} />
-                                }
-                            }
-                            shouldItemRender={(item, value) => item.Name.toLowerCase().indexOf(value.toLowerCase()) > -1}
-                            value={props.companyCountryOfOperation}
-                            onChange={(e) => props.setCountryOfOperation(e.target.value)}
-                            onSelect={(val) => props.setCountryOfOperation(val)}
-                        />
+                    <Select
+                      defaultValue={props.companyCountryOfOperation}
+                      onChange={()=>props.setCountryOfOperation()}
+                      options={props.countries}
+                      isMulti
+                    />
                     </div>
                 </div>
                 <div className="form-group row">
