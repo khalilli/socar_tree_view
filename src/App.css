@@ -1,61 +1,290 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
 .app {
-  background-color: #f7f8f8;
-  margin: 0 20px;
+    background-color: #f7f8f8;
+    margin: 0 20px;
 }
 
 .app .navbar {
-  padding: 12px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-image: linear-gradient(
+        to right,
+        #f7f8f8,
+        rgb(230, 230, 230) 20%,
+        90%,
+        #f7f8f8
+    );
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1300px;
 }
 
 .app .navbar-list {
-  display: flex;
-  gap: 40px;
-  list-style-type: none;
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .app .navbar-list--item {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .app .navbar-list--link {
-  color: #333;
-  font-size: 18px;
-  text-decoration: none;
+    color: #333;
+    /* font-weight: 500; */
+    font-size: 18px;
+    text-decoration: none;
 }
 
 .content {
-  margin-top: 20px;
-  border-radius: 5px;
-  padding: 10px;
-  height: 80vh;
-  background-color: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 1400px;
+    background-color: #fff;
 }
 
 .content-form {
-  padding-top: 20px;
+    padding-top: 20px;
 }
 
 .form-group {
-  margin: 10px 0;
+    margin: 10px 0;
 }
 
-.app .btn-primary {
-  padding: 6px 30px;
-  font-size: 16px;
-  font-family: inherit;
+.form-group span {
+    color: rgb(160, 158, 158);
 }
 
+.app .form-control {
+    border-color: rgb(64, 228, 173);
+    background-color: #f7f8f8;
+}
+
+.app .btn-save {
+    padding: 6px 30px;
+    font-size: 16px;
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none !important;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    background-color: rgb(65, 65, 65);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    transform: translate(0);
+}
+
+.app .btn-save:hover {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.app .btn-save:active {
+    outline: none !important;
+    border: none !important;
+    border-color: none !important;
+    transform: translateY(3px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* #body .btn-primary:focus {
+  outline: none !important;
+  border: none !important;
+  border-color: none !important;
+  box-shadow: none;
+} */
+
+/* #body .btn-primary:active {
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+} */
 .content-header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #999;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #999;
 }
 
 .app .content-header--button {
-  /* border: none; */
-  border-radius: 3px;
-  outline: none;
+    /* border: none; */
+    border-radius: 3px;
+    outline: none;
+    color: rgb(64, 228, 173);
+    background-color: rgb(75, 74, 74);
+    transition: all 0.2s ease;
+}
+
+.app .content-header--button:hover {
+    background-color: rgb(39, 39, 39);
 }
 
 .content-header--icon {
-  margin-left: 10px;
+    margin-left: 10px;
+}
+
+/* ***********************************  Utility Classes *********************************** */
+
+.margin-left {
+    margin-left: -40px;
+}
+
+.app .active {
+    font-weight: 600;
+    color: rgb(226, 10, 75);
+}
+
+.flex-div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: -40px;
+}
+
+input[type='search']::-webkit-search-cancel-button {
+    -webkit-appearance: searchfield-cancel-button;
+}
+
+/* *********************************** Board Members ************************ */
+
+.add-button {
+    border: 2px solid rgb(25, 25, 112) !important;
+    background-color: #fff;
+    color: rgb(54, 54, 54);
+    color: rgb(25, 25, 112);
+    border: none;
+    border-radius: 5px;
+    padding: 4px 8px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.add-button:hover {
+    background-color: rgb(25, 25, 112);
+    color: #000;
+    color: #fff;
+}
+
+.add-button:active {
+    outline: 2px solid #000 !important;
+}
+
+/* *************************** Delete Icon **************************** */
+
+.app span.deleteicon {
+    align-items: center;
+}
+.app span.deleteicon span {
+    position: absolute;
+    display: block;
+    right: 5px;
+    top: 14px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #ccc;
+    font: 13px monospace;
+    text-align: center;
+    line-height: 1em;
+    cursor: pointer;
+}
+
+.app span.deleteicon input {
+    padding-right: 18px;
+    box-sizing: border-box;
+    padding-right: 30px;
+}
+
+.app span.deleteicon-boardmembers span {
+    bottom: -27px;
+    right: -382px;
+}
+
+.margin-bottom {
+    margin-bottom: 10px !important;
+}
+
+.button-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.app .btn-reset {
+    padding: 6px 30px;
+    font-size: 16px;
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    transform: translate(0);
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    margin-left: 10px;
+}
+
+.app .btn-reset:hover {
+    background-color: rgb(65, 65, 65);
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(65, 65, 65);
+    color: #fff;
+    outline: none;
+}
+
+.app .btn-reset:active {
+    outline: none;
+    border-color: none;
+    transform: translateY(3px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input {
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 1px 6px;
+}
+
+.auto {
+    width: auto;
+    position: relative !important;
+}
+
+.form-control {
+    width: auto !important;
+    padding-right: 24px !important;
+}
+
+@media screen and (min-width: 1400px) {
+    .app span.deleteicon span {
+        right: -124px;
+    }
+
+    .app span.deleteicon-boardmembers span {
+        right: -440px;
+    }
 }
