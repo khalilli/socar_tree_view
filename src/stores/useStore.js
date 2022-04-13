@@ -1,3 +1,4 @@
+import axios from 'axios';
 import create from 'zustand';
 import {devtools} from 'zustand/middleware';
 import initiateWorkflow from '../feautures/companyDetails/api/initiateWorkflow';
@@ -41,6 +42,26 @@ const handleInitiateWorkflow = async (set, get) => {
     await initiateWorkflow(args);
 }
 
+const handleGetCompanyDetails = async (set, get) => {
+    let params = new URLSearchParams(window.location.search);
+    let key = parseInt(params.get("key"));
+    if(!Number.isNaN(key)){
+        const response = await axios.get("http://192.168.14.33/otcs/llisapi.dll?func=ll&objId=116190&objAction=RunReport&key="+key);
+        const data = response.data;
+        data.pop();
+        set({
+            companyDetails: {
+                name: data[0].CNAME,
+                segment: data[0].SERVICENAME,
+                share: data[0].CSHARE,
+                numberOfEmployees: data[0].COUNTEMP !== '?' ? data[0].COUNTEMP : '',
+                ceo: '',
+                countryOfOperation: ''
+            }
+        })
+    }
+}
+
 const store = (set, get) => ({
     companyDetails: {
         name: '',
@@ -59,7 +80,8 @@ const store = (set, get) => ({
         ceo: '',
         countryOfOperation: ''
     }}),
-    initWorkflow: () => handleInitiateWorkflow(set, get)
+    initWorkflow: () => handleInitiateWorkflow(set, get),
+    getCompanyDetails: () => handleGetCompanyDetails(set, get)
 })
 
 const useStore = create(devtools(store));

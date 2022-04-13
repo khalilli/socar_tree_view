@@ -2,17 +2,18 @@ import CompanyDetailsComponent from "./CompanyDetailsComponent";
 import useStore from '../../../stores/useStore';
 import shallow from 'zustand/shallow';
 import countries from '../../../assets/countries.json';
-import { useState } from "react";
+import { useEffect } from "react";
 
 const getState = state => [
     state.companyDetails,
     state.setCompanyDetails,
     state.setInitialCompanyDetails,
-    state.initWorkflow
+    state.initWorkflow,
+    state.getCompanyDetails
 ];
 
 const CompanyDetails = () => {
-    const [companyDetails, setCompanyDetails, setInitialCompanyDetails, initWorkflow] = useStore(getState, shallow);
+    const [companyDetails, setCompanyDetails, setInitialCompanyDetails, initWorkflow, getCompanyDetails] = useStore(getState, shallow);
     const args = {
         companyName: companyDetails.name,
         companySegment: companyDetails.segment,
@@ -46,7 +47,11 @@ const CompanyDetails = () => {
             initWorkflow();
         }
     }
-    console.log(countries);
+
+    useEffect(()=>{
+        getCompanyDetails();
+    }, [])
+
     return <CompanyDetailsComponent {...args} />
 }
 
