@@ -102,16 +102,6 @@
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* #body .btn-primary:focus {
-  outline: none !important;
-  border: none !important;
-  border-color: none !important;
-  box-shadow: none;
-} */
-
-/* #body .btn-primary:active {
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
-} */
 .content-header {
     padding-bottom: 20px;
     border-bottom: 1px solid #999;
@@ -194,7 +184,7 @@ input[type='search']::-webkit-search-cancel-button {
 .app span.deleteicon {
     align-items: center;
 }
-.app span.deleteicon span {
+.app span.deleteicon .delete-span {
     position: absolute;
     display: block;
     right: 5px;
@@ -264,6 +254,8 @@ input[type='search']::-webkit-search-cancel-button {
 
 .input {
     border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
     font-family: inherit;
     font-size: inherit;
     padding: 1px 6px;
@@ -275,7 +267,10 @@ input[type='search']::-webkit-search-cancel-button {
 }
 
 .form-control {
-    width: auto !important;
+    min-width: 150px !important;
+    height: 100%;
+    /* display: flex;
+    align-items: center; */
     padding-right: 24px !important;
 }
 

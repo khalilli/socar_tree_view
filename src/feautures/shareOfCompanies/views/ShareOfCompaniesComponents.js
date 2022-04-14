@@ -56,7 +56,7 @@ const ShareOfCompaniesComponent = () => {
                             Add
                             <i
                                 className="fa-solid fa-plus"
-                                style="margin-left: 10px"
+                                style={{ marginLeft: '10px' }}
                             ></i>
                         </button>
                     </div>
