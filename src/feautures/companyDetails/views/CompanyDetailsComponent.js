@@ -91,7 +91,7 @@ const CompanyDetailsComponent = props => {
                                 <span
                                     class="input form-control"
                                     id="industry"
-                                    contenteditable
+                                    contenteditable="true"
                                     role="textbox"
                                 >
                                     Quraşdırma
@@ -109,16 +109,17 @@ const CompanyDetailsComponent = props => {
                     </div>
                 </div>
                 <div className="form-group row">
-                    <label className="col-sm-3 col-form-label"
-                        >Fəaliyyət göstərdiyi ölkələr</label
-                    >
-                    <div className="col-sm-6">
-                    <Select
-                      defaultValue={props.companyCountryOfOperation}
-                      onChange={()=>props.setCountryOfOperation()}
-                      options={props.countries}
-                      isMulti
-                    />
+                    <label className="col-sm-3 col-form-label">
+                        Fəaliyyət göstərdiyi ölkələr
+                    </label>
+                    <div className="auto">
+                        <Select
+                            className="margin-left form-control form-control-select"
+                            defaultValue={props.companyCountryOfOperation}
+                            onChange={() => props.setCountryOfOperation()}
+                            options={props.countries}
+                            isMulti
+                        />
                     </div>
                 </div>
                 <div className="form-group row">
