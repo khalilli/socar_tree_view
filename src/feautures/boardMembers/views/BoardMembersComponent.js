@@ -1,4 +1,4 @@
-const BoardMembersComponent = () => {
+const BoardMembersComponent = props => {
     return (
         <main className="content">
             <div className="content-header">
@@ -16,61 +16,22 @@ const BoardMembersComponent = () => {
                         >
                             Direktorlar şurasının üzvləri
                         </label>
-                        <div className="col-sm-8">
-                            <span className="deleteicon deleteicon-boardmembers">
-                                <input
-                                    value="Vaqif Əliyev (SOCAR)"
-                                    type="text"
-                                    className="form-control margin-bottom"
-                                    id="company"
-                                />
-                                <span className="delete-span">x</span>
-                            </span>
-                        </div>
-                        <div className="col-sm-8">
-                            <span className="deleteicon deleteicon-boardmembers">
-                                <input
-                                    value="İlham Nəsirov (SOCAR)"
-                                    type="text"
-                                    className="form-control margin-bottom"
-                                    id="company"
-                                />
-                                <span className="delete-span">x</span>
-                            </span>
-                        </div>
-                        <div className="col-sm-8">
-                            <span className="deleteicon deleteicon-boardmembers">
-                                <input
-                                    value="Rüfət Səfərov (SOCAR)"
-                                    type="text"
-                                    className="form-control margin-bottom"
-                                    id="company"
-                                />
-                                <span className="delete-span">x</span>
-                            </span>
-                        </div>
-                        <div className="col-sm-8">
-                            <span className="deleteicon deleteicon-boardmembers">
-                                <input
-                                    value="Bülent Karaca (Tekfen)"
-                                    type="text"
-                                    className="form-control margin-bottom"
-                                    id="company"
-                                />
-                                <span className="delete-span">x</span>
-                            </span>
-                        </div>
-                        <div className="col-sm-8">
-                            <span className="deleteicon deleteicon-boardmembers">
-                                <input
-                                    value="Mustafa Kopuz (Tekfen)"
-                                    type="text"
-                                    className="form-control margin-bottom"
-                                    id="company"
-                                />
-                                <span className="delete-span">x</span>
-                            </span>
-                        </div>
+                        {
+                            props.directorList.map(x=>{
+                                return <div className="col-sm-8">
+                                    <span className="deleteicon deleteicon-boardmembers">
+                                        <input
+                                            value={x}
+                                            onChange={()=>{}}
+                                            type="text"
+                                            className="form-control margin-bottom"
+                                            id="company"
+                                        />
+                                        <span className="delete-span">x</span>
+                                    </span>
+                                </div>
+                            })
+                        }
                         <button
                             type="button"
                             className="col-sm-2 add-button"
@@ -93,18 +54,7 @@ const BoardMembersComponent = () => {
                         <div className="col-sm-8">
                             <span className="deleteicon deleteicon-boardmembers">
                                 <input
-                                    value="Rövnəq Abdullayev (SOCAR)"
-                                    type="text"
-                                    className="form-control margin-bottom"
-                                    id="company"
-                                />
-                                <span className="delete-span">x</span>
-                            </span>
-                        </div>
-                        <div className="col-sm-8">
-                            <span className="deleteicon deleteicon-boardmembers">
-                                <input
-                                    value="Mustafa Kopuz (Tekfen)"
+                                    //value="Rövnəq Abdullayev (SOCAR)"
                                     type="text"
                                     className="form-control margin-bottom"
                                     id="company"

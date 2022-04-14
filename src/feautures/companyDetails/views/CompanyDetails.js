@@ -14,6 +14,11 @@ const getState = state => [
 
 const CompanyDetails = () => {
     const [companyDetails, setCompanyDetails, setInitialCompanyDetails, initWorkflow, getCompanyDetails] = useStore(getState, shallow);
+    
+    useEffect(()=>{
+        getCompanyDetails();
+    }, [])
+
     const args = {
         companyName: companyDetails.name,
         companySegment: companyDetails.segment,
@@ -53,10 +58,6 @@ const CompanyDetails = () => {
             initWorkflow();
         }
     }
-
-    useEffect(()=>{
-        getCompanyDetails();
-    }, [])
 
     return <CompanyDetailsComponent {...args} />
 }
