@@ -87,5 +87,3 @@ const store = (set, get) => ({
 const useStore = create(devtools(store));
 
 export default useStore;
-
-
