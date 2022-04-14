@@ -82,6 +82,33 @@ const CompanyDetailsComponent = props => {
                     </div>
                 </div>
                 <div className="form-group row">
+                    <label className="col-sm-3 col-form-label">
+                        Fəaliyyət sahəsi
+                    </label>
+                    <div className="col-sm-9 flex-wrap segment-row">
+                        <div className="auto">
+                            <span className="deleteicon">
+                                <span
+                                    class="input form-control"
+                                    id="industry"
+                                    contenteditable
+                                    role="textbox"
+                                >
+                                    Quraşdırma
+                                </span>
+                                <span className="delete-span">x</span>
+                            </span>
+                        </div>
+                        <button className="col-sm-1 add-button">
+                            Add{' '}
+                            <i
+                                className="fa-solid fa-plus"
+                                style={{ marginLeft: '5px' }}
+                            ></i>
+                        </button>
+                    </div>
+                </div>
+                <div className="form-group row">
                     <label className="col-sm-3 col-form-label"
                         >Fəaliyyət göstərdiyi ölkələr</label
                     >
