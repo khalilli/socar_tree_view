@@ -89,12 +89,11 @@ const CompanyDetailsComponent = props => {
                         <div className="auto">
                             <span className="deleteicon">
                                 <span
-                                    class="input form-control"
+                                    className="input form-control"
                                     id="industry"
-                                    contenteditable="true"
+                                    contentEditable="true"
                                     role="textbox"
                                 >
-                                    Quraşdırma
                                 </span>
                                 <span className="delete-span">x</span>
                             </span>
@@ -112,7 +111,7 @@ const CompanyDetailsComponent = props => {
                     <label className="col-sm-3 col-form-label">
                         Fəaliyyət göstərdiyi ölkələr
                     </label>
-                    <div className="auto">
+                    <div className="col-sm-6">
                         <Select
                             className="margin-left form-control form-control-select"
                             defaultValue={props.companyCountryOfOperation}
