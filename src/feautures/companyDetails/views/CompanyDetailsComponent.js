@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import Select from 'react-select';
 
 const CompanyDetailsComponent = props => {
+    console.log(props.companyName);
     return (
         <main className="content">
             <div className="content-header">
@@ -10,6 +11,8 @@ const CompanyDetailsComponent = props => {
                     <i className="fa-solid fa-arrow-right-from-bracket content-header--icon"></i>
                 </button>
             </div>
+
+
             <form className="content-form">
                 <div className="form-group row">
                     <label className="col-sm-3 col-form-label">Şirkət</label>
@@ -23,6 +26,7 @@ const CompanyDetailsComponent = props => {
                         />
                     </div>
                 </div>
+
                 <div className="form-group row">
                     <label className="col-sm-3 col-form-label">
                         Aid olduğu seqment
