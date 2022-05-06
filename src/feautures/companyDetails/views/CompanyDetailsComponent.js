@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import Select from 'react-select';
 
 const CompanyDetailsComponent = props => {
-    console.log(props.companyName);
     return (
         <main className="content">
             <div className="content-header">

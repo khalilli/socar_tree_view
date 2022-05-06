@@ -18,6 +18,7 @@ const CompanyDetails = () => {
     useEffect(()=>{
         getCompanyDetails();
     }, [])
+    console.log(companyDetails.name);
 
     const args = {
         companyName: companyDetails.name,
