@@ -28,6 +28,7 @@ const FinancialDataComponent = (props) => {
     if(props.dividend2 !== props.dividend2Warn){
         colorD2 = true;
     }
+    console.log(props.active);
     return (
         <main className="content">
             <div className="content-header">
