@@ -18,14 +18,18 @@ const CompanyDetails = () => {
     useEffect(()=>{
         getCompanyDetails();
     }, [])
-    console.log(companyDetails.name);
 
     const args = {
         companyName: companyDetails.name,
+        nameWarn: companyDetails.nameWarn,
         companySegment: companyDetails.segment,
+        segmentWarn: companyDetails.segmentWarn,
         companyShare: companyDetails.share,
+        shareWarn: companyDetails.shareWarn,
         companyNumberOfEmployees: companyDetails.numberOfEmployees,
+        numberOfEmployeesWarn: companyDetails.numberOfEmployeesWarn,
         companyCEO: companyDetails.ceo,
+        CEOWarn: companyDetails.ceoWarn,
         countries,
         companyCountryOfOperation: companyDetails.countryOfOperation,
         cleanCountryName: () => {

@@ -40,6 +40,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.app .navbar-list--item:hover{
+    background-color: rgb(168, 168, 168);
+}
+
 .app .navbar-list--link {
     color: #333;
     /* font-weight: 500; */
@@ -70,6 +74,18 @@
 
 .app .form-control {
     border-color: rgb(64, 228, 173);
+    background-color: #f7f8f8;
+}
+
+.form-label {
+    border: none;
+    background-color: transparent;
+    min-width: 200px !important;
+    height: 100%;
+    padding-right: 24px !important;
+}
+.app .form-control.invalid {
+    border-color: red;
     background-color: #f7f8f8;
 }
 
@@ -180,7 +196,44 @@ input[type='search']::-webkit-search-cancel-button {
 }
 
 /* *************************** Delete Icon **************************** */
-
+.removebtn{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    margin-left: 385px;
+    margin-top: -34px;
+    color: #fff;
+    background-color: #ccc;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none
+}
+.removebtn1{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    margin-left: 179px;
+    margin-top: -1px;
+    color: #fff;
+    background-color: #ccc;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none
+}
 .app span.deleteicon {
     align-items: center;
 }

@@ -1,7 +1,22 @@
 import PropTypes from 'prop-types';
 import Select from 'react-select';
-
 const CompanyDetailsComponent = props => {
+    var color, colorS, colorSh, colorEmp, colorC = false;
+    if (props.companyName !== props.nameWarn){
+        color = true;
+    }
+    if (props.companySegment !== props.segmentWarn){
+        colorS = true;
+    }
+    if (props.companyShare !== props.shareWarn){
+        colorSh = true;
+    }
+    if (props.companyNumberOfEmployees !== props.numberOfEmployeesWarn){
+        colorEmp = true;
+    }
+    if (props.companyCEO !== props.CEOWarn){
+        colorC = true;
+    }
     return (
         <main className="content">
             <div className="content-header">
@@ -19,7 +34,7 @@ const CompanyDetailsComponent = props => {
                         <input
                             id="company"
                             type="text"
-                            className="form-control margin-left"
+                            className={color ? 'form-control invalid margin-left' : 'form-control margin-left'}
                             value={props.companyName}
                             onChange={e => props.setCompanyName(e.target.value)}
                         />
@@ -34,11 +49,9 @@ const CompanyDetailsComponent = props => {
                         <input
                             id="segment"
                             type="text"
-                            className="form-control margin-left"
+                            className={colorS ? 'form-control invalid margin-left' : 'form-control margin-left'}
                             value={props.companySegment}
-                            onChange={e =>
-                                props.setCompanySegment(e.target.value)
-                            }
+                            onChange={e => props.setCompanySegment(e.target.value)}
                         />
                     </div>
                 </div>
@@ -48,11 +61,9 @@ const CompanyDetailsComponent = props => {
                         <input
                             id="share"
                             type="number"
-                            className="form-control margin-left"
+                            className={colorSh ? 'form-control invalid margin-left' : "form-control margin-left"}
                             value={props.companyShare}
-                            onChange={e =>
-                                props.setCompanyShare(e.target.value)
-                            }
+                            onChange={e => props.setCompanyShare(e.target.value)}
                         />
                     </div>
                 </div>
@@ -62,13 +73,9 @@ const CompanyDetailsComponent = props => {
                         <input
                             id="employee"
                             type="number"
-                            className="form-control margin-left"
+                            className={colorEmp ? 'form-control invalid margin-left' : "form-control margin-left"}
                             value={props.companyNumberOfEmployees}
-                            onChange={e =>
-                                props.setCompanyNumberOfEmployees(
-                                    e.target.value
-                                )
-                            }
+                            onChange={e => props.setCompanyNumberOfEmployees(e.target.value)}
                         />
                     </div>
                 </div>
@@ -78,7 +85,7 @@ const CompanyDetailsComponent = props => {
                         <input
                             id="ceo"
                             type="text"
-                            className="form-control margin-left"
+                            className={colorC ? 'form-control invalid margin-left' : "form-control margin-left"}
                             value={props.companyCEO}
                             onChange={e => props.setCompanyCEO(e.target.value)}
                         />
@@ -131,7 +138,7 @@ const CompanyDetailsComponent = props => {
                             onClick={props.onSubmitForm}
                             className="btn-save"
                         >
-                            Save
+                            Send
                         </button>
                         <button
                             type="button"
