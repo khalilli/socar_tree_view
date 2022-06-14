@@ -210,7 +210,8 @@ const handleGetFinancialData = async (set, get) => {
 
 const handleGetCompanyShares = async (set, get) => {
     let params = new URLSearchParams(window.location.search);
-    let key = parseInt(params.get("key")); 
+    // let key = parseInt(params.get("key")); 
+    let key = 90; 
     if(!Number.isNaN(key)){
         const response = await axios.get("http://192.168.14.33/otcs/llisapi.dll?func=ll&objId=128820&objAction=RunReport&key"+90);
         const dataShare = response.data;
