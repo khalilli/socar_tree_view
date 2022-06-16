@@ -48,7 +48,7 @@ const BoardMembersComponent = props => {
               >
                 Direktorlar şurasının üzvləri
               </label>
-              {names.map((x, id) => {
+              {props.directorList.map((x, id) => {
                 return (
                   <div className="col-sm-8" key={id}>
                     <span className="deleteicon deleteicon-boardmembers">
