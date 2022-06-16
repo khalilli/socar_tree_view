@@ -1,12 +1,16 @@
 import { useState } from "react";
 import PropTypes from 'prop-types';
 const BoardMembersComponent = props => {
-    const [names, setNames] = useState(props.directorList);
+    const [names, setNames] = useState([]);
+    for(var i=0;i<props.directorList.length;i++){
+      names.push({dirname: props.directorList[i]});
+    }
     const [namesR, setNamesR] = useState(props.representativeList);
-    console.log(props.directorList);
-    const handleChangeDirectors = (id, event) => {
+
+    const handleChangeDirectors = (event, id) => {
         const values = [...names];
         values[id][event.target.name] = event.target.value;
+        console.log(event.target);
         setNames(values);
     };
     const handleChangeRep = (id, event) => {
@@ -15,10 +19,10 @@ const BoardMembersComponent = props => {
         setNamesR(values);
     }
     const addName = () => {
-        setNames([...names, {name: ""}]); /*check name, why not dirname */
+        setNames([...names, {dirname: ""}]); /*check name, why not dirname */
     };
     const addNameR = () => {
-        setNamesR([...namesR, {name: ""}]);
+        setNamesR([...namesR, {nameR: ""}]);
     };
     const deleteName = (id) => {
         const list = [...names];  
@@ -48,7 +52,7 @@ const BoardMembersComponent = props => {
               >
                 Direktorlar şurasının üzvləri
               </label>
-              {props.directorList.map((x, id) => {
+              {names.map((x, id) => {
                 return (
                   <div className="col-sm-8" key={id}>
                     <span className="deleteicon deleteicon-boardmembers">
