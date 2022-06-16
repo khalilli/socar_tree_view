@@ -5,7 +5,10 @@ const BoardMembersComponent = props => {
     for(var i=0;i<props.directorList.length;i++){
       names.push({dirname: props.directorList[i]});
     }
-    const [namesR, setNamesR] = useState(props.representativeList);
+    const [namesR, setNamesR] = useState([]);
+    for(var i=0;i<props.representativeList.length;i++){
+      namesR.push({repname: props.representativeList[i]});
+    }
 
     const handleChangeDirectors = (event, id) => {
         const values = [...names];
@@ -97,7 +100,6 @@ const BoardMembersComponent = props => {
                   <div className="col-sm-8" key={id}>
                     <span className="deleteicon deleteicon-boardmembers">
                       <input
-                        //value="Rövnəq Abdullayev (SOCAR)"
                         name="repname"
                         value={x.repname}
                         type="text"
