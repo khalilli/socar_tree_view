@@ -37,28 +37,28 @@ const FinancialData = () => {
             setFinancialData([{property: 'active', value: active}])
         },
         setCapital: capital => {
-            setFinancialData([{property: "capital", value: Number.parseInt(capital)}])
+            setFinancialData([{property: "capital", value: capital}])
         },
         setLiability: liability => {
-            setFinancialData([{property: "liability", value: Number.parseInt(liability)}])
+            setFinancialData([{property: "liability", value: liability}])
         },
         setEBITDA: ebitda => {
-            setFinancialData([{property: "ebitda", value: Number.parseInt(ebitda)}])
+            setFinancialData([{property: "ebitda", value: ebitda}])
         },
         setLoss: loss => {
-            setFinancialData([{property: "loss", value: Number.parseInt(loss)}])
+            setFinancialData([{property: "loss", value: loss}])
         },
         setIncomeTax: incometax => {
-            setFinancialData([{property: "incometax", value: Number.parseInt(incometax)}])
+            setFinancialData([{property: "incometax", value: incometax}])
         },
         setPropertyTax: propertytax => {
-            setFinancialData([{property: "propertytax", value: Number.parseInt(propertytax)}])
+            setFinancialData([{property: "propertytax", value: propertytax}])
         },
         setDividend1: dividend1 => {
-            setFinancialData([{property: "dividend1", value: Number.parseInt(dividend1)}])
+            setFinancialData([{property: "dividend1", value: dividend1}])
         },
         setDividend2: dividend2 => {
-            setFinancialData([{property: "dividend2", value: Number.parseInt(dividend2)}])
+            setFinancialData([{property: "dividend2", value: dividend2}])
         },
         reset: () => {
             setInitialFinancialData();
