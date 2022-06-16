@@ -16,9 +16,9 @@ const BoardMembersComponent = props => {
         const values = [...namesR];
         values[id][event.target.name] = event.target.value;
         setNamesR(values);
-    }
+    };
     const addName = () => {
-        setNames([...names, {dirname: ""}]); /*check name, why not dirname */
+        setNames([...names, {dirname: ""}]);
     };
     const addNameR = () => {
         setNamesR([...namesR, {repname: ""}]);
@@ -61,7 +61,7 @@ const BoardMembersComponent = props => {
                         onChange={(e) => handleChangeDirectors(e, id)}
                         type="text"
                         className="form-control margin-bottom"
-                        id="company"
+                        id="companyDir"
                       />
                       {/* <span className="delete-span">x</span> */}
                     </span>
@@ -103,7 +103,7 @@ const BoardMembersComponent = props => {
                         type="text"
                         className="form-control margin-bottom"
                         onChange={(e) => handleChangeRep(e, id)}
-                        id="company"
+                        id="companyRep"
                       />
                       {/* <span className="delete-span">x</span> */}
                     </span>
