@@ -11,10 +11,14 @@ const getState = state => [
 ];
 
 const BoardMembers = () => {
-    const [directorList, getDirectors, representativeList] = useStore(getState, shallow);
+    const [directorList, getDirectors, representativeList, getRepresentatives] = useStore(getState, shallow);
 
     useEffect(()=>{
         getDirectors();
+    }, []);
+
+    useEffect(()=>{
+        getRepresentatives();
     }, []);
 
     const args = {
