@@ -50,7 +50,8 @@ const FinancialDataComponent = (props) => {
                             id="active"
                             type="number"
                             className={color ? 'form-control invalid' : 'form-control'}
-                            value={props.active}
+                            // value={props.active}
+                            value="2424522"
                             onChange={e => props.setActive(e.target.value)}
                         />
                         <span className="col-sm-1">AZN</span>
