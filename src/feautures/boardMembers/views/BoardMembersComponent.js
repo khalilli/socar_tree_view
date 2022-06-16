@@ -9,7 +9,8 @@ const BoardMembersComponent = props => {
     for(var i=0;i<props.representativeList.length;i++){
       namesR.push({repname: props.representativeList[i]});
     }
-
+    console.log(names);
+    console.log(namesR);
     const handleChangeDirectors = (event, id) => {
         const values = [...names];
         values[id][event.target.name] = event.target.value;
