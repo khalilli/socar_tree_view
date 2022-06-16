@@ -34,7 +34,7 @@ const FinancialData = () => {
         dividend2: financialData.dividend2,
         dividend2Warn: financialData.dividend2Warn,
         setActive: active => {
-            setFinancialData([{property: "active", value: Number.parseInt(active)}])
+            setFinancialData([{property: 'active', value: Number.parseInt(active)}])
         },
         setCapital: capital => {
             setFinancialData([{property: "capital", value: Number.parseInt(capital)}])

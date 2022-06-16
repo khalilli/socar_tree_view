@@ -46,7 +46,6 @@ const FinancialDataComponent = (props) => {
                         Cəmi Aktivlər
                     </label>
                     <div className="col-sm-2 flex-div">
-                        {"hello" + props.active}
                         <input
                             id="active"
                             type="number"
