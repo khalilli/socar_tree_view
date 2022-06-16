@@ -15,11 +15,11 @@ const BoardMembers = () => {
 
     useEffect(()=>{
         getDirectors();
-    }, []);
+    }, [getDirectors]);
 
     useEffect(()=>{
         getRepresentatives();
-    }, []);
+    }, [getRepresentatives]);
 
     const args = {
         directorList,
