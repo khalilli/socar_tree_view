@@ -10,11 +10,10 @@ const BoardMembersComponent = props => {
     const handleChangeDirectors = (event, id) => {
         const values = [...names];
         values[id][event.target.name] = event.target.value;
-        console.log(event.target);
         setNames(values);
     };
-    const handleChangeRep = (id, event) => {
-        const values = [...names];
+    const handleChangeRep = (event, id) => {
+        const values = [...namesR];
         values[id][event.target.name] = event.target.value;
         setNamesR(values);
     }
@@ -22,7 +21,7 @@ const BoardMembersComponent = props => {
         setNames([...names, {dirname: ""}]); /*check name, why not dirname */
     };
     const addNameR = () => {
-        setNamesR([...namesR, {nameR: ""}]);
+        setNamesR([...namesR, {repname: ""}]);
     };
     const deleteName = (id) => {
         const list = [...names];  
