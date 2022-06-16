@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const BoardMembersComponent = props => {
     const [names, setNames] = useState(props.directorList);
     const [namesR, setNamesR] = useState(props.representativeList);
-    console.log(names);
+    console.log(props.directorList);
     const handleChangeDirectors = (id, event) => {
         const values = [...names];
         values[id][event.target.name] = event.target.value;
