@@ -46,10 +46,9 @@ const FinancialDataComponent = (props) => {
                         Cəmi Aktivlər
                     </label>
                     <div className="col-sm-2 flex-div">
-                        <input type="number" value={props.active}></input>
                         <input
                             id="active"
-                            type="number"
+                            type="text"
                             className={color ? 'form-control invalid' : 'form-control'}
                             value={props.active}
                             onChange={e => props.setActive(e.target.value)}
