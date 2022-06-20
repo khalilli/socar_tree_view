@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 const BoardMembersComponent = props => {
   console.log(props.directorList);
   console.log(props.representativeList);
+  console.log("render time");
     const [names, setNames] = useState([]);
     for(var i=0;i<props.directorList.length;i++){
       names.push({dirname: props.directorList[i]});
