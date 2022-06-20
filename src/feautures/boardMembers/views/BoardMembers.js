@@ -21,10 +21,10 @@ const BoardMembers = () => {
         getRepresentatives();
     }, [getRepresentatives]);
 
-    console.log(directorList);
+    const directorListName = directorList.map(item => ({dirname: item}))
 
     const args = {
-        directorList,
+        directorListName,
         representativeList,  
     };
     return <BoardMembersComponent {...args} />

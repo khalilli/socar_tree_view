@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const BoardMembersComponent = props => {
   //console.log(props.directorList);
   //console.log(props.representativeList);
-    const [names, setNames] = useState(props.directorList);
+    const [names, setNames] = useState(props.directorListName);
     const [namesR, setNamesR] = useState([]);
 
     console.log(names);
