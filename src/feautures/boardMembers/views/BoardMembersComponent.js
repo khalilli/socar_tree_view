@@ -4,13 +4,12 @@ const BoardMembersComponent = props => {
     const [names, setNames] = useState([]);
     for(var i=0;i<props.directorList.length;i++){
       names.push({dirname: props.directorList[i]});
+      console.log("Director", props.directorList[i]);
     }
     const [namesR, setNamesR] = useState([]);
     for(var j=0;j<props.representativeList.length;j++){
       namesR.push({repname: props.representativeList[j]});
     }
-    console.log(names);
-    console.log(namesR);
     const handleChangeDirectors = (event, id) => {
         const values = [...names];
         values[id][event.target.name] = event.target.value;
