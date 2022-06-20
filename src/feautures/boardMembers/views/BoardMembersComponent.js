@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useMemo } from "react";
 import PropTypes from 'prop-types';
 const BoardMembersComponent = props => {
   console.log(props.directorList);
@@ -6,10 +6,10 @@ const BoardMembersComponent = props => {
     const [names, setNames] = useState([]);
     const [namesR, setNamesR] = useState([]);
     
-    // for(var i=0;i<props.directorList.length;i++){
-    //   names.push({dirname: props.directorList[i]});
-    // }
-    names = props.directorList.map(item => ({dirname: item}))
+    const dirname = useMemo(props.directorList.map(item => ({dirname: item})), [props.directorList]);
+    for(var i=0;i<dirname.length;i++){
+      names.push(dirname[i]);
+    }
     
     for(var j=0;j<props.representativeList.length;j++){
       namesR.push({repname: props.representativeList[j]});
