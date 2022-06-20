@@ -1,11 +1,14 @@
-import { useState, useCallback } from "react";
+import { useState, useEffect } from "react";
 import PropTypes from 'prop-types';
 const BoardMembersComponent = props => {
   console.log(props.directorList);
   console.log(props.representativeList);
-    const [names, setNames] = useState(props.directorList);
+    const [names, setNames] = useState({...props.directorList});
     const [namesR, setNamesR] = useState(props.representativeList);
     console.log(names);
+    useEffect(() => {
+      setNames(props.directorList);
+    }, [props.directorList]);
     // for(var i=0;i<props.directorList.length;i++){
     //   names.push({dirname: props.directorList[i]});
     // }
