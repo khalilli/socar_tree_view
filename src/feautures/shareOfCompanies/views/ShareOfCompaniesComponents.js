@@ -15,13 +15,13 @@ const ShareOfCompaniesComponent = (props) => {
     setCompanyNameShare(values);
   }
   const addShare = () => {
-    setCompanyNameShare([...companyNameShare, {CNAME: "", Y: ""}]);
+    setCompanyNameShare([...companyNameShare, {Y: "", CNAME: ""}]);
   }
   const deleteNameShare = (id) => {
-    const list = [...companyNameShare];
-    list.splice(id, 1);
     console.log(id);
-    setCompanyNameShare(list);
+    // const list = [...companyNameShare];
+    // list.splice(id, 1);
+    // setCompanyNameShare(list);
   }
   const inputName = [];
   for (var i=0; i<companyNameShare.length; i++){
