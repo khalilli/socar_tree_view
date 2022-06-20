@@ -90,7 +90,7 @@ const handleGetDirectors = async (set, get) => {
         let data = response.data;
         data.pop();
         data = data.map(x=>({dirname: x.DIREKTOR}));
-        console.log(data);
+        //console.log(data);
         set({
             directorList: data,
         })
@@ -104,7 +104,7 @@ const handleGetRepresentatives = async (set, get) => {
         let data = response.data;
         data.pop();
         data = data.map(x=>({repname: x.UMUMIYIGINCAQ}));
-        console.log(data);
+        //console.log(data);
         set({
             representativeList: data,
         })

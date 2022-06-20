@@ -1,23 +1,16 @@
 import { useState, useEffect } from "react";
 import PropTypes from 'prop-types';
 const BoardMembersComponent = props => {
-  console.log(props.directorList);
-  console.log(props.representativeList);
     const [names, setNames] = useState(props.directorList);
     const [namesR, setNamesR] = useState(props.representativeList);
-    console.log(names);
+
     useEffect(() => {
       setNames(props.directorList);
     }, [props.directorList]);
     useEffect(() => {
       setNamesR(props.representativeList);
     }, [props.representativeList]);
-    // for(var i=0;i<props.directorList.length;i++){
-    //   names.push({dirname: props.directorList[i]});
-    // }
-    // for(var j=0;j<props.representativeList.length;j++){
-    //   namesR.push({repname: props.representativeList[j]});
-    // }
+
     const handleChangeDirectors = (event, id) => {
         const values = [...names];
         values[id][event.target.name] = event.target.value;
@@ -34,10 +27,12 @@ const BoardMembersComponent = props => {
     const addNameR = () => {
         setNamesR([...namesR, {repname: ""}]);
     };
+    console.log(names);
     const deleteName = (id) => {
-        const list = [...names];  
-        list.splice(id, 1);
-        setNames(list);
+      console.log(id);
+        // const list = [...names];  
+        // list.splice(id, 1);
+        // setNames(list);
     };
     const deleteNameR = (id) => {
         const list = [...namesR];
