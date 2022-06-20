@@ -25,7 +25,7 @@ const ShareOfCompaniesComponent = (props) => {
   }
   const inputName = [];
   for (var i=0; i<companyNameShare.length; i++){
-    if(companyNameShare[i].name.length === 0){
+    if(companyNameShare[i].CNAME.length === 0){
       inputName.push(i);
     }
   }
@@ -44,7 +44,7 @@ const ShareOfCompaniesComponent = (props) => {
                 <div className="col-sm-2 flex-div">
                   <input
                     value={x.CNAME}
-                    name="name"
+                    name="CNAME"
                     onChange={e => changeNameShare(e,id)}
                     type="text"
                     className={inputName.includes(id) ? 'form-control' : 'form-label'}
@@ -55,7 +55,7 @@ const ShareOfCompaniesComponent = (props) => {
                 <div className="col-sm-2 flex-div">
                   <input
                     value={x.Y}
-                    name="share"
+                    name="Y"
                     onChange={e => changeNameShare(e, id)}
                     type="text"
                     className="form-control"
