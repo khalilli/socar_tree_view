@@ -17,8 +17,6 @@ const CompanyDetailsComponent = props => {
     if (props.companyCEO !== props.CEOWarn){
         colorC = true;
     }
-    console.log(props.companyName, "and", props.nameWarn, "and color is", color);
-    console.log(props.companyShare, "and", props.shareWarn, "and color is", colorSh)
     return (
         <main className="content">
             <div className="content-header">
@@ -27,7 +25,6 @@ const CompanyDetailsComponent = props => {
                     <i className="fa-solid fa-arrow-right-from-bracket content-header--icon"></i>
                 </button>
             </div>
-
 
             <form className="content-form">
                 <div className="form-group row">

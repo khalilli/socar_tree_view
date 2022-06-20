@@ -7,8 +7,9 @@ const initiateWorkflow = async (args) => {
     data.append("objAction", "RunReport");
     args.cid && data.append("cid", args.cid);
     args.cname && data.append("cname", args.cname);
-    args.stype && data.append("stype", args.stype);
-    args.countemp && data.append("countemp", args.countemp);
+    args.segment && data.append("segment", args.segment);
+    args.share && data.append("share", args.share);
+    args.numberOfEmployees && data.append("numberOfEmployees", args.numberOfEmployees);
     args.ceo && data.append("ceo", args.ceo);
     data.append("nextUrl", window.nextUrl);
 

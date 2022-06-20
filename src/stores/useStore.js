@@ -1,7 +1,7 @@
 import axios from 'axios';
 import create from 'zustand';
 import {devtools} from 'zustand/middleware';
-import initiateWorkflow from '../feautures/companyDetails/api/initiateWorkflow';
+import initiateWorkflow from '../feautures/api/initiateWorkflow';
 
 const handleSetCompany = (set, get, args) => {
     const companyDetails = Object.assign({}, get().companyDetails);
@@ -46,17 +46,31 @@ const handleSetCompany = (set, get, args) => {
     }
     set({companyDetails});
 }
-
 const handleInitiateWorkflow = async (set, get) => {
     const companyDetails = get().companyDetails;
+    const directorList = get().directorList;
+    const representativeList = get().representativeList;
+    const financialData = get().financialData;
     const args = {
         cname: companyDetails.name,
-        countemp: companyDetails.numberOfEmployees,
-        ceo: companyDetails.ceo
+        segment: companyDetails.segment,
+        share: companyDetails.share,
+        numberOfEmployees: companyDetails.numberOfEmployees,
+        ceo: companyDetails.ceo,
+        directorList,
+        representativeList,
+        active: financialData.active,
+        capital: financialData.capital,
+        liability: financialData.liability,
+        ebitda: financialData.ebitda,
+        loss: financialData.loss,
+        incometax: financialData.incometax,
+        propertytax: financialData.propertytax,
+        dividend1: financialData.dividend1,
+        dividend2: financialData.dividend2,
     };
     await initiateWorkflow(args);
 }
-
 const handleGetCompanyDetails = async (set, get) => {
     let params = new URLSearchParams(window.location.search);
     let key = parseInt(params.get("key"));
@@ -81,7 +95,6 @@ const handleGetCompanyDetails = async (set, get) => {
         })
     }
 }
-
 const handleGetDirectors = async (set, get) => {
     let params = new URLSearchParams(window.location.search);
     let key = parseInt(params.get("key"));
@@ -108,7 +121,6 @@ const handleGetRepresentatives = async (set, get) => {
         })
     }
 }
-
 const handleSetFinancialData = (set, get, args) => {
     const financialData = Object.assign({}, get().financialData);
     for (const object of args) {  
@@ -173,7 +185,6 @@ const handleSetFinancialData = (set, get, args) => {
     }
     set({financialData});
 }
-
 const handleGetFinancialData = async (set, get) => {
     let params = new URLSearchParams(window.location.search);
     let key = parseInt(params.get("key"));
@@ -205,7 +216,6 @@ const handleGetFinancialData = async (set, get) => {
         })
     }
 }
-
 const handleGetCompanyShares = async (set, get) => {
     let params = new URLSearchParams(window.location.search);
     let key = parseInt(params.get("key")); 
