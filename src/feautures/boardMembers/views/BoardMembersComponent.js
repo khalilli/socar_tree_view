@@ -6,9 +6,11 @@ const BoardMembersComponent = props => {
     const [names, setNames] = useState([]);
     const [namesR, setNamesR] = useState([]);
     
-    for(var i=0;i<props.directorList.length;i++){
-      names.push({dirname: props.directorList[i]});
-    }
+    // for(var i=0;i<props.directorList.length;i++){
+    //   names.push({dirname: props.directorList[i]});
+    // }
+    names = props.directorList.map(item => ({dirname: item}))
+    
     for(var j=0;j<props.representativeList.length;j++){
       namesR.push({repname: props.representativeList[j]});
     }
