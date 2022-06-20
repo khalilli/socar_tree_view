@@ -1,16 +1,21 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 const ShareOfCompaniesComponent = (props) => {
   const [companyNameShare, setCompanyNameShare] = useState(props.companyShares);
+
+  useEffect(() => {
+    setCompanyNameShare(props.companyShares);
+  }, [props.companyShares]);
+
   console.log(companyNameShare);
-  console.log(props.companyShares)
+
   const changeNameShare = (e, id) => {
     const values = [...companyNameShare];
     values[id][e.target.name] = e.target.value;
     setCompanyNameShare(values);
   }
   const addShare = () => {
-    setCompanyNameShare([...companyNameShare, {name: "", share: ""}]);
+    setCompanyNameShare([...companyNameShare, {CNAME: "", Y: ""}]);
   }
   const deleteNameShare = (id) => {
     const list = [...companyNameShare];
@@ -38,7 +43,7 @@ const ShareOfCompaniesComponent = (props) => {
               <div className="form-group row" key={id}>
                 <div className="col-sm-2 flex-div">
                   <input
-                    value={x.name}
+                    value={x.CNAME}
                     name="name"
                     onChange={e => changeNameShare(e,id)}
                     type="text"
@@ -49,7 +54,7 @@ const ShareOfCompaniesComponent = (props) => {
 
                 <div className="col-sm-2 flex-div">
                   <input
-                    value={x.share}
+                    value={x.Y}
                     name="share"
                     onChange={e => changeNameShare(e, id)}
                     type="text"
