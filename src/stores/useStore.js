@@ -242,7 +242,7 @@ const store = (set, get) => ({
         ceoWarn: '',
         countryOfOperation: ''
     },
-    directorList: [],
+    directorList: ["fr", "aze"],
     representativeList: [],
     financialData: {
         active: '',
