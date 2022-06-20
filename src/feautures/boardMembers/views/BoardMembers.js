@@ -15,6 +15,7 @@ const BoardMembers = () => {
 
     useEffect(()=>{
         getDirectors();
+        console.log("check");
     }, [getDirectors]);
 
     useEffect(()=>{
