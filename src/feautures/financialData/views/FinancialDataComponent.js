@@ -28,7 +28,6 @@ const FinancialDataComponent = (props) => {
     if(props.dividend2 !== props.dividend2Warn){
         colorD2 = true;
     }
-    console.log(props.active);
     return (
         <main className="content">
             <div className="content-header">
@@ -53,7 +52,6 @@ const FinancialDataComponent = (props) => {
                             value={props.active}
                             onChange={e => props.setActive(e.target.value)}
                         />
-                        <span className="col-sm-1">AZN</span>
                     </div>
                 </div>
                 <div className="form-group row">
@@ -71,7 +69,6 @@ const FinancialDataComponent = (props) => {
                             onChange={(e) => props.setCapital(e.target.value)}
                             id="capital"
                         />
-                        <span className="col-sm-1">AZN</span>
                     </div>
                 </div>
                 <div className="form-group row">
@@ -86,7 +83,6 @@ const FinancialDataComponent = (props) => {
                             onChange={(e) => props.setLiability(e.target.value)}
                             id="liability"
                         />
-                        <span className="col-sm-1">AZN</span>
                     </div>
                 </div>
                 <div className="form-group row">
@@ -104,7 +100,6 @@ const FinancialDataComponent = (props) => {
                             onChange={(e) => props.setEBITDA(e.target.value)}
                             id="ebitda"
                         />
-                        <span className="col-sm-1">AZN</span>
                     </div>
                 </div>
                 <div className="form-group row">
@@ -119,7 +114,6 @@ const FinancialDataComponent = (props) => {
                             onChange={(e) => props.setLoss(e.target.value)}
                             id="loss"
                         />
-                        <span className="col-sm-1">AZN</span>
                     </div>
                 </div>
                 <div className="form-group row">
@@ -137,7 +131,6 @@ const FinancialDataComponent = (props) => {
                             id="incometax"
                             value={props.incomeTax}
                         />
-                        <span className="col-sm-1">AZN</span>
                     </div>
                 </div>
                 <div className="form-group row">
@@ -155,7 +148,6 @@ const FinancialDataComponent = (props) => {
                             id="propertytax"
                             value={props.propertyTax}
                         />
-                        <span className="col-sm-1">AZN</span>
                     </div>
                 </div>
                 <div className="form-group row">
@@ -173,7 +165,6 @@ const FinancialDataComponent = (props) => {
                             id="dividend1"
                             value={props.dividend1}
                         />
-                        <span className="col-sm-1">AZN</span>
                     </div>
                 </div>
                 <div className="form-group row">
@@ -191,7 +182,6 @@ const FinancialDataComponent = (props) => {
                             id="dividend2"
                             value={props.dividend2}
                         />
-                        <span className="col-sm-1">AZN</span>
                     </div>
                 </div>
                 <div className="form-group row">

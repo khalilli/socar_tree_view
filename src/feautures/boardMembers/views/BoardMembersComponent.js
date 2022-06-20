@@ -28,7 +28,8 @@ const BoardMembersComponent = props => {
         setNamesR([...namesR, {repname: ""}]);
     };
     console.log(names);
-    const deleteName = (id) => {
+    const deleteName = (id, e) => {
+      e.preventDefault();
       console.log(id);
         // const list = [...names];  
         // list.splice(id, 1);
@@ -71,7 +72,7 @@ const BoardMembersComponent = props => {
                       />
                       {/* <span className="delete-span">x</span> */}
                     </span>
-                    <button className="removebtn" onClick={(id) => deleteName(id)}>
+                    <button className="removebtn" onClick={(id, e) => deleteName(id, e)}>
                       x
                     </button>
                   </div>
