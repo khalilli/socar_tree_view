@@ -90,7 +90,6 @@ const handleGetDirectors = async (set, get) => {
         let data = response.data;
         data.pop();
         data = data.map(x=>({dirname: x.DIREKTOR}));
-        //console.log(data);
         set({
             directorList: data,
         })
@@ -104,7 +103,6 @@ const handleGetRepresentatives = async (set, get) => {
         let data = response.data;
         data.pop();
         data = data.map(x=>({repname: x.UMUMIYIGINCAQ}));
-        //console.log(data);
         set({
             representativeList: data,
         })
@@ -212,7 +210,7 @@ const handleGetCompanyShares = async (set, get) => {
     let params = new URLSearchParams(window.location.search);
     let key = parseInt(params.get("key")); 
     if(!Number.isNaN(key)){
-        const response = await axios.get("http://192.168.14.33/otcs/llisapi.dll?func=ll&objId=128820&objAction=RunReport&key"+key);
+        const response = await axios.get("http://192.168.14.33/otcs/llisapi.dll?func=ll&objId=128820&objAction=RunReport&key="+key);
         const dataShare = response.data;
         const dataName = response.data;
         dataShare.pop();
