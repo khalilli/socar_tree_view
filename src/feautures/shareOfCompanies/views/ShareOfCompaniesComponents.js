@@ -19,9 +19,9 @@ const ShareOfCompaniesComponent = (props) => {
   }
   const deleteNameShare = (id) => {
     console.log(id);
-    // const list = [...companyNameShare];
-    // list.splice(id, 1);
-    // setCompanyNameShare(list);
+    const list = [...companyNameShare];
+    list.splice(id, 1);
+    setCompanyNameShare(list);
   }
   const inputName = [];
   for (var i=0; i<companyNameShare.length; i++){

@@ -17,7 +17,8 @@ const CompanyDetailsComponent = props => {
     if (props.companyCEO !== props.CEOWarn){
         colorC = true;
     }
-    console.log(props.companyShare);
+    console.log(props.companyName, "and", props.nameWarn, "and color is", color);
+    console.log(props.companyShare, "and", props.shareWarn, "and color is", colorSh)
     return (
         <main className="content">
             <div className="content-header">
