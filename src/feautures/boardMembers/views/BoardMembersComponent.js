@@ -10,7 +10,7 @@ const BoardMembersComponent = props => {
     for(var i=0;i<props.directorList.length;i++){
       names.push({dirname: props.directorList[i]});
     }
-    
+    console.log(names);
     for(var j=0;j<props.representativeList.length;j++){
       namesR.push({repname: props.representativeList[j]});
     }
