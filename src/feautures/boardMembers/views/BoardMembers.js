@@ -21,8 +21,8 @@ const BoardMembers = () => {
         getRepresentatives();
     }, [getRepresentatives]);
 
-    const directorListName = directorList.map(item => ({dirname: item}))
-
+    const directorListName = directorList.map(item => ({dirname: item}));
+    console.log(directorListName);
     const args = {
         directorListName,
         representativeList,  
