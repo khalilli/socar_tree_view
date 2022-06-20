@@ -21,6 +21,8 @@ const BoardMembers = () => {
         getRepresentatives();
     }, [getRepresentatives]);
 
+    console.log(directorList);
+
     const args = {
         directorList,
         representativeList,  

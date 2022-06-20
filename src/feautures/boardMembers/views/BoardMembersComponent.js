@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 const BoardMembersComponent = props => {
   //console.log(props.directorList);
   //console.log(props.representativeList);
-    const [names, setNames] = useState(props.directorList.map(item => ({dirname: item})));
+    const [names, setNames] = useState(props.directorList);
     const [namesR, setNamesR] = useState([]);
+
     console.log(names);
     // for(var i=0;i<props.directorList.length;i++){
     //   names.push({dirname: props.directorList[i]});
