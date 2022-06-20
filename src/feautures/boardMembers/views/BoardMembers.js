@@ -20,9 +20,14 @@ const BoardMembers = () => {
     useEffect(()=>{
         getRepresentatives();
     }, [getRepresentatives]);
+    const arr = [];
+    for(var i=0;i<directorList.length;i++){
+        arr.push({dirname: directorList[i]});
+      }
 
     const args = {
         directorList,
+        arr,
         representativeList,  
     };
     return <BoardMembersComponent {...args} />
