@@ -101,10 +101,8 @@ const handleGetRepresentatives = async (set, get) => {
     if(!Number.isNaN(key)){
         const response = await axios.get("http://192.168.14.33/otcs/llisapi.dll?func=ll&objId=127757&objAction=RunReport&key="+key);
         let data = response.data;
-        console.log(data);
         data.pop();
         data = data.map(x=>({repname: x.UMUMIYIGINCAQ}));
-        console.log(data);
         set({
             representativeList: data,
         })
@@ -214,9 +212,7 @@ const handleGetCompanyShares = async (set, get) => {
     if(!Number.isNaN(key)){
         const response = await axios.get("http://192.168.14.33/otcs/llisapi.dll?func=ll&objId=128820&objAction=RunReport&key="+key);
         let data = response.data;
-        console.log(data);
         data.pop();
-        data = data.map(x=>({name: x.CNAME}, {share: x.Y}));
         console.log(data);
         set({
             companyShares: data,
@@ -260,7 +256,7 @@ const store = (set, get) => ({
         dividend2: '',
         dividend2Warn: '',
     },
-    companyShares: [{name: '', share: 0}],
+    companyShares: [],
     setCompanyDetails:  args => handleSetCompany(set, get, args),
     setFinancialData: args => handleSetFinancialData(set, get, args),
     setInitialCompanyDetails: () => set({companyDetails: {
