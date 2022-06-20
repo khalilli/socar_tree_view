@@ -71,7 +71,7 @@ const BoardMembersComponent = props => {
                       />
                       {/* <span className="delete-span">x</span> */}
                     </span>
-                    <button className="removebtn" onClick={deleteName}>
+                    <button className="removebtn" onClick={(id) => deleteName(id)}>
                       x
                     </button>
                   </div>
