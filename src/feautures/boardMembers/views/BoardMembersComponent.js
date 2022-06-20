@@ -4,11 +4,11 @@ const BoardMembersComponent = props => {
   console.log(props.directorList);
   console.log(props.representativeList);
     const [names, setNames] = useState([]);
+    const [namesR, setNamesR] = useState([]);
+    
     for(var i=0;i<props.directorList.length;i++){
       names.push({dirname: props.directorList[i]});
     }
-
-    const [namesR, setNamesR] = useState([]);
     for(var j=0;j<props.representativeList.length;j++){
       namesR.push({repname: props.representativeList[j]});
     }
@@ -22,9 +22,9 @@ const BoardMembersComponent = props => {
         valuesR[id][event.target.name] = event.target.value;
         setNamesR(valuesR);
     };
-    const addName = useCallback(() => {
+    const addName = () => {
         setNames([...names, {dirname: ""}]);
-    }, [names]);
+    };
     const addNameR = () => {
         setNamesR([...namesR, {repname: ""}]);
     };

@@ -15,10 +15,12 @@ const BoardMembers = () => {
 
     useEffect(()=>{
         getDirectors();
+        console.log("check1");
     }, [getDirectors]);
 
     useEffect(()=>{
         getRepresentatives();
+        console.log("check2");
     }, [getRepresentatives]);
 
     const args = {
