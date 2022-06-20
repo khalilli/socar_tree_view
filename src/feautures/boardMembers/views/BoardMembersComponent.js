@@ -21,9 +21,11 @@ const BoardMembersComponent = props => {
     };
     const addName = () => {
         setNames([...names, {dirname: ""}]);
+        console.log("director added");
     };
     const addNameR = () => {
         setNamesR([...namesR, {repname: ""}]);
+        console.log("rep added");
     };
     const deleteName = (id) => {
         const list = [...names];  
