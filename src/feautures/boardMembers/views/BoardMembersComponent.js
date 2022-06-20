@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import PropTypes from 'prop-types';
 const BoardMembersComponent = props => {
   console.log(props.directorList);
   console.log(props.representativeList);
-  console.log("render time");
     const [names, setNames] = useState([]);
     for(var i=0;i<props.directorList.length;i++){
       names.push({dirname: props.directorList[i]});
@@ -23,9 +22,9 @@ const BoardMembersComponent = props => {
         valuesR[id][event.target.name] = event.target.value;
         setNamesR(valuesR);
     };
-    const addName = () => {
+    const addName = useCallback(() => {
         setNames([...names, {dirname: ""}]);
-    };
+    }, [names]);
     const addNameR = () => {
         setNamesR([...namesR, {repname: ""}]);
     };
