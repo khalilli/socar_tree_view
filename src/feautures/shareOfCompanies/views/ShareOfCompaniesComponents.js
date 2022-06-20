@@ -2,7 +2,6 @@ import {useState} from 'react';
 import PropTypes from 'prop-types';
 const ShareOfCompaniesComponent = (props) => {
   const [companyNameShare, setCompanyNameShare] = useState(props.companyShares);
-  console.log(companyNameShare);
   const changeNameShare = (e, id) => {
     const values = [...companyNameShare];
     values[id][e.target.name] = e.target.value;
