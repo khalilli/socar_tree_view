@@ -89,7 +89,7 @@ const handleGetDirectors = async (set, get) => {
         const response = await axios.get("http://192.168.14.33/otcs/llisapi.dll?func=ll&objId=128822&objAction=RunReport&key="+key);
         let data = response.data;
         data.pop();
-        data = data.map(x=>x.DIREKTOR);
+        data = data.map(x=>({dirname: x.DIREKTOR}));
         console.log(data);
         set({
             directorList: data,
@@ -103,7 +103,7 @@ const handleGetRepresentatives = async (set, get) => {
         const response = await axios.get("http://192.168.14.33/otcs/llisapi.dll?func=ll&objId=127757&objAction=RunReport&key="+key);
         let data = response.data;
         data.pop();
-        data = data.map(x=>({dirname: x.UMUMIYIGINCAQ}));
+        data = data.map(x=>({repname: x.UMUMIYIGINCAQ}));
         console.log(data);
         set({
             representativeList: data,
