@@ -8,10 +8,10 @@ const CompanyDetailsComponent = props => {
     if (props.companySegment !== props.segmentWarn){
         colorS = true;
     }
-    if (props.companyShare !== props.shareWarn){
+    if (props.companyShare.toString() !== props.shareWarn){
         colorSh = true;
     }
-    if (props.companyNumberOfEmployees !== props.numberOfEmployeesWarn){
+    if (props.companyNumberOfEmployees.toString() !== props.numberOfEmployeesWarn){
         colorEmp = true;
     }
     if (props.companyCEO !== props.CEOWarn){
