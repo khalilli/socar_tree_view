@@ -21,8 +21,13 @@ const BoardMembers = () => {
         getRepresentatives();
     }, [getRepresentatives]);
     
+    const directorListName = [];
+    for(var i=0;i<directorList.length;i++){
+        directorListName.push({dirname: directorList[i]});
+      }
     const args = {
         directorList,
+        directorListName,
         representativeList,  
     };
     return <BoardMembersComponent {...args} />
