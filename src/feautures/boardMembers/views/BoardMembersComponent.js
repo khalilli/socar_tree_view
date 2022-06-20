@@ -9,6 +9,9 @@ const BoardMembersComponent = props => {
     useEffect(() => {
       setNames(props.directorList);
     }, [props.directorList]);
+    useEffect(() => {
+      setNames(props.representativeList);
+    }, [props.representativeList]);
     // for(var i=0;i<props.directorList.length;i++){
     //   names.push({dirname: props.directorList[i]});
     // }
