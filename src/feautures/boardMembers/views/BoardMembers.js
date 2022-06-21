@@ -63,6 +63,7 @@ const BoardMembers = () => {
        setNamesR(list);
     };
     console.log(names);
+    console.log(namesR);
     const args = {
         names,
         namesR,

@@ -40,7 +40,6 @@ const BoardMembersComponent = props => {
     //   console.log(id);
     //   setNamesR(list);
     // };
-    console.log(props.names);
     return (
       <main className="content">
         <div className="content-header">
