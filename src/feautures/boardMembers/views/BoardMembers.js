@@ -75,16 +75,14 @@ const BoardMembers = () => {
         addNameR,
         deleteName,
         deleteNameR,
-        onSubmitForm: async (set, get) => {
-            const directorList = get().directorList;
-            const representativeList = get().representativeList;
-            console.log(directorList);
-            console.log(representativeList);
+        onSubmitForm: () => {
+            console.log(names);
+            console.log(namesR);
             const args = {
-                directorList,
-                representativeList,
+                directorList: names,
+                representativeList: namesR,
             };
-            await initiateWorkflow(args);
+            initiateWorkflow(args);
         }
     };
     return <BoardMembersComponent {...args} />
