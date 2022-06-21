@@ -48,19 +48,17 @@ const handleSetCompany = (set, get, args) => {
 }
 const handleInitiateWorkflow = async (set, get) => {
     const companyDetails = get().companyDetails;
-    const directorList = get().directorList;
-    const representativeList = get().representativeList;
+    // const directorList = get().directorList;
+    // const representativeList = get().representativeList;
     const financialData = get().financialData;
-    console.log(companyDetails.name);
-    console.log(directorList);
     const args = {
         cname: companyDetails.name,
         segment: companyDetails.segment,
         share: companyDetails.share,
         numberOfEmployees: companyDetails.numberOfEmployees,
         ceo: companyDetails.ceo,
-        directorList,
-        representativeList,
+        //directorList,
+        //representativeList,
         active: financialData.active,
         capital: financialData.capital,
         liability: financialData.liability,

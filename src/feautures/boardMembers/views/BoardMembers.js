@@ -1,6 +1,8 @@
 import BoardMembersComponent from "./BoardMembersComponent";
 import useStore from '../../../stores/useStore';
 import shallow from 'zustand/shallow';
+import initiateWorkflow from "../../api/initiateWorkflow";
+import axios from 'axios';
 import { useEffect, useState } from "react";
 
 const getState = state => [
@@ -73,8 +75,16 @@ const BoardMembers = () => {
         addNameR,
         deleteName,
         deleteNameR,
-        onSubmitForm: () => {
-            initWorkflow();
+        onSubmitForm: async (set, get) => {
+            const directorList = get().directorList;
+            const representativeList = get().representativeList;
+            console.log(directorList);
+            console.log(representativeList);
+            const args = {
+                directorList,
+                representativeList,
+            };
+            await initiateWorkflow(args);
         }
     };
     return <BoardMembersComponent {...args} />
