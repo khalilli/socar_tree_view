@@ -11,6 +11,7 @@ const BoardMembersComponent = props => {
       setNamesR(props.representativeList);
     }, [props.representativeList]);
 
+    console.log(names);
     const handleChangeDirectors = (event, id) => {
         const values = [...names];
         values[id][event.target.name] = event.target.value;
@@ -135,7 +136,7 @@ const BoardMembersComponent = props => {
           </div>
           <div className="form-group row">
             <div className="col-sm-12 button-right">
-              <button type="button" className="btn-save">
+              <button type="button" className="btn-save" onClick={props.onSubmitForm}>
                 Send
               </button>
               <button type="button" className="btn-reset">

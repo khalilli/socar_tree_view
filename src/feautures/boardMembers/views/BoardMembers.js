@@ -7,11 +7,12 @@ const getState = state => [
     state.directorList,
     state.getDirectors,
     state.representativeList,
-    state.getRepresentatives
+    state.getRepresentatives,
+    state.initWorkflow
 ];
 
 const BoardMembers = () => {
-    const [directorList, getDirectors, representativeList, getRepresentatives] = useStore(getState, shallow);
+    const [directorList, getDirectors, representativeList, getRepresentatives, initWorkflow] = useStore(getState, shallow);
 
     useEffect(()=>{
         getDirectors();
@@ -20,10 +21,13 @@ const BoardMembers = () => {
     useEffect(()=>{
         getRepresentatives();
     }, [getRepresentatives]);
-
+    console.log(directorList);
     const args = {
         directorList,
         representativeList,  
+        onSubmitForm: () => {
+            initWorkflow();
+        }
     };
     return <BoardMembersComponent {...args} />
 }
