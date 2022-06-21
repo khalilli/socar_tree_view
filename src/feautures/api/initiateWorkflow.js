@@ -11,6 +11,15 @@ const initiateWorkflow = async (args) => {
     args.share && data.append("share", args.share);
     args.numberOfEmployees && data.append("numberOfEmployees", args.numberOfEmployees);
     args.ceo && data.append("ceo", args.ceo);
+    args.active && data.append("active", args.active);
+    args.capital && data.append("capital", args.capital);
+    args.liability && data.append("liability", args.liability);
+    args.ebitda && data.append("ebitda", args.ebitda);
+    args.loss && data.append("loss", args.loss);
+    args.incometax && data.append("incometax", args.incometax);
+    args.propertytax && data.append("propertytax", args.propertytax);
+    args.dividend1 && data.append("dividend1", args.dividend1);
+    args.dividend2 && data.append("dividend2", args.dividend2);
     data.append("nextUrl", window.nextUrl);
 
     const config = {
