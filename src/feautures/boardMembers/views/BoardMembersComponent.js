@@ -1,47 +1,46 @@
 import { useState, useEffect } from "react";
 import PropTypes from 'prop-types';
 const BoardMembersComponent = props => {
-    const [names, setNames] = useState(props.directorList);
-    const [namesR, setNamesR] = useState(props.representativeList);
+    // const [names, setNames] = useState(props.directorList);
+    // const [namesR, setNamesR] = useState(props.representativeList);
 
-    useEffect(() => {
-      setNames(props.directorList);
-    }, [props.directorList]);
-    useEffect(() => {
-      setNamesR(props.representativeList);
-    }, [props.representativeList]);
+    // useEffect(() => {
+    //   setNames(props.directorList);
+    // }, [props.directorList]);
+    // useEffect(() => {
+    //   setNamesR(props.representativeList);
+    // }, [props.representativeList]);
 
-    console.log(names);
-    const handleChangeDirectors = (event, id) => {
-        const values = [...names];
-        values[id][event.target.name] = event.target.value;
-        setNames(values);
-    };
-    const handleChangeRep = (event, id) => {
-        const valuesR = [...namesR];
-        valuesR[id][event.target.name] = event.target.value;
-        setNamesR(valuesR);
-    };
-    const addName = () => {
-        setNames([...names, {dirname: ""}]);
-    };
-    const addNameR = () => {
-        setNamesR([...namesR, {repname: ""}]);
-    };
-    console.log(names);
-    const deleteName = (id, e) => {
-      e.preventDefault();
-      console.log(id);
-        // const list = [...names];  
-        // list.splice(id, 1);
-        // setNames(list);
-    };
-    const deleteNameR = (id) => {
-        const list = [...namesR];
-        list.splice(id, 1);
-        console.log(id);
-        setNamesR(list);
-    };
+    // const handleChangeDirectors = (event, id) => {
+    //   const values = [...names];
+    //   values[id][event.target.name] = event.target.value;
+    //   setNames(values);
+    // };
+    // const handleChangeRep = (event, id) => {
+    //   const valuesR = [...namesR];
+    //   valuesR[id][event.target.name] = event.target.value;
+    //   setNamesR(valuesR);
+    // };
+    // const addName = () => {
+    //   setNames([...names, {dirname: ""}]);
+    // };
+    // const addNameR = () => {
+    //   setNamesR([...namesR, {repname: ""}]);
+    // };
+    // const deleteName = (id, e) => {
+    //   e.preventDefault();
+    //   const list = [...names];  
+    //   list.splice(id, 1);
+    //   setNames(list);
+    // };
+    // const deleteNameR = (id) => {
+    //   e.preventDefault();
+    //   const list = [...namesR];
+    //   list.splice(id, 1);
+    //   console.log(id);
+    //   setNamesR(list);
+    // };
+    console.log(props.names);
     return (
       <main className="content">
         <div className="content-header">
@@ -59,21 +58,21 @@ const BoardMembersComponent = props => {
               >
                 Direktorlar şurasının üzvləri
               </label>
-              {names.map((x, id) => {
+              {props.names.map((x, id) => {
                 return (
                   <div className="col-sm-8" key={id}>
                     <span className="deleteicon deleteicon-boardmembers">
                       <input
                         name="dirname"
                         value={x.dirname}
-                        onChange={(e) => handleChangeDirectors(e, id)}
+                        onChange={(e) => props.handleChangeDirectors(e, id)}
                         type="text"
                         className="form-control margin-bottom"
                         id="companyDir"
                       />
                       {/* <span className="delete-span">x</span> */}
                     </span>
-                    <button className="removebtn" onClick={(id, e) => deleteName(id, e)}>
+                    <button className="removebtn" onClick={(id, e) => props.deleteName(id, e)}>
                       x
                     </button>
                   </div>
@@ -84,7 +83,7 @@ const BoardMembersComponent = props => {
                 type="button"
                 className="col-sm-2 add-button"
                 id="add-member"
-                onClick={addName}
+                onClick={props.addName}
               >
                 Add
                 <i
@@ -100,7 +99,7 @@ const BoardMembersComponent = props => {
               >
                 Ümumi yığıncaqda təmsilçilər
               </label>
-              {namesR.map((x, id) => {
+              {props.namesR.map((x, id) => {
                 return (
                   <div className="col-sm-8" key={id}>
                     <span className="deleteicon deleteicon-boardmembers">
@@ -109,12 +108,12 @@ const BoardMembersComponent = props => {
                         value={x.repname}
                         type="text"
                         className="form-control margin-bottom"
-                        onChange={(e) => handleChangeRep(e, id)}
+                        onChange={(e) => props.handleChangeRep(e, id)}
                         id="companyRep"
                       />
                       {/* <span className="delete-span">x</span> */}
                     </span>
-                    <button className="removebtn" onClick={() => deleteNameR(id)}>
+                    <button className="removebtn" onClick={(id, e) => props.deleteNameR(id, e)}>
                       x
                     </button>
                   </div>
@@ -124,7 +123,7 @@ const BoardMembersComponent = props => {
                 type="button"
                 className="col-sm-2 add-button"
                 id="add-member"
-                onClick={addNameR}
+                onClick={props.addNameR}
               >
                 Add
                 <i
