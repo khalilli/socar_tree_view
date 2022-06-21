@@ -1,45 +1,6 @@
 import { useState, useEffect } from "react";
 import PropTypes from 'prop-types';
 const BoardMembersComponent = props => {
-    // const [names, setNames] = useState(props.directorList);
-    // const [namesR, setNamesR] = useState(props.representativeList);
-
-    // useEffect(() => {
-    //   setNames(props.directorList);
-    // }, [props.directorList]);
-    // useEffect(() => {
-    //   setNamesR(props.representativeList);
-    // }, [props.representativeList]);
-
-    // const handleChangeDirectors = (event, id) => {
-    //   const values = [...names];
-    //   values[id][event.target.name] = event.target.value;
-    //   setNames(values);
-    // };
-    // const handleChangeRep = (event, id) => {
-    //   const valuesR = [...namesR];
-    //   valuesR[id][event.target.name] = event.target.value;
-    //   setNamesR(valuesR);
-    // };
-    // const addName = () => {
-    //   setNames([...names, {dirname: ""}]);
-    // };
-    // const addNameR = () => {
-    //   setNamesR([...namesR, {repname: ""}]);
-    // };
-    // const deleteName = (id, e) => {
-    //   e.preventDefault();
-    //   const list = [...names];  
-    //   list.splice(id, 1);
-    //   setNames(list);
-    // };
-    // const deleteNameR = (id) => {
-    //   e.preventDefault();
-    //   const list = [...namesR];
-    //   list.splice(id, 1);
-    //   console.log(id);
-    //   setNamesR(list);
-    // };
     return (
       <main className="content">
         <div className="content-header">
