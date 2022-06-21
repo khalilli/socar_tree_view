@@ -7,10 +7,11 @@ const getState = state => [
     state.financialData,
     state.setFinancialData,
     state.setInitialFinancialData,
+    state.initWorkflow,
     state.getFinancialData
 ];
 const FinancialData = () => {
-    const [financialData, setFinancialData, setInitialFinancialData, getFinancialData] = useStore(getState, shallow);
+    const [financialData, setFinancialData, setInitialFinancialData, initWorkflow, getFinancialData] = useStore(getState, shallow);
     useEffect(() => {
       getFinancialData();
     }, []);
@@ -62,8 +63,10 @@ const FinancialData = () => {
         },
         reset: () => {
             setInitialFinancialData();
+        },
+        onSubmitForm: () => {
+            initWorkflow();
         }
-
     }
     return <FinancialDataComponent {...args} />;
 }

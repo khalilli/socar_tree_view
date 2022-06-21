@@ -186,7 +186,7 @@ const FinancialDataComponent = (props) => {
                 </div>
                 <div className="form-group row">
                     <div className="col-sm-12 button-right">
-                        <button type="button" className="btn-save">
+                        <button type="button" className="btn-save" onClick={props.onSubmitForm}>
                             Send
                         </button>
                         <button type="button" className="btn-reset" onClick={props.reset}>
