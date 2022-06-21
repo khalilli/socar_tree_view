@@ -48,8 +48,6 @@ const handleSetCompany = (set, get, args) => {
 }
 const handleInitiateWorkflow = async (set, get) => {
     const companyDetails = get().companyDetails;
-    // const directorList = get().directorList;
-    // const representativeList = get().representativeList;
     const financialData = get().financialData;
     const args = {
         cname: companyDetails.name,
@@ -57,8 +55,6 @@ const handleInitiateWorkflow = async (set, get) => {
         share: companyDetails.share,
         numberOfEmployees: companyDetails.numberOfEmployees,
         ceo: companyDetails.ceo,
-        //directorList,
-        //representativeList,
         active: financialData.active,
         capital: financialData.capital,
         liability: financialData.liability,
