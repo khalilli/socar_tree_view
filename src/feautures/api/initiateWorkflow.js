@@ -25,7 +25,7 @@ const initiateWorkflow = async (args) => {
     //args.companyName && data.append("companyName", args.companyName);
     args.nameLength && data.append("nameLength", args.nameLength);
     for(var i=0; i<args.nameLength; i++){
-      args.companyName[i] && data.append("companyName", args.companyName[i]);
+      args.companyName[i] && data.append("companyName"+[i], args.companyName[i]);
       console.log(args.companyName[i]);
     }
     args.companyShare && data.append("companyShare", args.companyShare);
