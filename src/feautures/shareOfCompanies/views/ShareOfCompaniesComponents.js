@@ -1,31 +1,7 @@
-import {useState, useEffect} from 'react';
-import PropTypes from 'prop-types';
 const ShareOfCompaniesComponent = (props) => {
-  const [companyNameShare, setCompanyNameShare] = useState(props.companyShares);
-
-  useEffect(() => {
-    setCompanyNameShare(props.companyShares);
-  }, [props.companyShares]);
-
-  console.log(companyNameShare);
-
-  const changeNameShare = (e, id) => {
-    const values = [...companyNameShare];
-    values[id][e.target.name] = e.target.value;
-    setCompanyNameShare(values);
-  }
-  const addShare = () => {
-    setCompanyNameShare([...companyNameShare, {Y: "", CNAME: ""}]);
-  }
-  const deleteNameShare = (id) => {
-    console.log(id);
-    const list = [...companyNameShare];
-    list.splice(id, 1);
-    setCompanyNameShare(list);
-  }
   const inputName = [];
-  for (var i=0; i<companyNameShare.length; i++){
-    if(companyNameShare[i].CNAME.length === 0){
+  for (var i=0; i<props.companyNameShare.length; i++){
+    if(props.companyNameShare[i].CNAME.length === 0){
       inputName.push(i);
     }
   }
@@ -38,14 +14,14 @@ const ShareOfCompaniesComponent = (props) => {
           </button>
         </div>
         <form className="content-form">
-        {companyNameShare.map((x, id) => {
+        {props.companyNameShare.map((x, id) => {
             return (
               <div className="form-group row" key={id}>
                 <div className="col-sm-2 flex-div">
                   <input
                     value={x.CNAME}
                     name="CNAME"
-                    onChange={e => changeNameShare(e,id)}
+                    onChange={e => props.changeNameShare(e,id)}
                     type="text"
                     className={inputName.includes(id) ? 'form-control' : 'form-label'}
                     id="company"
@@ -56,7 +32,7 @@ const ShareOfCompaniesComponent = (props) => {
                   <input
                     value={x.Y}
                     name="Y"
-                    onChange={e => changeNameShare(e, id)}
+                    onChange={e => props.changeNameShare(e, id)}
                     type="text"
                     className="form-control"
                     id="company"
@@ -64,7 +40,7 @@ const ShareOfCompaniesComponent = (props) => {
                   <span className="col-sm-1">
                     <i className="fa-solid fa-percent"></i>
                   </span>
-                  <button className="removebtn1" onClick={() => deleteNameShare(id)}>
+                  <button className="removebtn1" onClick={() => props.deleteNameShare(id)}>
                     x
                   </button>
                 </div>
@@ -77,7 +53,7 @@ const ShareOfCompaniesComponent = (props) => {
                 type="button"
                 className="col-sm-1 add-button"
                 id="add-member"
-                onClick={addShare}
+                onClick={props.addShare}
               >
                 Add
                 <i
@@ -101,8 +77,5 @@ const ShareOfCompaniesComponent = (props) => {
       </main>
     );
 };
-// ShareOfCompaniesComponent.propTypes = {
-//   companyShares: PropTypes.array,
-// };
 
 export default ShareOfCompaniesComponent;

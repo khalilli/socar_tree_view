@@ -2,7 +2,6 @@ import BoardMembersComponent from "./BoardMembersComponent";
 import useStore from '../../../stores/useStore';
 import shallow from 'zustand/shallow';
 import initiateWorkflow from "../../api/initiateWorkflow";
-import axios from 'axios';
 import { useEffect, useState } from "react";
 
 const getState = state => [
