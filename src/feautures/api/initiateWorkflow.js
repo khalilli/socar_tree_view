@@ -4,7 +4,8 @@ const initiateWorkflow = async (args) => {
     const data = new FormData();
     console.log(args.directorList);
     console.log(args.representativeList);
-    console.log(args.companyShares);
+    console.log(args.companyName);
+    console.log(args.companyShare);
     data.append('func', 'll');
     data.append("objId", window.initiateWorkflowId);
     data.append("objAction", "RunReport");
@@ -25,7 +26,8 @@ const initiateWorkflow = async (args) => {
     args.propertytax && data.append("propertytax", args.propertytax);
     args.dividend1 && data.append("dividend1", args.dividend1);
     args.dividend2 && data.append("dividend2", args.dividend2);
-    args.companyShares && data.append("companyShares", args.companyShares);
+    args.companyName && data.append("companyName", args.companyName);
+    args.companyShare && data.append("companyShare", args.companyShare);
     data.append("nextUrl", window.nextUrl);
 
     const config = {

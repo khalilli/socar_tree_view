@@ -39,6 +39,14 @@ const ShareOfCompanies = () => {
       setCompanyNameShare(list);
     }
 
+    //remove keys of array to fit tags
+    const cname = [];
+    const cshare = [];
+    for (var i=0; i<companyNameShare.length; i++){
+        cname.push(companyNameShare[i].CNAME);
+        cshare.push(companyNameShare[i].Y);
+    }
+
     const args = {
         companyNameShare,
         companySharesWarn,
@@ -47,7 +55,8 @@ const ShareOfCompanies = () => {
         deleteNameShare,
         onSubmitForm: () => {
             const args = {
-                companyShares: companyNameShare
+                companyName: cname,
+                companyShare: cshare,
             };
             initiateWorkflow(args);
         }
