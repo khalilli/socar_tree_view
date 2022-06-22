@@ -64,8 +64,15 @@ const BoardMembers = () => {
        console.log(id);
        setNamesR(list);
     };
-    console.log(names);
-    console.log(namesR);
+    //remove keys for tag
+    const namesValue = [];
+    const namesRValue = [];
+    for (var i=0;i<names.length;i++){
+        namesValue.push(names[i].dirname);
+    }
+    for (var j=0;j<namesR.length;j++){
+        namesRValue.push(namesR[j].repname);
+    }
     const args = {
         names,
         namesR,
@@ -77,9 +84,9 @@ const BoardMembers = () => {
         deleteNameR,
         onSubmitForm: () => {
             const args = {
-                directorList: names,
+                directorList: namesValue,
                 directorListLength: names.length,
-                representativeList: namesR,
+                representativeList: namesRValue,
                 representativeListLength: namesR.length,
             };
             initiateWorkflow(args);

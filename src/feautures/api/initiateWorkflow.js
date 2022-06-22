@@ -3,8 +3,7 @@ import axios from "axios";
 const initiateWorkflow = async (args) => {
     const data = new FormData();
     console.log(args.directorList);
-    console.log(args.directorListLength);
-    console.log(args.representativeListLength);
+    console.log(args.representativeList);
     data.append('func', 'll');
     data.append("objId", window.initiateWorkflowId);
     data.append("objAction", "RunReport");
