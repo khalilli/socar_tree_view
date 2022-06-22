@@ -76,11 +76,11 @@ const BoardMembers = () => {
         deleteName,
         deleteNameR,
         onSubmitForm: () => {
-            console.log(names);
-            console.log(namesR);
             const args = {
                 directorList: names,
+                directorListLength: names.length,
                 representativeList: namesR,
+                representativeListLength: namesR.length,
             };
             initiateWorkflow(args);
         }
