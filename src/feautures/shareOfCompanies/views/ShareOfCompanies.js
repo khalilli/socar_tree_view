@@ -44,7 +44,7 @@ const ShareOfCompanies = () => {
     const cshare = [];
     for (var i=0; i<companyNameShare.length; i++){
         cname.push(companyNameShare[i].CNAME);
-        cshare.push(companyNameShare[i].Y);
+        cshare.push(parseInt(companyNameShare[i].Y));
     }
 
     const args = {
