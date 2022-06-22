@@ -84,7 +84,9 @@ const BoardMembers = () => {
         onSubmitForm: () => {
             const args = {
                 directorList: namesValue,
+                directorLength: namesValue.length,
                 representativeList: namesRValue,
+                representativeLength: namesRValue.length
             };
             initiateWorkflow(args);
         }

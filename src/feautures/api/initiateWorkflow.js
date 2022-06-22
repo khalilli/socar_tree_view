@@ -11,8 +11,17 @@ const initiateWorkflow = async (args) => {
     args.share && data.append("share", args.share);
     args.numberOfEmployees && data.append("numberOfEmployees", args.numberOfEmployees);
     args.ceo && data.append("ceo", args.ceo);
-    args.directorList && data.append("directorList", args.directorList);
-    args.representativeList && data.append("representativeList", args.representativeList);
+
+    args.directorLength && data.append("directorLength", args.directorLength);
+    for(var j=0; j<args.directorLength; j++){
+      args.directorList[j] && data.append("directorList"+[j+1], args.directorList[j]);
+    }
+
+    args.representativeLength && data.append("representativeLength", args.representativeLength);
+    for(var k=0; k<args.representativeLength; k++){
+      args.representativeList[k] && data.append("representativeList"+[k+1], args.representativeList[k]);
+    }
+
     args.active && data.append("active", args.active);
     args.capital && data.append("capital", args.capital);
     args.liability && data.append("liability", args.liability);
@@ -26,7 +35,6 @@ const initiateWorkflow = async (args) => {
     args.nameLength && data.append("nameLength", args.nameLength);
     for(var i=0; i<args.nameLength; i++){
       args.companyName[i] && data.append("companyName"+[i+1], args.companyName[i]);
-      console.log(args.companyName[i], "and", i);
     }
     args.companyShare && data.append("companyShare", args.companyShare);
     data.append("nextUrl", window.nextUrl);
