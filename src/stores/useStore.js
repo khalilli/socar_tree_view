@@ -263,6 +263,7 @@ const store = (set, get) => ({
         dividend2Warn: '',
     },
     companyShares: [],
+    companySharesWarn: [],
     setCompanyDetails:  args => handleSetCompany(set, get, args),
     setFinancialData: args => handleSetFinancialData(set, get, args),
     setInitialCompanyDetails: () => set({companyDetails: {
