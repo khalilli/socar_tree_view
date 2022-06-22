@@ -11,6 +11,8 @@ const ShareOfCompaniesComponent = (props) => {
     if (parseInt(props.companyNameShare[j].Y) !== props.companySharesWarn[j].Y){
       color = true;
       colorKey = j;
+      console.log(props.companyNameShare[j].Y);
+      console.log(props.companySharesWarn[j].Y);
       console.log(j);
     }
   }

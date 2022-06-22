@@ -22,8 +22,6 @@ const ShareOfCompanies = () => {
       setCompanyNameShare(companyShares);
     }, [companyShares]);
   
-    console.log(companyNameShare);
-  
     const changeNameShare = (e, id) => {
       const values = [...companyNameShare];
       values[id][e.target.name] = e.target.value;
