@@ -219,7 +219,6 @@ const handleGetCompanyShares = async (set, get) => {
         const response = await axios.get("http://192.168.14.33/otcs/llisapi.dll?func=ll&objId=128820&objAction=RunReport&key="+key);
         let data = response.data;
         data.pop();
-        console.log(data);
         set({
             companyShares: data,
         })
