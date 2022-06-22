@@ -6,11 +6,12 @@ import { useEffect, useState } from "react";
 
 const getState = state => [
     state.companyShares,
+    state.companySharesWarn,
     state.getCompanyShares
 ];
 
 const ShareOfCompanies = () => {
-    const [companyShares, getCompanyShares] = useStore(getState, shallow);
+    const [companyShares, companySharesWarn, getCompanyShares] = useStore(getState, shallow);
     useEffect(()=>{
         getCompanyShares();
     }, [getCompanyShares]);
@@ -40,6 +41,7 @@ const ShareOfCompanies = () => {
 
     const args = {
         companyNameShare,
+        companySharesWarn,
         changeNameShare,
         addShare,
         deleteNameShare,

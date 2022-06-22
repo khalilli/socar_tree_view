@@ -5,6 +5,12 @@ const ShareOfCompaniesComponent = (props) => {
       inputName.push(i);
     }
   }
+  var color = false;
+  for (var j=0; j<props.companyNameShare.length; i++){
+    if (props.companyNameShare[i].Y.toString() !== props.companySharesWarn[i].Y){
+      color = true;
+    }
+  }
     return (
       <main className="content">
         <div className="content-header">
@@ -33,8 +39,8 @@ const ShareOfCompaniesComponent = (props) => {
                     value={x.Y}
                     name="Y"
                     onChange={e => props.changeNameShare(e, id)}
-                    type="text"
-                    className="form-control"
+                    type="number"
+                    className={color ? "form-control invalid" : "form-control"}
                     id="company"
                   />
                   <span className="col-sm-1">

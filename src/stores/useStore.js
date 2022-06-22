@@ -221,6 +221,7 @@ const handleGetCompanyShares = async (set, get) => {
         data.pop();
         set({
             companyShares: data,
+            companySharesWarn: data,
         })
     }
 }
