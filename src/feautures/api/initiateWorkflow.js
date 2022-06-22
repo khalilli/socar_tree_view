@@ -22,10 +22,10 @@ const initiateWorkflow = async (args) => {
     args.propertytax && data.append("propertytax", args.propertytax);
     args.dividend1 && data.append("dividend1", args.dividend1);
     args.dividend2 && data.append("dividend2", args.dividend2);
-    //args.companyName && data.append("companyName", args.companyName);
+
     args.nameLength && data.append("nameLength", args.nameLength);
     for(var i=0; i<args.nameLength; i++){
-      args.companyName[i] && data.append("companyName"+[i], args.companyName[i]);
+      args.companyName[i] && data.append("companyName"+[i+1], args.companyName[i]);
       console.log(args.companyName[i], "and", i);
     }
     args.companyShare && data.append("companyShare", args.companyShare);
