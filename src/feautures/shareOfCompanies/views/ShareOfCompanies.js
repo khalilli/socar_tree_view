@@ -57,6 +57,7 @@ const ShareOfCompanies = () => {
             const args = {
                 companyName: cname,
                 companyShare: cshare,
+                shareLength: cshare.length
             };
             initiateWorkflow(args);
         }
