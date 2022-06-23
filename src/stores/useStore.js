@@ -204,12 +204,13 @@ const handleGetCompanyShares = async (set, get) => {
     let key = parseInt(params.get("key")); 
     if(!Number.isNaN(key)){
         const response = await axios.get("http://192.168.14.33/otcs/llisapi.dll?func=ll&objId=128820&objAction=RunReport&key="+key);
-        let dataShares = response.data;
-        dataShares.pop();
-        console.log(response.data);
+        let data = response.data;
+        let dataWarn = response.data;
+        dataWarn = dataWarn.map(x=> ({Y: x.Y, CNAME: x.CNAME}));
+        data.pop();
         set({
-            companyShares: dataShares,
-            companySharesWarn: response.data,
+            companyShares: data,
+            companySharesWarn: dataWarn,
         })
     }
 }
