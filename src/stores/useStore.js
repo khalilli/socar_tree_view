@@ -84,10 +84,14 @@ const handleGetDirectors = async (set, get) => {
     if(!Number.isNaN(key)){
         const response = await axios.get("http://192.168.14.33/otcs/llisapi.dll?func=ll&objId=128822&objAction=RunReport&key="+key);
         let data = response.data;
+        let dataWarn = response.data;
+        dataWarn = dataWarn.map(x=>({dirname: x.DIREKTOR}));
+        dataWarn.pop();
         data.pop();
         data = data.map(x=>({dirname: x.DIREKTOR}));
         set({
             directorList: data,
+            dirListWarn: dataWarn,
         })
     }
 }
@@ -101,6 +105,7 @@ const handleGetRepresentatives = async (set, get) => {
         data = data.map(x=>({repname: x.UMUMIYIGINCAQ}));
         set({
             representativeList: data,
+            repListWarn: data,
         })
     }
 }
@@ -231,7 +236,9 @@ const store = (set, get) => ({
         countryOfOperation: ''
     },
     directorList: [],
+    dirListWarn: [],
     representativeList: [],
+    repListWarn: [],
     financialData: {
         active: '',
         activeWarn: '',
