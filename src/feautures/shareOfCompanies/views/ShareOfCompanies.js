@@ -45,7 +45,7 @@ const ShareOfCompanies = () => {
         cshare.push(parseInt(companyNameShare[i].Y));
     }
     
-    const checkChange = false;
+    var checkChange = false;
     if(companySharesWarn.length !== companyNameShare.length){
       checkChange = true;
     }else{
