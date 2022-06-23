@@ -13,6 +13,8 @@ const ShareOfCompaniesComponent = (props) => {
     }
   }
 
+  console.log(props.newField);
+
     return (
       <main className="content">
         <div className="content-header">
@@ -42,7 +44,7 @@ const ShareOfCompaniesComponent = (props) => {
                     name="Y"
                     onChange={e => props.changeNameShare(e, id)}
                     type="number"
-                    className={colorKeys.includes(id) || props.newField ? "form-control invalid" : "form-control"}
+                    className={colorKeys.includes(id) || props.newField === true ? "form-control invalid" : "form-control"}
                     id="company"
                   />
                   <span className="col-sm-1">
