@@ -20,19 +20,20 @@ const CompanyDetails = () => {
     }, []);
 
     var color, colorS, colorSh, colorEmp, colorC = false;
-    if (companyDetails.companyName !== companyDetails.nameWarn){
+    if (companyDetails.name !== companyDetails.nameWarn){
         color = true;
     }
-    if (companyDetails.companySegment !== companyDetails.segmentWarn){
+    if (companyDetails.segment !== companyDetails.segmentWarn){
         colorS = true;
     }
-    if (companyDetails.companyShare.toString() !== companyDetails.shareWarn){
+    if (companyDetails.share.toString() !== companyDetails.shareWarn){
         colorSh = true;
     }
-    if (companyDetails.companyNumberOfEmployees.toString() !== companyDetails.numberOfEmployeesWarn){
+    console.log(companyDetails.share, companyDetails.shareWarn, colorSh);
+    if (companyDetails.numberOfEmployees.toString() !== companyDetails.numberOfEmployeesWarn){
         colorEmp = true;
     }
-    if (companyDetails.companyCEO !== companyDetails.CEOWarn){
+    if (companyDetails.ceo !== companyDetails.ceoWarn){
         colorC = true;
     }
 
