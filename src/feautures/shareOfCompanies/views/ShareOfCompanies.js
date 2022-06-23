@@ -43,6 +43,7 @@ const ShareOfCompanies = () => {
       e.preventDefault();
       const list = [...companyNameShare];
       list.splice(id, 1);
+      colorKeys.splice(id, 1);
       setCompanyNameShare(list);
     }
 
