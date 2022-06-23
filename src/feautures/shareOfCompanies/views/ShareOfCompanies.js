@@ -14,7 +14,7 @@ const ShareOfCompanies = () => {
     const [companyShares, companySharesWarn, getCompanyShares] = useStore(getState, shallow);
     useEffect(()=>{
         getCompanyShares();
-    }, []);
+    }, [getCompanyShares]);
 
     const [companyNameShare, setCompanyNameShare] = useState(companyShares);
 
