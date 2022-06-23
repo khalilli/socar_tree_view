@@ -30,8 +30,8 @@ const ShareOfCompanies = () => {
     const addShare = () => {
       setCompanyNameShare([...companyNameShare, {Y: "", CNAME: ""}]);
     }
-    const deleteNameShare = (id) => {
-      console.log(id);
+    const deleteNameShare = (e, id) => {
+      e.preventDefault();
       const list = [...companyNameShare];
       list.splice(id, 1);
       setCompanyNameShare(list);

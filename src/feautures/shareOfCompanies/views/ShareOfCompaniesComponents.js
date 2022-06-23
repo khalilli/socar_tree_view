@@ -52,7 +52,7 @@ const ShareOfCompaniesComponent = (props) => {
                   <span className="col-sm-1">
                     <i className="fa-solid fa-percent"></i>
                   </span>
-                  <button className="removebtn1" onClick={() => props.deleteNameShare(id)}>
+                  <button className="removebtn1" onClick={(e) => props.deleteNameShare(e, id)}>
                     x
                   </button>
                 </div>
