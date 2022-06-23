@@ -97,10 +97,19 @@ const FinancialData = () => {
         },
         onSubmitForm: () => {
             const args = {
+                active: financialData.active,
+                capital: financialData.capital,
+                liability: financialData.liability,
+                ebitda: financialData.ebitda,
+                loss: financialData.loss,
+                incometax: financialData.incometax,
+                propertytax: financialData.propertytax,
+                dividend1: financialData.dividend1,
+                dividend2: financialData.dividend2, 
                 color, colorC, colorL, colorE, colorLoss, coloriT, colorpT, colorD1, colorD2
             };
             initiateWorkflow(args);
-            initWorkflow();
+            //initWorkflow();
         }
     }
     return <FinancialDataComponent {...args} />;
