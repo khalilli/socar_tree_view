@@ -35,6 +35,7 @@ const FinancialData = () => {
     if(financialData.incomeTax !== financialData.incomeTaxWarn){
         coloriT = true;
     }
+    console.log(financialData.incomeTax, financialData.incomeTaxWarn, coloriT);
     if(financialData.propertyTax !== financialData.propertyTaxWarn){
         colorpT = true;
     }
