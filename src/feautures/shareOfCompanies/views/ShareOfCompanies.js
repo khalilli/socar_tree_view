@@ -46,6 +46,7 @@ const ShareOfCompanies = () => {
     }
 
     const args = {
+        companyShares,
         companyNameShare,
         companySharesWarn,
         changeNameShare,
