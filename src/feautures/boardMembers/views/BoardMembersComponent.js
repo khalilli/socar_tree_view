@@ -20,7 +20,7 @@ const BoardMembersComponent = props => {
               {props.names.map((x, id) => {
                 return (
                   <div className="col-sm-8" key={id}>
-                    <span className="deleteicon deleteicon-boardmembers">
+                    {/* <span className="deleteicon deleteicon-boardmembers"> */}
                       <input
                         name="dirname"
                         value={x.dirname}
@@ -30,8 +30,8 @@ const BoardMembersComponent = props => {
                         id="companyDir"
                       />
                       {/* <span className="delete-span">x</span> */}
-                    </span>
-                    <button className="removebtn" onClick={(id, e) => props.deleteName(id, e)}>
+                    {/* </span> */}
+                    <button className="removebtn" onClick={(e) => props.deleteName(e, id)}>
                       x
                     </button>
                   </div>
@@ -72,7 +72,7 @@ const BoardMembersComponent = props => {
                       />
                       {/* <span className="delete-span">x</span> */}
                     </span>
-                    <button className="removebtn" onClick={(id, e) => props.deleteNameR(id, e)}>
+                    <button className="removebtn" onClick={(e) => props.deleteNameR(e, id)}>
                       x
                     </button>
                   </div>

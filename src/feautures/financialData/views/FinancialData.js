@@ -94,7 +94,10 @@ const FinancialData = () => {
             setInitialFinancialData();
         },
         onSubmitForm: () => {
+            let params = new URLSearchParams(window.location.search);
+            let key = parseInt(params.get("key"));
             const args = {
+                cid: key,
                 active: financialData.active,
                 capital: financialData.capital,
                 liability: financialData.liability,

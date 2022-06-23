@@ -50,17 +50,16 @@ const BoardMembers = () => {
       const addNameR = () => {
         setNamesR([...namesR, {repname: ""}]);
     };
-    const deleteName = (id, e) => {
-       e.preventDefault();
-       const list = [...names];  
-       list.splice(id, 1);
-       setNames(list);
+    const deleteName = (e, id) => {
+        e.preventDefault();
+        const list = [...names];  
+        list.splice(id, 1);
+        setNames(list);
     };
-    const deleteNameR = (id, e) => {
+    const deleteNameR = (e, id) => {
        e.preventDefault();
        const list = [...namesR];
        list.splice(id, 1);
-       console.log(id);
        setNamesR(list);
     };
     //remove keys for tag
@@ -82,7 +81,10 @@ const BoardMembers = () => {
         deleteName,
         deleteNameR,
         onSubmitForm: () => {
+            let params = new URLSearchParams(window.location.search);
+            let key = parseInt(params.get("key"));
             const args = {
+                cid: key,
                 directorList: namesValue,
                 directorLength: namesValue.length,
                 representativeList: namesRValue,

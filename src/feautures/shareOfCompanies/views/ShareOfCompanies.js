@@ -52,12 +52,15 @@ const ShareOfCompanies = () => {
         addShare,
         deleteNameShare,
         onSubmitForm: () => {
-            const args = {
-                companyName: cname,
-                companyShare: cshare,
-                nameLength: cname.length
-            };
-            initiateWorkflow(args);
+          let params = new URLSearchParams(window.location.search);
+          let key = parseInt(params.get("key"));
+          const args = {
+            cid: key,
+            companyName: cname,
+            companyShare: cshare,
+            nameLength: cname.length
+          };
+          initiateWorkflow(args);
         }
     }
 
