@@ -30,6 +30,15 @@ const ShareOfCompanies = () => {
     const addShare = () => {
       setCompanyNameShare([...companyNameShare, {Y: "", CNAME: ""}]);
     }
+    // highlight edited input fields
+    var colorKeys = [];
+    var colorValues = [];
+    for (var j=0; j<companyShares.length; j++){
+      if (companyShares[j].Y !== companySharesWarn[j].Y){
+        colorKeys.push(j);
+        colorValues.push(companyShares[j].Y);
+      }
+    }
     const deleteNameShare = (e, id) => {
       e.preventDefault();
       const list = [...companyNameShare];
