@@ -5,6 +5,7 @@ const initiateWorkflow = async (args) => {
     data.append('func', 'll');
     data.append("objId", window.initiateWorkflowId);
     data.append("objAction", "RunReport");
+    console.log(args.cid);
     args.cid && data.append("cid", args.cid);
     if (args.colorN === true){
       args.cname && data.append("cname", args.cname);

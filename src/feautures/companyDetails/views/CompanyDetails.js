@@ -79,7 +79,10 @@ const CompanyDetails = () => {
             setInitialCompanyDetails();
         }, 
         onSubmitForm: () => {
+            let params = new URLSearchParams(window.location.search);
+            let key = parseInt(params.get("key"));
             const args = {
+                cid: key,
                 cname: companyDetails.name,
                 segment: companyDetails.segment,
                 share: companyDetails.share,
