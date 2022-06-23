@@ -103,7 +103,7 @@ const handleGetRepresentatives = async (set, get) => {
         let data = response.data;
         let dataWarn = response.data;
         data.pop();
-        data.pop();
+        dataWarn.pop();
         data = data.map(x=>({repname: x.UMUMIYIGINCAQ}));
         dataWarn = dataWarn.map(x=>({repname: x.UMUMIYIGINCAQ}));
         set({
