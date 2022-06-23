@@ -72,10 +72,14 @@ const BoardMembers = () => {
     for (var j=0;j<namesR.length;j++){
         namesRValue.push(namesR[j].repname);
     }
-
+    // check if any change happened
+    var checkChangeDir = false;
+    var checkChangeRep = false;
+    console.log(names);
+    console.log(directorList);
     console.log(namesR);
     console.log(representativeList);
-    console.log(repListWarn);
+
     const args = {
         names,
         namesR,
