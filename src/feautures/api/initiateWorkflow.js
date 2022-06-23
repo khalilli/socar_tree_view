@@ -22,9 +22,15 @@ const initiateWorkflow = async (args) => {
       args.representativeList[k] && data.append("representativeList"+[k+1], args.representativeList[k]);
     }
 
-    args.active && data.append("active", args.active);
-    args.capital && data.append("capital", args.capital);
-    args.liability && data.append("liability", args.liability);
+    if (args.color === true){
+      args.active && data.append("active", args.active);
+    }
+    if(args.colorC === true){
+      args.capital && data.append("capital", args.capital);
+    }
+    if(args.colorL === true){
+      args.liability && data.append("liability", args.liability);
+    }
     args.ebitda && data.append("ebitda", args.ebitda);
     args.loss && data.append("loss", args.loss);
     args.incometax && data.append("incometax", args.incometax);

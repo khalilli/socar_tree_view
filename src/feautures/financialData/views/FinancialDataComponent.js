@@ -1,33 +1,5 @@
 import PropTypes from 'prop-types';
 const FinancialDataComponent = (props) => {
-    // var color, colorC, colorL, colorE, colorLoss, coloriT, colorpT, colorD1, colorD2 = false;
-    // if(props.active !== props.activeWarn){
-    //     color = true;
-    // }
-    // if(props.capital !== props.capitalWarn){
-    //     colorC = true;
-    // }
-    // if(props.liability !== props.liabilityWarn){
-    //     colorL = true;
-    // }
-    // if(props.ebitda !== props.ebitdaWarn){
-    //     colorE = true;
-    // }
-    // if(props.loss !== props.lossWarn){
-    //     colorLoss = true;
-    // }
-    // if(props.incomeTax !== props.incomeTaxWarn){
-    //     coloriT = true;
-    // }
-    // if(props.propertyTax !== props.propertyTaxWarn){
-    //     colorpT = true;
-    // }
-    // if(props.dividend1 !== props.dividend1Warn){
-    //     colorD1 = true;
-    // }
-    // if(props.dividend2 !== props.dividend2Warn){
-    //     colorD2 = true;
-    // }
     return (
         <main className="content">
             <div className="content-header">
