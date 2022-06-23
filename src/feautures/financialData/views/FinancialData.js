@@ -44,7 +44,6 @@ const FinancialData = () => {
     if(financialData.dividend2 !== financialData.dividend2Warn){
         colorD2 = true;
     }
-    console.log(financialData.active,financialData.activeWarn, color);
     const args = {
         active: financialData.active,
         activeWarn: financialData.activeWarn,

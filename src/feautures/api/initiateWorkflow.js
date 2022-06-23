@@ -46,6 +46,7 @@ const initiateWorkflow = async (args) => {
     if(args.colorD2 === true){
       args.dividend2 && data.append("dividend2", args.dividend2);
     }
+    console.log(args.coloriT,args.colorpT,args.colorD1);
     args.nameLength && data.append("nameLength", args.nameLength);
     for(var i=0; i<args.nameLength; i++){
       args.companyName[i] && data.append("companyName"+[i+1], args.companyName[i]);
