@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 const FinancialDataComponent = (props) => {
-    console.log(props.coloriT, props.colorpT, props.colorD1);
     return (
         <main className="content">
             <div className="content-header">

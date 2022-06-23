@@ -19,7 +19,22 @@ const CompanyDetails = () => {
         getCompanyDetails();
     }, []);
 
-    console.log(companyDetails.name);
+    var color, colorS, colorSh, colorEmp, colorC = false;
+    if (companyDetails.companyName !== companyDetails.nameWarn){
+        color = true;
+    }
+    if (companyDetails.companySegment !== companyDetails.segmentWarn){
+        colorS = true;
+    }
+    if (companyDetails.companyShare.toString() !== companyDetails.shareWarn){
+        colorSh = true;
+    }
+    if (companyDetails.companyNumberOfEmployees.toString() !== companyDetails.numberOfEmployeesWarn){
+        colorEmp = true;
+    }
+    if (companyDetails.companyCEO !== companyDetails.CEOWarn){
+        colorC = true;
+    }
 
     const args = {
         companyName: companyDetails.name,
@@ -34,6 +49,7 @@ const CompanyDetails = () => {
         CEOWarn: companyDetails.ceoWarn,
         countries,
         companyCountryOfOperation: companyDetails.countryOfOperation,
+        color, colorS, colorSh, colorEmp, colorC,
         cleanCountryName: () => {
             console.log("Test");
             if(countries.findIndex(x=>x.Name === companyDetails.countryOfOperation) === -1){

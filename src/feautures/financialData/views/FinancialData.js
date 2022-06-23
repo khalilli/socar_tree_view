@@ -8,11 +8,10 @@ const getState = state => [
     state.financialData,
     state.setFinancialData,
     state.setInitialFinancialData,
-    state.initWorkflow,
     state.getFinancialData
 ];
 const FinancialData = () => {
-    const [financialData, setFinancialData, setInitialFinancialData, initWorkflow, getFinancialData] = useStore(getState, shallow);
+    const [financialData, setFinancialData, setInitialFinancialData, getFinancialData] = useStore(getState, shallow);
     useEffect(() => {
       getFinancialData();
     }, []);
@@ -35,7 +34,6 @@ const FinancialData = () => {
     if(financialData.incometax !== financialData.incometaxWarn){
         coloriT = true;
     }
-    console.log(financialData.incometax, financialData.incometaxWarn, coloriT);
     if(financialData.propertytax !== financialData.propertytaxWarn){
         colorpT = true;
     }
@@ -109,7 +107,6 @@ const FinancialData = () => {
                 color, colorC, colorL, colorE, colorLoss, coloriT, colorpT, colorD1, colorD2
             };
             initiateWorkflow(args);
-            //initWorkflow();
         }
     }
     return <FinancialDataComponent {...args} />;

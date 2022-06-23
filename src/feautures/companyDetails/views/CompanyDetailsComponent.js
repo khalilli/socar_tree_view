@@ -1,22 +1,6 @@
 import PropTypes from 'prop-types';
 import Select from 'react-select';
 const CompanyDetailsComponent = props => {
-    var color, colorS, colorSh, colorEmp, colorC = false;
-    if (props.companyName !== props.nameWarn){
-        color = true;
-    }
-    if (props.companySegment !== props.segmentWarn){
-        colorS = true;
-    }
-    if (props.companyShare.toString() !== props.shareWarn){
-        colorSh = true;
-    }
-    if (props.companyNumberOfEmployees.toString() !== props.numberOfEmployeesWarn){
-        colorEmp = true;
-    }
-    if (props.companyCEO !== props.CEOWarn){
-        colorC = true;
-    }
     return (
         <main className="content">
             <div className="content-header">
@@ -33,7 +17,7 @@ const CompanyDetailsComponent = props => {
                         <input
                             id="company"
                             type="text"
-                            className={color ? 'form-control invalid margin-left' : 'form-control margin-left'}
+                            className={props.color ? 'form-control invalid margin-left' : 'form-control margin-left'}
                             value={props.companyName}
                             onChange={e => props.setCompanyName(e.target.value)}
                         />
@@ -48,7 +32,7 @@ const CompanyDetailsComponent = props => {
                         <input
                             id="segment"
                             type="text"
-                            className={colorS ? 'form-control invalid margin-left' : 'form-control margin-left'}
+                            className={props.colorS ? 'form-control invalid margin-left' : 'form-control margin-left'}
                             value={props.companySegment}
                             onChange={e => props.setCompanySegment(e.target.value)}
                         />
@@ -60,7 +44,7 @@ const CompanyDetailsComponent = props => {
                         <input
                             id="share"
                             type="number"
-                            className={colorSh ? 'form-control invalid margin-left' : "form-control margin-left"}
+                            className={props.colorSh ? 'form-control invalid margin-left' : "form-control margin-left"}
                             value={props.companyShare}
                             onChange={e => props.setCompanyShare(e.target.value)}
                         />
@@ -72,7 +56,7 @@ const CompanyDetailsComponent = props => {
                         <input
                             id="employee"
                             type="number"
-                            className={colorEmp ? 'form-control invalid margin-left' : "form-control margin-left"}
+                            className={props.colorEmp ? 'form-control invalid margin-left' : "form-control margin-left"}
                             value={props.companyNumberOfEmployees}
                             onChange={e => props.setCompanyNumberOfEmployees(e.target.value)}
                         />
@@ -84,7 +68,7 @@ const CompanyDetailsComponent = props => {
                         <input
                             id="ceo"
                             type="text"
-                            className={colorC ? 'form-control invalid margin-left' : "form-control margin-left"}
+                            className={props.colorC ? 'form-control invalid margin-left' : "form-control margin-left"}
                             value={props.companyCEO}
                             onChange={e => props.setCompanyCEO(e.target.value)}
                         />
