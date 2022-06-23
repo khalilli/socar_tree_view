@@ -59,13 +59,12 @@ const initiateWorkflow = async (args) => {
     }
     if (args.change === true){
       args.nameLength && data.append("nameLength", args.nameLength);
-      for(var i=0; i<args.nameLength; i++){
-        args.companyName[i] && data.append("companyName"+[i+1], args.companyName[i]);
-      }
-      args.companyShare && data.append("companyShare", args.companyShare);
-      data.append("nextUrl", window.nextUrl);
+    for(var i=0; i<args.nameLength; i++){
+      args.companyName[i] && data.append("companyName"+[i+1], args.companyName[i]);
     }
-
+    args.companyShare && data.append("companyShare", args.companyShare);
+    }
+    data.append("nextUrl", window.nextUrl);
     const config = {
       method: 'post',
       url: window.baseUrl,
