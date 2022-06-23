@@ -43,8 +43,8 @@ const FinancialData = () => {
     if(financialData.dividend2 !== financialData.dividend2Warn){
         colorD2 = true;
     }
-    console.log(financialData.active,financialData.activeWarn);
-    console.log(financialData.capital, financialData.capitalWarn);
+    console.log(financialData.active,financialData.activeWarn, color);
+    console.log(financialData.capital, financialData.capitalWarn, colorC);
     const args = {
         active: financialData.active,
         activeWarn: financialData.activeWarn,
@@ -96,7 +96,10 @@ const FinancialData = () => {
             setInitialFinancialData();
         },
         onSubmitForm: () => {
-            initWorkflow();
+            const args = {
+                color, colorC, colorL, colorE, colorLoss, coloriT, colorpT, colorD1, colorD2
+            };
+            initWorkflow(args);
         }
     }
     return <FinancialDataComponent {...args} />;
