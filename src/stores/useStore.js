@@ -207,6 +207,8 @@ const handleGetCompanyShares = async (set, get) => {
         let data = response.data;
         const dataWarn = response.data;
         data.pop();
+        console.log(data);
+        console.log(dataWarn);
         set({
             companyShares: data,
             companySharesWarn: dataWarn,
