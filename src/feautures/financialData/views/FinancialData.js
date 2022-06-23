@@ -1,6 +1,7 @@
 import FinancialDataComponent from "./FinancialDataComponent";
 import useStore from '../../../stores/useStore';
 import shallow from 'zustand/shallow';
+import initiateWorkflow from "../../api/initiateWorkflow";
 import { useEffect } from "react";
 
 const getState = state => [
@@ -98,7 +99,8 @@ const FinancialData = () => {
             const args = {
                 color, colorC, colorL, colorE, colorLoss, coloriT, colorpT, colorD1, colorD2
             };
-            initWorkflow(args);
+            initiateWorkflow(args);
+            initWorkflow();
         }
     }
     return <FinancialDataComponent {...args} />;
