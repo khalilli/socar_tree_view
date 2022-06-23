@@ -32,11 +32,11 @@ const FinancialData = () => {
     if(financialData.loss !== financialData.lossWarn){
         colorLoss = true;
     }
-    if(financialData.incomeTax !== financialData.incomeTaxWarn){
+    if(financialData.incometax !== financialData.incometaxWarn){
         coloriT = true;
     }
-    console.log(financialData.incomeTax, financialData.incomeTaxWarn, coloriT);
-    if(financialData.propertyTax !== financialData.propertyTaxWarn){
+    console.log(financialData.incometax, financialData.incometaxWarn, coloriT);
+    if(financialData.propertytax !== financialData.propertytaxWarn){
         colorpT = true;
     }
     if(financialData.dividend1 !== financialData.dividend1Warn){
