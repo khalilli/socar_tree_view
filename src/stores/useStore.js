@@ -101,6 +101,7 @@ const handleGetRepresentatives = async (set, get) => {
         data = data.map(x=>({repname: x.UMUMIYIGINCAQ}));
         set({
             representativeList: data,
+            repListWarn: data,
         })
     }
 }
@@ -232,6 +233,7 @@ const store = (set, get) => ({
     },
     directorList: [],
     representativeList: [],
+    repListWarn: [],
     financialData: {
         active: '',
         activeWarn: '',
