@@ -44,8 +44,18 @@ const ShareOfCompanies = () => {
         cname.push(companyNameShare[i].CNAME);
         cshare.push(parseInt(companyNameShare[i].Y));
     }
-    console.log(companySharesWarn);
-    console.log(companyNameShare);
+    
+    const checkChange = false;
+    if(companySharesWarn.length !== companyNameShare.length){
+      checkChange = true;
+    }else{
+      for(var n=0;n<companyNameShare.length;n++){
+        if(companyNameShare[n].Y !== companySharesWarn[n].Y || companyNameShare[n].CNAME !== companySharesWarn[n].CNAME){
+          checkChange = true;
+        }
+      }
+    }
+    console.log(checkChange);
     const args = {
         companyShares,
         companyNameShare,
@@ -60,6 +70,7 @@ const ShareOfCompanies = () => {
             cid: key,
             companyName: cname,
             companyShare: cshare,
+            change: checkChange,
             nameLength: cname.length
           };
           initiateWorkflow(args);
