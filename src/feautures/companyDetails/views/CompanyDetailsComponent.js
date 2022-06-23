@@ -17,7 +17,7 @@ const CompanyDetailsComponent = props => {
                         <input
                             id="company"
                             type="text"
-                            className={props.color ? 'form-control invalid margin-left' : 'form-control margin-left'}
+                            className={props.colorN ? 'form-control invalid margin-left' : 'form-control margin-left'}
                             value={props.companyName}
                             onChange={e => props.setCompanyName(e.target.value)}
                         />
@@ -68,7 +68,7 @@ const CompanyDetailsComponent = props => {
                         <input
                             id="ceo"
                             type="text"
-                            className={props.colorC ? 'form-control invalid margin-left' : "form-control margin-left"}
+                            className={props.colorCeo ? 'form-control invalid margin-left' : "form-control margin-left"}
                             value={props.companyCEO}
                             onChange={e => props.setCompanyCEO(e.target.value)}
                         />

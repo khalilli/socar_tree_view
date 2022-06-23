@@ -2,6 +2,7 @@ import CompanyDetailsComponent from "./CompanyDetailsComponent";
 import useStore from '../../../stores/useStore';
 import shallow from 'zustand/shallow';
 import countries from '../../../assets/countries.json';
+import initiateWorkflow from "../../api/initiateWorkflow";
 import { useEffect } from "react";
 
 const getState = state => [
@@ -19,9 +20,9 @@ const CompanyDetails = () => {
         getCompanyDetails();
     }, []);
 
-    var color, colorS, colorSh, colorEmp, colorC = false;
+    var colorN, colorS, colorSh, colorEmp, colorCeo = false;
     if (companyDetails.name !== companyDetails.nameWarn){
-        color = true;
+        colorN = true;
     }
     if (companyDetails.segment !== companyDetails.segmentWarn){
         colorS = true;
@@ -29,12 +30,11 @@ const CompanyDetails = () => {
     if (companyDetails.share.toString() !== companyDetails.shareWarn){
         colorSh = true;
     }
-    console.log(companyDetails.share, companyDetails.shareWarn, colorSh);
     if (companyDetails.numberOfEmployees.toString() !== companyDetails.numberOfEmployeesWarn){
         colorEmp = true;
     }
     if (companyDetails.ceo !== companyDetails.ceoWarn){
-        colorC = true;
+        colorCeo = true;
     }
 
     const args = {
@@ -50,7 +50,7 @@ const CompanyDetails = () => {
         CEOWarn: companyDetails.ceoWarn,
         countries,
         companyCountryOfOperation: companyDetails.countryOfOperation,
-        color, colorS, colorSh, colorEmp, colorC,
+        colorN, colorS, colorSh, colorEmp, colorCeo,
         cleanCountryName: () => {
             console.log("Test");
             if(countries.findIndex(x=>x.Name === companyDetails.countryOfOperation) === -1){
@@ -79,7 +79,15 @@ const CompanyDetails = () => {
             setInitialCompanyDetails();
         }, 
         onSubmitForm: () => {
-            initWorkflow();
+            const args = {
+                cname: companyDetails.name,
+                segment: companyDetails.segment,
+                share: companyDetails.share,
+                numberOfEmployees: companyDetails.numberOfEmployees,
+                ceo: companyDetails.ceo,
+                colorN, colorS, colorSh, colorEmp, colorCeo
+            };
+            initiateWorkflow(args);
         }
     }
 

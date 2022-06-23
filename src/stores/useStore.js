@@ -50,11 +50,11 @@ const handleInitiateWorkflow = async (set, get) => {
     const companyDetails = get().companyDetails;
     const financialData = get().financialData;
     const args = {
-        cname: companyDetails.name,
-        segment: companyDetails.segment,
-        share: companyDetails.share,
-        numberOfEmployees: companyDetails.numberOfEmployees,
-        ceo: companyDetails.ceo,
+        // cname: companyDetails.name,
+        // segment: companyDetails.segment,
+        // share: companyDetails.share,
+        // numberOfEmployees: companyDetails.numberOfEmployees,
+        // ceo: companyDetails.ceo,
         // active: financialData.active,
         // capital: financialData.capital,
         // liability: financialData.liability,

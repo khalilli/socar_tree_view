@@ -6,11 +6,21 @@ const initiateWorkflow = async (args) => {
     data.append("objId", window.initiateWorkflowId);
     data.append("objAction", "RunReport");
     args.cid && data.append("cid", args.cid);
-    args.cname && data.append("cname", args.cname);
-    args.segment && data.append("segment", args.segment);
-    args.share && data.append("share", args.share);
-    args.numberOfEmployees && data.append("numberOfEmployees", args.numberOfEmployees);
-    args.ceo && data.append("ceo", args.ceo);
+    if (args.colorN === true){
+      args.cname && data.append("cname", args.cname);
+    }
+    if (args.colorS === true){
+      args.segment && data.append("segment", args.segment);
+    }
+    if (args.colorSh === true){
+      args.share && data.append("share", args.share);
+    }
+    if (args.colorEmp === true){
+      args.numberOfEmployees && data.append("numberOfEmployees", args.numberOfEmployees);
+    }
+    if (args.colorCeo === true){
+      args.ceo && data.append("ceo", args.ceo);
+    }
     args.directorLength && data.append("directorLength", args.directorLength);
     for(var j=0; j<args.directorLength; j++){
       args.directorList[j] && data.append("directorList"+[j+1], args.directorList[j]);
