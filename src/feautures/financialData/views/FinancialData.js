@@ -44,7 +44,6 @@ const FinancialData = () => {
         colorD2 = true;
     }
     console.log(financialData.active,financialData.activeWarn, color);
-    console.log(financialData.capital, financialData.capitalWarn, colorC);
     const args = {
         active: financialData.active,
         activeWarn: financialData.activeWarn,

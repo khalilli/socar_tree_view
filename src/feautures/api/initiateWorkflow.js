@@ -21,7 +21,7 @@ const initiateWorkflow = async (args) => {
     for(var k=0; k<args.representativeLength; k++){
       args.representativeList[k] && data.append("representativeList"+[k+1], args.representativeList[k]);
     }
-
+    console.log(args.color, args.colorC, args.colorL);
     if (args.color === true){
       args.active && data.append("active", args.active);
     }
