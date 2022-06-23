@@ -72,9 +72,10 @@ const BoardMembers = () => {
     for (var j=0;j<namesR.length;j++){
         namesRValue.push(namesR[j].repname);
     }
-    console.log(repListWarn);
-    console.log(names);
+
+    console.log(namesR);
     console.log(representativeList);
+    console.log(repListWarn);
     const args = {
         names,
         namesR,
