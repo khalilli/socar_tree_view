@@ -95,8 +95,7 @@ const BoardMembers = () => {
             }
         }
     }
-    console.log(checkChangeDir);
-    console.log(checkChangeRep);
+    console.log(checkChangeDir, 'and', checkChangeRep);
     const args = {
         names,
         namesR,

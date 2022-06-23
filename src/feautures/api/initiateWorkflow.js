@@ -22,6 +22,7 @@ const initiateWorkflow = async (args) => {
     if (args.colorCeo === true){
       args.ceo && data.append("ceo", args.ceo);
     }
+    console.log(args.changeDir, 'and', args.changeRep);
     if(args.changeDir === true){
       args.directorLength && data.append("directorLength", args.directorLength);
       for(var j=0; j<args.directorLength; j++){
