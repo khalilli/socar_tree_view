@@ -42,7 +42,7 @@ const ShareOfCompaniesComponent = (props) => {
                     name="Y"
                     onChange={e => props.changeNameShare(e, id)}
                     type="number"
-                    className={"form-control"}
+                    className={colorKeys.includes(id) || props.newField ? "form-control invalid" : "form-control"}
                     id="company"
                   />
                   <span className="col-sm-1">
