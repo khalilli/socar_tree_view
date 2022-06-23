@@ -55,7 +55,6 @@ const ShareOfCompanies = () => {
         }
       }
     }
-    console.log(checkChange);
     const args = {
         companyShares,
         companyNameShare,

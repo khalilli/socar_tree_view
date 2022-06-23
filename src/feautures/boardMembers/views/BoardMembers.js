@@ -76,11 +76,27 @@ const BoardMembers = () => {
     // check if any change happened
     var checkChangeDir = false;
     var checkChangeRep = false;
-    console.log(dirListWarn);
-    console.log(names);
-    console.log(repListWarn);
-    console.log(namesR);
+    if (dirListWarn.length !== names.length){
+        checkChangeDir = true;
+    }else{
+        for(var n=0;n<dirListWarn.length;n++){
+            if(dirListWarn[n].dirname !== names[n].dirname){
+                checkChangeDir = true;
+            }
+        }
+    }
 
+    if (repListWarn.length !== namesR.length){
+        checkChangeRep = true;
+    }else{
+        for(var m=0;m<repListWarn.length;m++){
+            if(repListWarn[m].repname !== namesR[m].repname){
+                checkChangeRep = true;
+            }
+        }
+    }
+    console.log(checkChangeDir);
+    console.log(checkChangeRep);
     const args = {
         names,
         namesR,
@@ -98,7 +114,9 @@ const BoardMembers = () => {
                 directorList: namesValue,
                 directorLength: namesValue.length,
                 representativeList: namesRValue,
-                representativeLength: namesRValue.length
+                representativeLength: namesRValue.length,
+                changeDir: checkChangeDir,
+                changeRep: checkChangeRep
             };
             initiateWorkflow(args);
         }
