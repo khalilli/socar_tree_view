@@ -5,18 +5,16 @@ const ShareOfCompaniesComponent = (props) => {
       inputName.push(i);
     }
   }
-  var color = false;
-  var colorKey;
+
+  var colorKeys = [];
   for (var j=0; j<props.companyShares.length; j++){
     if (parseInt(props.companyShares[j].Y) !== props.companySharesWarn[j].Y){
-      color = true;
-      colorKey = j;
+      colorKeys.push(j);
       console.log(props.companyShares[j].Y);
       console.log(props.companySharesWarn[j].Y);
-      console.log(j);
     }
   }
-  console.log(color, "and", colorKey);
+  console.log(colorKeys);
     return (
       <main className="content">
         <div className="content-header">
@@ -46,7 +44,7 @@ const ShareOfCompaniesComponent = (props) => {
                     name="Y"
                     onChange={e => props.changeNameShare(e, id)}
                     type="number"
-                    className={color && colorKey === id ? "form-control invalid" : "form-control"}
+                    className={colorKeys.includes(id) ? "form-control invalid" : "form-control"}
                     id="company"
                   />
                   <span className="col-sm-1">
