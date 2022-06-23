@@ -15,7 +15,8 @@ const FinancialData = () => {
     useEffect(() => {
       getFinancialData();
     }, []);
-    console.log(financialData.active);
+    console.log(financialData.active,financialData.activeWarn);
+    console.log(financialData.capital, financialData.capitalWarn);
     const args = {
         active: financialData.active,
         activeWarn: financialData.activeWarn,
