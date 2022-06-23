@@ -8,12 +8,11 @@ const ShareOfCompaniesComponent = (props) => {
 
   var colorKeys = [];
   for (var j=0; j<props.companyShares.length; j++){
-    console.log(props.companyShares[j].Y);
-    console.log(props.companySharesWarn[j].Y);
     if (props.companyShares[j].Y !== props.companySharesWarn[j].Y){
       colorKeys.push(j);
     }
   }
+
     return (
       <main className="content">
         <div className="content-header">
@@ -25,7 +24,7 @@ const ShareOfCompaniesComponent = (props) => {
         <form className="content-form">
         {props.companyNameShare.map((x, id) => {
             return (
-              <div className="form-group row" key={id}>
+              <div className="form-group row" key={id} value={x.Y}>
                 <div className="col-sm-2 flex-div">
                   <input
                     value={x.CNAME}
@@ -43,7 +42,7 @@ const ShareOfCompaniesComponent = (props) => {
                     name="Y"
                     onChange={e => props.changeNameShare(e, id)}
                     type="number"
-                    className={colorKeys.includes(id) ? "form-control invalid" : "form-control"}
+                    className={"form-control"}
                     id="company"
                   />
                   <span className="col-sm-1">
