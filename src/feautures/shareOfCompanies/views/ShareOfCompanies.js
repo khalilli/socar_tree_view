@@ -31,7 +31,8 @@ const ShareOfCompanies = () => {
       setCompanyNameShare([...companyNameShare, {Y: "", CNAME: ""}]);
     }
     // highlight edited input fields
-    var colorKeys = [];
+    const [colorKeys, setcolorKeys] = useState([]);
+    //var colorKeys = [];
     var colorValues = [];
     for (var j=0; j<companyShares.length; j++){
       if (companyShares[j].Y !== companySharesWarn[j].Y){
@@ -43,8 +44,10 @@ const ShareOfCompanies = () => {
       e.preventDefault();
       const list = [...companyNameShare];
       list.splice(id, 1);
-      colorKeys.splice(id, 1);
       setCompanyNameShare(list);
+      const colorlist = [...colorKeys];
+      colorlist.splice(id, 1);
+      setcolorKeys(colorlist);
     }
 
     //remove keys of array to fit tags
