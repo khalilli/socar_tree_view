@@ -101,14 +101,14 @@ const handleGetRepresentatives = async (set, get) => {
     if(!Number.isNaN(key)){
         const response = await axios.get("http://192.168.14.33/otcs/llisapi.dll?func=ll&objId=127757&objAction=RunReport&key="+key);
         let data = response.data;
-        //let dataWarn = response.data;
+        let dataWarn = response.data;
+        dataWarn = dataWarn.map(x=>({repname: x.UMUMIYIGINCAQ}));
+        dataWarn.pop();
         data.pop();
-        //dataWarn.pop();
         data = data.map(x=>({repname: x.UMUMIYIGINCAQ}));
-        //dataWarn = dataWarn.map(x=>({repname: x.UMUMIYIGINCAQ}));
         set({
             representativeList: data,
-            repListWarn: data,
+            repListWarn: dataWarn,
         })
     }
 }
