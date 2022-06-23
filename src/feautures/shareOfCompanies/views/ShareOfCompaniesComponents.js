@@ -8,7 +8,7 @@ const ShareOfCompaniesComponent = (props) => {
 
   var colorKeys = [];
   for (var j=0; j<props.companyShares.length; j++){
-    if (parseInt(props.companyShares[j].Y) !== props.companySharesWarn[j].Y){
+    if (props.companyShares[j].Y !== props.companySharesWarn[j].Y){
       colorKeys.push(j);
       console.log(props.companyShares[j].Y);
       console.log(props.companySharesWarn[j].Y);
