@@ -27,10 +27,8 @@ const ShareOfCompanies = () => {
       values[id][e.target.name] = e.target.value;
       setCompanyNameShare(values);
     }
-    var newField = false;
     const addShare = () => {
       setCompanyNameShare([...companyNameShare, {Y: "", CNAME: ""}]);
-      newField = true;
     }
     const deleteNameShare = (e, id) => {
       e.preventDefault();
@@ -64,7 +62,6 @@ const ShareOfCompanies = () => {
         changeNameShare,
         addShare,
         deleteNameShare,
-        newField,
         onSubmitForm: () => {
           let params = new URLSearchParams(window.location.search);
           let key = parseInt(params.get("key"));
