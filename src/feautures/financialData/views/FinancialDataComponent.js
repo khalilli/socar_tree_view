@@ -1,33 +1,33 @@
 import PropTypes from 'prop-types';
 const FinancialDataComponent = (props) => {
-    var color, colorC, colorL, colorE, colorLoss, coloriT, colorpT, colorD1, colorD2 = false;
-    if(props.active !== props.activeWarn){
-        color = true;
-    }
-    if(props.capital !== props.capitalWarn){
-        colorC = true;
-    }
-    if(props.liability !== props.liabilityWarn){
-        colorL = true;
-    }
-    if(props.ebitda !== props.ebitdaWarn){
-        colorE = true;
-    }
-    if(props.loss !== props.lossWarn){
-        colorLoss = true;
-    }
-    if(props.incomeTax !== props.incomeTaxWarn){
-        coloriT = true;
-    }
-    if(props.propertyTax !== props.propertyTaxWarn){
-        colorpT = true;
-    }
-    if(props.dividend1 !== props.dividend1Warn){
-        colorD1 = true;
-    }
-    if(props.dividend2 !== props.dividend2Warn){
-        colorD2 = true;
-    }
+    // var color, colorC, colorL, colorE, colorLoss, coloriT, colorpT, colorD1, colorD2 = false;
+    // if(props.active !== props.activeWarn){
+    //     color = true;
+    // }
+    // if(props.capital !== props.capitalWarn){
+    //     colorC = true;
+    // }
+    // if(props.liability !== props.liabilityWarn){
+    //     colorL = true;
+    // }
+    // if(props.ebitda !== props.ebitdaWarn){
+    //     colorE = true;
+    // }
+    // if(props.loss !== props.lossWarn){
+    //     colorLoss = true;
+    // }
+    // if(props.incomeTax !== props.incomeTaxWarn){
+    //     coloriT = true;
+    // }
+    // if(props.propertyTax !== props.propertyTaxWarn){
+    //     colorpT = true;
+    // }
+    // if(props.dividend1 !== props.dividend1Warn){
+    //     colorD1 = true;
+    // }
+    // if(props.dividend2 !== props.dividend2Warn){
+    //     colorD2 = true;
+    // }
     return (
         <main className="content">
             <div className="content-header">
@@ -48,7 +48,7 @@ const FinancialDataComponent = (props) => {
                         <input
                             id="active"
                             type="text"
-                            className={color ? 'form-control invalid' : 'form-control'}
+                            className={props.color ? 'form-control invalid' : 'form-control'}
                             value={props.active}
                             onChange={e => props.setActive(e.target.value)}
                         />
@@ -65,7 +65,7 @@ const FinancialDataComponent = (props) => {
                         <input
                             value={props.capital}
                             type="text"
-                            className={colorC ? 'form-control invalid' : 'form-control'}
+                            className={props.colorC ? 'form-control invalid' : 'form-control'}
                             onChange={(e) => props.setCapital(e.target.value)}
                             id="capital"
                         />
@@ -79,7 +79,7 @@ const FinancialDataComponent = (props) => {
                         <input
                             value={props.liability}
                             type="text"
-                            className={colorL ? 'form-control invalid' : 'form-control'}
+                            className={props.colorL ? 'form-control invalid' : 'form-control'}
                             onChange={(e) => props.setLiability(e.target.value)}
                             id="liability"
                         />
@@ -96,7 +96,7 @@ const FinancialDataComponent = (props) => {
                         <input
                             value={props.ebitda}
                             type="text"
-                            className={colorE ? 'form-control invalid' : 'form-control'}
+                            className={props.colorE ? 'form-control invalid' : 'form-control'}
                             onChange={(e) => props.setEBITDA(e.target.value)}
                             id="ebitda"
                         />
@@ -110,7 +110,7 @@ const FinancialDataComponent = (props) => {
                         <input
                             value={props.loss}
                             type="text"
-                            className={colorLoss ? 'form-control invalid' : 'form-control'}
+                            className={props.colorLoss ? 'form-control invalid' : 'form-control'}
                             onChange={(e) => props.setLoss(e.target.value)}
                             id="loss"
                         />
@@ -126,7 +126,7 @@ const FinancialDataComponent = (props) => {
                     <div className="col-sm-2 flex-div">
                         <input
                             type="text"
-                            className={coloriT ? 'form-control invalid' : 'form-control'}
+                            className={props.coloriT ? 'form-control invalid' : 'form-control'}
                             onChange={(e) => props.setIncomeTax(e.target.value)}
                             id="incometax"
                             value={props.incomeTax}
@@ -143,7 +143,7 @@ const FinancialDataComponent = (props) => {
                     <div className="col-sm-2 flex-div">
                         <input
                             type="text"
-                            className={colorpT ? 'form-control invalid' : 'form-control'}
+                            className={props.colorpT ? 'form-control invalid' : 'form-control'}
                             onChange={(e) => props.setPropertyTax(e.target.value)}
                             id="propertytax"
                             value={props.propertyTax}
@@ -160,7 +160,7 @@ const FinancialDataComponent = (props) => {
                     <div className="col-sm-2 flex-div">
                         <input
                             type="text"
-                            className={colorD1 ? 'form-control invalid' : 'form-control'}
+                            className={props.colorD1 ? 'form-control invalid' : 'form-control'}
                             onChange={(e) => props.setDividend1(e.target.value)}
                             id="dividend1"
                             value={props.dividend1}
@@ -177,7 +177,7 @@ const FinancialDataComponent = (props) => {
                     <div className="col-sm-2 flex-div">
                         <input
                             type="text"
-                            className={colorD2 ? 'form-control invalid' : 'form-control'}
+                            className={props.colorD2 ? 'form-control invalid' : 'form-control'}
                             onChange={(e) => props.setDividend2(e.target.value)}
                             id="dividend2"
                             value={props.dividend2}

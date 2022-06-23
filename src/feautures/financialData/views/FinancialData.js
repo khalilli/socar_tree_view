@@ -15,6 +15,34 @@ const FinancialData = () => {
     useEffect(() => {
       getFinancialData();
     }, []);
+    var color, colorC, colorL, colorE, colorLoss, coloriT, colorpT, colorD1, colorD2 = false;
+    if(financialData.active !== financialData.activeWarn){
+        color = true;
+    }
+    if(financialData.capital !== financialData.capitalWarn){
+        colorC = true;
+    }
+    if(financialData.liability !== financialData.liabilityWarn){
+        colorL = true;
+    }
+    if(financialData.ebitda !== financialData.ebitdaWarn){
+        colorE = true;
+    }
+    if(financialData.loss !== financialData.lossWarn){
+        colorLoss = true;
+    }
+    if(financialData.incomeTax !== financialData.incomeTaxWarn){
+        coloriT = true;
+    }
+    if(financialData.propertyTax !== financialData.propertyTaxWarn){
+        colorpT = true;
+    }
+    if(financialData.dividend1 !== financialData.dividend1Warn){
+        colorD1 = true;
+    }
+    if(financialData.dividend2 !== financialData.dividend2Warn){
+        colorD2 = true;
+    }
     console.log(financialData.active,financialData.activeWarn);
     console.log(financialData.capital, financialData.capitalWarn);
     const args = {
@@ -36,6 +64,7 @@ const FinancialData = () => {
         dividend1Warn: financialData.dividend1Warn,
         dividend2: financialData.dividend2,
         dividend2Warn: financialData.dividend2Warn,
+        color, colorC, colorL, colorE, colorLoss, coloriT, colorpT, colorD1, colorD2,
         setActive: active => {
             setFinancialData([{property: 'active', value: active}])
         },
