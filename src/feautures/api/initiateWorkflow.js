@@ -5,7 +5,7 @@ const initiateWorkflow = async (args) => {
     data.append('func', 'll');
     data.append("objId", window.initiateWorkflowId);
     data.append("objAction", "RunReport");
-    console.log(args.cid);
+  
     args.cid && data.append("cid", args.cid);
     if (args.colorN === true){
       args.cname && data.append("cname", args.cname);
@@ -22,14 +22,21 @@ const initiateWorkflow = async (args) => {
     if (args.colorCeo === true){
       args.ceo && data.append("ceo", args.ceo);
     }
-    args.directorLength && data.append("directorLength", args.directorLength);
-    for(var j=0; j<args.directorLength; j++){
-      args.directorList[j] && data.append("directorList"+[j+1], args.directorList[j]);
+
+    if (args.changeDir === true){
+      args.directorLength && data.append("directorLength", args.directorLength);
+      for(var j=0; j<args.directorLength; j++){
+        args.directorList[j] && data.append("directorList"+[j+1], args.directorList[j]);
+      }
     }
-    args.representativeLength && data.append("representativeLength", args.representativeLength);
-    for(var k=0; k<args.representativeLength; k++){
-      args.representativeList[k] && data.append("representativeList"+[k+1], args.representativeList[k]);
+
+    if (args.changeRep === true){
+      args.representativeLength && data.append("representativeLength", args.representativeLength);
+      for(var k=0; k<args.representativeLength; k++){
+        args.representativeList[k] && data.append("representativeList"+[k+1], args.representativeList[k]);
+      }
     }
+
     if (args.color === true){
       args.active && data.append("active", args.active);
     }
@@ -57,6 +64,7 @@ const initiateWorkflow = async (args) => {
     if(args.colorD2 === true){
       args.dividend2 && data.append("dividend2", args.dividend2);
     }
+    
     if (args.change === true){
       args.nameLength && data.append("nameLength", args.nameLength);
     for(var i=0; i<args.nameLength; i++){
@@ -64,6 +72,8 @@ const initiateWorkflow = async (args) => {
     }
     args.companyShare && data.append("companyShare", args.companyShare);
     }
+
+
     data.append("nextUrl", window.nextUrl);
     const config = {
       method: 'post',
