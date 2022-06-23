@@ -88,7 +88,6 @@ const handleGetDirectors = async (set, get) => {
         data = data.map(x=>({dirname: x.DIREKTOR}));
         set({
             directorList: data,
-            directorListWarn: data,
         })
     }
 }
@@ -232,7 +231,6 @@ const store = (set, get) => ({
         countryOfOperation: ''
     },
     directorList: [],
-    directorListWarn: [],
     representativeList: [],
     financialData: {
         active: '',

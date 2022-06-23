@@ -8,13 +8,12 @@ const getState = state => [
     state.directorList,
     state.getDirectors,
     state.representativeList,
-    state.directorListWarn,
     state.getRepresentatives,
     state.initWorkflow
 ];
 
 const BoardMembers = () => {
-    const [directorList, directorListWarn, getDirectors, representativeList, getRepresentatives, initWorkflow] = useStore(getState, shallow);
+    const [directorList, getDirectors, representativeList, getRepresentatives, initWorkflow] = useStore(getState, shallow);
 
     useEffect(()=>{
         getDirectors();
@@ -76,8 +75,7 @@ const BoardMembers = () => {
     var checkChangeDir = false;
     var checkChangeRep = false;
     console.log(directorList);
-    console.log(directorListWarn);
-    console.log(representativeList);
+    console.log(names);
 
     const args = {
         names,
