@@ -44,7 +44,8 @@ const ShareOfCompanies = () => {
         cname.push(companyNameShare[i].CNAME);
         cshare.push(parseInt(companyNameShare[i].Y));
     }
-
+    console.log(companyShares);
+    console.log(companySharesWarn);
     const args = {
         companyShares,
         companyNameShare,
