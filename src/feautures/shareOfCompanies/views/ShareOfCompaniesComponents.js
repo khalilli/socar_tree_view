@@ -14,7 +14,6 @@ const ShareOfCompaniesComponent = (props) => {
       colorKeys.push(j);
     }
   }
-  console.log(colorKeys);
     return (
       <main className="content">
         <div className="content-header">

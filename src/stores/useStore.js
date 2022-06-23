@@ -207,6 +207,7 @@ const handleGetCompanyShares = async (set, get) => {
         let data = response.data;
         let dataWarn = response.data;
         dataWarn = dataWarn.map(x=> ({Y: x.Y, CNAME: x.CNAME}));
+        dataWarn.pop();
         data.pop();
         set({
             companyShares: data,
