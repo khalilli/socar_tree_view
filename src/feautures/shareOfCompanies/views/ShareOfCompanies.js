@@ -71,6 +71,8 @@ const ShareOfCompanies = () => {
         changeNameShare,
         addShare,
         deleteNameShare,
+        colorKeys,
+        colorValues,
         onSubmitForm: () => {
           let params = new URLSearchParams(window.location.search);
           let key = parseInt(params.get("key"));
