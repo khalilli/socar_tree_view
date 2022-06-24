@@ -33,10 +33,13 @@ const ShareOfCompanies = () => {
     // highlight edited input fields
     var colorKeys = [];
     for (var j=0; j<companySharesWarn.length; j++){
-      if (companyNameShare[j].Y === companySharesWarn[j].Y){
+      if (companyShares[j].Y === companySharesWarn[j].Y){
         colorKeys.push(j);
       }
     }
+
+    console.log(companyNameShare);
+    console.log(companySharesWarn);
 
     const deleteNameShare = (e, id) => {
       e.preventDefault();
