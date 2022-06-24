@@ -34,6 +34,8 @@ const ShareOfCompanies = () => {
     var colorKeys = [];
     if(companySharesWarn.length < companyNameShare.length){
       for (var j=0; j<companySharesWarn.length; j++){
+        console.log(companyNameShare[j].Y);
+        console.log(companySharesWarn[j].Y);
         if (companyNameShare[j].Y === companySharesWarn[j].Y){
           colorKeys.push(j);
         }
@@ -41,6 +43,8 @@ const ShareOfCompanies = () => {
     }else{
       for (var j=0; j<companyNameShare.length; j++){
         for(var f=0;f<companySharesWarn.length; f++){
+          console.log(companyNameShare[j].Y);
+          console.log(companySharesWarn[f].Y);
           if (companyNameShare[j].Y === companySharesWarn[f].Y){
             colorKeys.push(j);
           }
