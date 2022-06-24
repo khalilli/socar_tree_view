@@ -32,11 +32,17 @@ const ShareOfCompanies = () => {
     }
     // highlight edited input fields
     var colorKeys = [];
-    for (var j=0; j<companySharesWarn.length; j++){
-      if (companyShares[j].Y === companySharesWarn[j].Y){
-        console.log(companyNameShare[j].Y);
-    console.log(companySharesWarn[j].Y);
-        colorKeys.push(j);
+    if(companySharesWarn.length <companyNameShare.length){
+      for (var j=0; j<companySharesWarn.length; j++){
+        if (companyNameShare[j].Y === companySharesWarn[j].Y){
+          colorKeys.push(j);
+        }
+      }
+    }else{
+      for (var j=0; j<companyNameShare.length; j++){
+        if (companyNameShare[j].Y === companySharesWarn[j].Y){
+          colorKeys.push(j);
+        }
       }
     }
 
