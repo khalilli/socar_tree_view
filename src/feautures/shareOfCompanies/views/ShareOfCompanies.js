@@ -34,12 +34,11 @@ const ShareOfCompanies = () => {
     var colorKeys = [];
     for (var j=0; j<companySharesWarn.length; j++){
       if (companyShares[j].Y === companySharesWarn[j].Y){
+        console.log(companyNameShare[j].Y);
+    console.log(companySharesWarn[j].Y);
         colorKeys.push(j);
       }
     }
-
-    console.log(companyNameShare);
-    console.log(companySharesWarn);
 
     const deleteNameShare = (e, id) => {
       e.preventDefault();
