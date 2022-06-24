@@ -34,7 +34,7 @@ const ShareOfCompanies = () => {
     var colorKeys = [];
     var colorValues = [];
     for (var j=0; j<companyShares.length; j++){
-      if (companyNameShare[j].Y !== companySharesWarn[j].Y){
+      if (companyShares[j].Y !== companySharesWarn[j].Y){
         colorKeys.push(j);
         colorValues.push(companyShares[j].Y);
       }
