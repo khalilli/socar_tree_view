@@ -33,6 +33,7 @@ const ShareOfCompanies = () => {
     // highlight edited input fields
     var colorKeys = [];
     var colorValues = [];
+    var deleteCheck = false;
     for (var j=0; j<companyShares.length; j++){
       if (companyShares[j].Y !== companySharesWarn[j].Y){
         colorKeys.push(j);
@@ -42,11 +43,22 @@ const ShareOfCompanies = () => {
     
     const deleteNameShare = (e, id) => {
       e.preventDefault();
+      deleteCheck = true;
       const list = [...companyNameShare];
       list.splice(id, 1);
       setCompanyNameShare(list);
     }
-
+    console.log(deleteCheck);
+    if(deleteCheck === true){
+      colorKeys = [];
+      colorValues = [];
+      for (var j=0; j<companyShares.length; j++){
+        if (companyShares[j].Y !== companySharesWarn[j].Y){
+          colorKeys.push(j);
+          colorValues.push(companyShares[j].Y);
+        }
+      }
+    }
     //remove keys of array to fit tags
     const cname = [];
     const cshare = [];
