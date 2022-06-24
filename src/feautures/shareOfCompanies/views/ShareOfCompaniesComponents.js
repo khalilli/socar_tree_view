@@ -17,7 +17,7 @@ const ShareOfCompaniesComponent = (props) => {
         <form className="content-form">
         {props.companyNameShare.map((x, id) => {
             return (
-              <div className="form-group row" key={id} value={x.Y}>
+              <div className="form-group row" key={id}>
                 <div className="col-sm-2 flex-div">
                   <input
                     value={x.CNAME}
@@ -35,7 +35,7 @@ const ShareOfCompaniesComponent = (props) => {
                     name="Y"
                     onChange={e => props.changeNameShare(e, id)}
                     type="number"
-                    className={x.Y === 60 ? "form-control" : "form-control invalid"}
+                    className={"form-control"}
                     id="company"
                   />
                   <span className="col-sm-1">
