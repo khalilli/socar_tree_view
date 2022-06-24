@@ -31,20 +31,21 @@ const ShareOfCompanies = () => {
       setCompanyNameShare([...companyNameShare, {Y: "", CNAME: ""}]);
     }
     // highlight edited input fields
-    var colorKeys = [];
-    var colorValues = [];
+    var colorKey = [];
     for (var j=0; j<companyShares.length; j++){
       if (companyShares[j].Y === companySharesWarn[j].Y){
-        colorKeys.push(j);
-        colorValues.push(companyShares[j].Y);
+        colorKey.push(j);
       }
     }
-    
+    const [colorKeys, setcolor] = useState(colorKey);
     const deleteNameShare = (e, id) => {
       e.preventDefault();
       const list = [...companyNameShare];
       list.splice(id, 1);
       setCompanyNameShare(list);
+      const clist = [...colorKeys];
+      clist.splice(id,1);
+      setcolor(clist);
     }
     //remove keys of array to fit tags
     const cname = [];
@@ -72,7 +73,6 @@ const ShareOfCompanies = () => {
         addShare,
         deleteNameShare,
         colorKeys,
-        colorValues,
         onSubmitForm: () => {
           let params = new URLSearchParams(window.location.search);
           let key = parseInt(params.get("key"));

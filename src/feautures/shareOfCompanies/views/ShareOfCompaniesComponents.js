@@ -7,7 +7,6 @@ const ShareOfCompaniesComponent = (props) => {
   }
 
   // var colorKeys = [];
-  // var colorValues = [];
   // for (var j=0; j<props.companyShares.length; j++){
   //   if (props.companyShares[j].Y !== props.companySharesWarn[j].Y){
   //     colorKeys.push(j);
@@ -15,7 +14,6 @@ const ShareOfCompaniesComponent = (props) => {
   //   }
   // }
   console.log(props.colorKeys);
-  console.log(props.colorValues);
     return (
       <main className="content">
         <div className="content-header">
