@@ -13,13 +13,20 @@ const CompanyDetailsComponent = props => {
             <form className="content-form">
                 <div className="form-group row">
                     <label className="col-sm-3 col-form-label">Şirkət</label>
-                    <div className="col-sm-6">
+                    <div className="col-sm-3">
                         <input
                             id="company"
                             type="text"
-                            className={props.colorN ? 'form-control invalid margin-left' : 'form-control margin-left'}
+                            className={'form-control margin-left'}
                             value={props.companyName}
-                            onChange={e => props.setCompanyName(e.target.value)}
+                        />
+                    </div>
+                    <div className="col-sm-3">
+                        <input
+                            id="company"
+                            type="text"
+                            className={'form-control margin-left'}
+                            value={props.companyName}
                         />
                     </div>
                 </div>
@@ -28,49 +35,77 @@ const CompanyDetailsComponent = props => {
                     <label className="col-sm-3 col-form-label">
                         Aid olduğu seqment
                     </label>
-                    <div className="col-sm-6">
+                    <div className="col-sm-3">
                         <input
                             id="segment"
                             type="text"
-                            className={props.colorS ? 'form-control invalid margin-left' : 'form-control margin-left'}
+                            className={'form-control margin-left'}
                             value={props.companySegment}
-                            onChange={e => props.setCompanySegment(e.target.value)}
+                        />
+                    </div>
+                    <div className="col-sm-3">
+                        <input
+                            id="segment"
+                            type="text"
+                            className={'form-control margin-left'}
+                            value={props.companySegment}
                         />
                     </div>
                 </div>
                 <div className="form-group row">
                     <label className="col-sm-3 col-form-label">Share</label>
-                    <div className="col-sm-6">
+                    <div className="col-sm-3">
                         <input
                             id="share"
                             type="number"
-                            className={props.colorSh ? 'form-control invalid margin-left' : "form-control margin-left"}
+                            className={"form-control margin-left"}
                             value={props.companyShare}
-                            onChange={e => props.setCompanyShare(e.target.value)}
+                        />
+                    </div>
+                    <div className="col-sm-3">
+                        <input
+                            id="share"
+                            type="number"
+                            className={"form-control margin-left"}
+                            value={props.companyShare}
                         />
                     </div>
                 </div>
                 <div className="form-group row">
                     <label className="col-sm-3 col-form-label">İşçi sayı</label>
-                    <div className="col-sm-6">
+                    <div className="col-sm-3">
                         <input
                             id="employee"
                             type="number"
-                            className={props.colorEmp ? 'form-control invalid margin-left' : "form-control margin-left"}
+                            className={"form-control margin-left"}
                             value={props.companyNumberOfEmployees}
-                            onChange={e => props.setCompanyNumberOfEmployees(e.target.value)}
+                        />
+                    </div>
+                    <div className="col-sm-3">
+                        <input
+                            id="employee"
+                            type="number"
+                            className={"form-control margin-left"}
+                            value={props.companyNumberOfEmployees}
                         />
                     </div>
                 </div>
                 <div className="form-group row">
                     <label className="col-sm-3 col-form-label">Rəhbər</label>
-                    <div className="col-sm-6">
+                    <div className="col-sm-3">
                         <input
                             id="ceo"
                             type="text"
-                            className={props.colorCeo ? 'form-control invalid margin-left' : "form-control margin-left"}
+                            className={"form-control margin-left"}
                             value={props.companyCEO}
-                            onChange={e => props.setCompanyCEO(e.target.value)}
+                        />
+                    </div>
+                    <div className="col-sm-3">
+                        <input
+                            id="ceo"
+                            type="text"
+                            className={"form-control margin-left"}
+                            value={props.companyCEO}
                         />
                     </div>
                 </div>
@@ -104,11 +139,10 @@ const CompanyDetailsComponent = props => {
                     <label className="col-sm-3 col-form-label">
                         Fəaliyyət göstərdiyi ölkələr
                     </label>
-                    <div className="col-sm-6">
+                    <div className="col-sm-3">
                         <Select
                             className="margin-left form-control form-control-select"
                             defaultValue={props.companyCountryOfOperation}
-                            onChange={() => props.setCountryOfOperation()}
                             options={props.countries}
                             isMulti
                         />
@@ -118,17 +152,15 @@ const CompanyDetailsComponent = props => {
                     <div className="col-sm-12 button-right">
                         <button
                             type="button"
-                            onClick={props.onSubmitForm}
                             className="btn-save"
                         >
-                            Send
+                            Approve
                         </button>
                         <button
                             type="button"
-                            onClick={props.reset}
                             className="btn-reset"
                         >
-                            Reset
+                            Send back
                         </button>
                     </div>
                 </div>

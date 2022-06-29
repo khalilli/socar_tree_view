@@ -1,11 +1,4 @@
 const ShareOfCompaniesComponent = (props) => {
-  const inputName = [];
-  for (var i=0; i<props.companyNameShare.length; i++){
-    if(props.companyNameShare[i].CNAME.length === 0){
-      inputName.push(i);
-    }
-  }
-  console.log(props.colorKeys);
     return (
       <main className="content">
         <div className="content-header">
@@ -15,62 +8,68 @@ const ShareOfCompaniesComponent = (props) => {
           </button>
         </div>
         <form className="content-form">
-        {props.companyNameShare.map((x, id) => {
-            return (
-              <div className="form-group row" key={id}>
-                <div className="col-sm-2 flex-div">
-                  <input
-                    value={x.CNAME}
-                    name="CNAME"
-                    onChange={e => props.changeNameShare(e,id)}
-                    type="text"
-                    className={inputName.includes(id) ? 'form-control' : 'form-label'}
-                    id="company"
-                  />
+          <div className="row">
+            <div className="form-group col-4">
+              {props.companyShares.map((x, id) => {
+              return (
+                <div className="form-group row" key={id}>
+                  <div className="col-sm-2 flex-div">
+                    <input
+                      defaultValue={x.CNAME}
+                      name="CNAME"
+                      type="text"
+                      className={'form-label'}
+                      id="company"
+                    />
+                  </div>
+                  <div className="col-sm-2 flex-div">
+                    <input
+                      defaultValue={x.Y}
+                      name="Y"
+                      type="number"
+                      className={"form-control"}
+                      id="company"
+                    />
+                  </div>
                 </div>
-
-                <div className="col-sm-2 flex-div">
-                  <input
-                    value={x.Y}
-                    name="Y"
-                    onChange={e => props.changeNameShare(e, id)}
-                    type="number"
-                    className={"form-control"}
-                    id="company"
-                  />
-                  <span className="col-sm-1">
-                    <i className="fa-solid fa-percent"></i>
-                  </span>
-                  <button className="removebtn1" onClick={(e) => props.deleteNameShare(e, id)}>
-                    x
-                  </button>
+              );
+              })} 
+            </div>
+            <div className="form-group col-4">
+              {props.companyShares.map((x, id) => {
+              return (
+                <div className="form-group row" key={id}>
+                  <div className="col-sm-2 flex-div">
+                    <input
+                      defaultValue={x.CNAME}
+                      name="CNAME"
+                      type="text"
+                      className={'form-label'}
+                      id="company"
+                    />
+                  </div>
+                  <div className="col-sm-2 flex-div">
+                    <input
+                      defaultValue={x.Y}
+                      name="Y"
+                      type="number"
+                      className={"form-control"}
+                      id="company"
+                    />
+                  </div>
                 </div>
-              </div>
-            );
-        })} 
-          <div className="form-group row">
-            <div className="col-sm-10">
-              <button
-                type="button"
-                className="col-sm-1 add-button"
-                id="add-member"
-                onClick={props.addShare}
-              >
-                Add
-                <i
-                  className="fa-solid fa-plus"
-                  style={{ marginLeft: "10px" }}
-                ></i>
-              </button>
+              );
+              })} 
             </div>
           </div>
+
           <div className="form-group row">
             <div className="col-sm-12 button-right">
-              <button type="button" className="btn-save" onClick={props.onSubmitForm}>
-                Send
+              <button type="button" className="btn-save">
+                Approve
               </button>
               <button type="button" className="btn-reset">
-                Reset
+                Send back
               </button>
             </div>
           </div>
