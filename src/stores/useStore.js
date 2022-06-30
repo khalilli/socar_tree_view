@@ -223,7 +223,6 @@ const handleGetCompanyShares = async (set, get) => {
         })
     }
 }
-
 const store = (set, get) => ({
     companyDetails: {
         name: '',
