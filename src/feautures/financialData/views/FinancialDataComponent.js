@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 const FinancialDataComponent = (props) => {
     return (
         <main className="content">
@@ -20,9 +19,17 @@ const FinancialDataComponent = (props) => {
                         <input
                             id="active"
                             type="text"
-                            className={props.color ? 'form-control invalid' : 'form-control'}
+                            className={'form-control'}
                             value={props.active}
-                            onChange={e => props.setActive(e.target.value)}
+                        />
+                    </div>
+                    <br/>
+                    <div className="col-sm-2 flex-div">
+                        <input
+                            id="active"
+                            type="text"
+                            className={'form-control'}
+                            value={props.active}
                         />
                     </div>
                 </div>
@@ -37,8 +44,16 @@ const FinancialDataComponent = (props) => {
                         <input
                             value={props.capital}
                             type="text"
-                            className={props.colorC ? 'form-control invalid' : 'form-control'}
-                            onChange={(e) => props.setCapital(e.target.value)}
+                            className={'form-control'}
+                            id="capital"
+                        />
+                    </div>
+                    <br/>
+                    <div className="col-sm-2 flex-div">
+                        <input
+                            value={props.capital}
+                            type="text"
+                            className={'form-control'}
                             id="capital"
                         />
                     </div>
@@ -51,8 +66,16 @@ const FinancialDataComponent = (props) => {
                         <input
                             value={props.liability}
                             type="text"
-                            className={props.colorL ? 'form-control invalid' : 'form-control'}
-                            onChange={(e) => props.setLiability(e.target.value)}
+                            className={'form-control'}
+                            id="liability"
+                        />
+                    </div>
+                    <br/>
+                    <div className="col-sm-2 flex-div">
+                        <input
+                            value={props.liability}
+                            type="text"
+                            className={'form-control'}
                             id="liability"
                         />
                     </div>
@@ -68,8 +91,16 @@ const FinancialDataComponent = (props) => {
                         <input
                             value={props.ebitda}
                             type="text"
-                            className={props.colorE ? 'form-control invalid' : 'form-control'}
-                            onChange={(e) => props.setEBITDA(e.target.value)}
+                            className={'form-control'}
+                            id="ebitda"
+                        />
+                    </div>
+                    <br/>
+                    <div className="col-sm-2 flex-div">
+                        <input
+                            value={props.ebitda}
+                            type="text"
+                            className={'form-control'}
                             id="ebitda"
                         />
                     </div>
@@ -82,8 +113,16 @@ const FinancialDataComponent = (props) => {
                         <input
                             value={props.loss}
                             type="text"
-                            className={props.colorLoss ? 'form-control invalid' : 'form-control'}
-                            onChange={(e) => props.setLoss(e.target.value)}
+                            className={'form-control'}
+                            id="loss"
+                        />
+                    </div>
+                    <br/>
+                    <div className="col-sm-2 flex-div">
+                        <input
+                            value={props.loss}
+                            type="text"
+                            className={'form-control'}
                             id="loss"
                         />
                     </div>
@@ -98,8 +137,16 @@ const FinancialDataComponent = (props) => {
                     <div className="col-sm-2 flex-div">
                         <input
                             type="text"
-                            className={props.coloriT ? 'form-control invalid' : 'form-control'}
-                            onChange={(e) => props.setIncomeTax(e.target.value)}
+                            className={'form-control'}
+                            id="incometax"
+                            value={props.incomeTax}
+                        />
+                    </div>
+                    <br/>
+                    <div className="col-sm-2 flex-div">
+                        <input
+                            type="text"
+                            className={'form-control'}
                             id="incometax"
                             value={props.incomeTax}
                         />
@@ -115,8 +162,16 @@ const FinancialDataComponent = (props) => {
                     <div className="col-sm-2 flex-div">
                         <input
                             type="text"
-                            className={props.colorpT ? 'form-control invalid' : 'form-control'}
-                            onChange={(e) => props.setPropertyTax(e.target.value)}
+                            className={'form-control'}
+                            id="propertytax"
+                            value={props.propertyTax}
+                        />
+                    </div>
+                    <br/>
+                    <div className="col-sm-2 flex-div">
+                        <input
+                            type="text"
+                            className={'form-control'}
                             id="propertytax"
                             value={props.propertyTax}
                         />
@@ -132,8 +187,16 @@ const FinancialDataComponent = (props) => {
                     <div className="col-sm-2 flex-div">
                         <input
                             type="text"
-                            className={props.colorD1 ? 'form-control invalid' : 'form-control'}
-                            onChange={(e) => props.setDividend1(e.target.value)}
+                            className={'form-control'}
+                            id="dividend1"
+                            value={props.dividend1}
+                        />
+                    </div>
+                    <br/>
+                    <div className="col-sm-2 flex-div">
+                        <input
+                            type="text"
+                            className={'form-control'}
                             id="dividend1"
                             value={props.dividend1}
                         />
@@ -149,8 +212,16 @@ const FinancialDataComponent = (props) => {
                     <div className="col-sm-2 flex-div">
                         <input
                             type="text"
-                            className={props.colorD2 ? 'form-control invalid' : 'form-control'}
-                            onChange={(e) => props.setDividend2(e.target.value)}
+                            className={'form-control'}
+                            id="dividend2"
+                            value={props.dividend2}
+                        />
+                    </div>
+                    <br/>
+                    <div className="col-sm-2 flex-div">
+                        <input
+                            type="text"
+                            className={'form-control'}
                             id="dividend2"
                             value={props.dividend2}
                         />
@@ -158,27 +229,16 @@ const FinancialDataComponent = (props) => {
                 </div>
                 <div className="form-group row">
                     <div className="col-sm-12 button-right">
-                        <button type="button" className="btn-save" onClick={props.onSubmitForm}>
-                            Send
+                        <button type="button" className="btn-save">
+                            Approve
                         </button>
-                        <button type="button" className="btn-reset" onClick={props.reset}>
-                            Reset
+                        <button type="button" className="btn-reset">
+                            Send back
                         </button>
                     </div>
                 </div>
             </form>
         </main>
     );
-};
-FinancialDataComponent.propTypes = {
-    active: PropTypes.number,
-    capital: PropTypes.number,
-    liability: PropTypes.number,
-    ebitda: PropTypes.number,
-    loss: PropTypes.number,
-    incomeTax: PropTypes.number,
-    propertyTax: PropTypes.number,
-    dividend1: PropTypes.number,
-    dividend2: PropTypes.number,
 };
 export default FinancialDataComponent;

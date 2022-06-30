@@ -17,39 +17,38 @@ const BoardMembersComponent = props => {
               >
                 Direktorlar şurasının üzvləri
               </label>
-              {props.names.map((x, id) => {
-                return (
-                  <div className="col-sm-8" key={id}>
-                    {/* <span className="deleteicon deleteicon-boardmembers"> */}
-                      <input
-                        name="dirname"
-                        value={x.dirname}
-                        onChange={(e) => props.handleChangeDirectors(e, id)}
-                        type="text"
-                        className="form-control margin-bottom"
-                        id="companyDir"
-                      />
-                      {/* <span className="delete-span">x</span> */}
-                    {/* </span> */}
-                    <button className="removebtn" onClick={(e) => props.deleteName(e, id)}>
-                      x
-                    </button>
-                  </div>
-                );
-              })}
-
-              <button
-                type="button"
-                className="col-sm-2 add-button"
-                id="add-member"
-                onClick={props.addName}
-              >
-                Add
-                <i
-                  className="fa-solid fa-plus"
-                  style={{ marginLeft: "5px" }}
-                ></i>
-              </button>
+              <div className="row">
+                <div className="form-group col-4">
+                  {props.directorList.map((x, id) => {
+                  return (
+                    <div className="col-sm-6" key={id}>
+                        <input
+                          name="dirname"
+                          defaultValue={x.dirname}
+                          type="text"
+                          className="form-control margin-bottom"
+                          id="companyDir"
+                        />
+                    </div>
+                  );
+                })}
+                </div>
+                <div className="form-group col-4">
+                  {props.directorList.map((x, id) => {
+                  return (
+                    <div className="col-sm-6" key={id}>
+                        <input
+                          name="dirname"
+                          defaultValue={x.dirname}
+                          type="text"
+                          className="form-control margin-bottom"
+                          id="companyDir"
+                        />
+                    </div>
+                  );
+                })}
+                </div>
+              </div>
             </div>
             <div className="form-group col-6">
               <label
@@ -58,47 +57,51 @@ const BoardMembersComponent = props => {
               >
                 Ümumi yığıncaqda təmsilçilər
               </label>
-              {props.namesR.map((x, id) => {
-                return (
-                  <div className="col-sm-8" key={id}>
-                    <span className="deleteicon deleteicon-boardmembers">
-                      <input
-                        name="repname"
-                        value={x.repname}
-                        type="text"
-                        className="form-control margin-bottom"
-                        onChange={(e) => props.handleChangeRep(e, id)}
-                        id="companyRep"
-                      />
-                      {/* <span className="delete-span">x</span> */}
-                    </span>
-                    <button className="removebtn" onClick={(e) => props.deleteNameR(e, id)}>
-                      x
-                    </button>
-                  </div>
-                );
-              })}
-              <button
-                type="button"
-                className="col-sm-2 add-button"
-                id="add-member"
-                onClick={props.addNameR}
-              >
-                Add
-                <i
-                  className="fa-solid fa-plus"
-                  style={{ marginLeft: "5px" }}
-                ></i>
-              </button>
+              <div className="row">
+                <div className="form-group col-4">
+                  {props.representativeList.map((x, id) => {
+                  return (
+                    <div className="col-sm-6" key={id}>
+                      <span className="deleteicon deleteicon-boardmembers">
+                        <input
+                          name="repname"
+                          defaultValue={x.repname}
+                          type="text"
+                          className="form-control margin-bottom"
+                          id="companyRep"
+                        />
+                      </span>
+                    </div>
+                  );
+                })}
+                </div>
+                <div className="form-group col-4">
+                  {props.representativeList.map((x, id) => {
+                  return (
+                    <div className="col-sm-6" key={id}>
+                      <span className="deleteicon deleteicon-boardmembers">
+                        <input
+                          name="repname"
+                          defaultValue={x.repname}
+                          type="text"
+                          className="form-control margin-bottom"
+                          id="companyRep"
+                        />
+                      </span>
+                    </div>
+                  );
+                })}
+                </div>
+              </div>
             </div>
           </div>
           <div className="form-group row">
             <div className="col-sm-12 button-right">
-              <button type="button" className="btn-save" onClick={props.onSubmitForm}>
-                Send
+              <button type="button" className="btn-save">
+                Approve
               </button>
               <button type="button" className="btn-reset">
-                Reset
+                Send back
               </button>
             </div>
           </div>
